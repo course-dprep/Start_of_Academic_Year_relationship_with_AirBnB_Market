@@ -7,6 +7,24 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 2. Run some analysis
 3. Present results in a final pdf generated using LaTeX
 
+## Research question(s):
+
+*How is the market affected in populair student cities by the start of the Academic year?*
+- How are the Air B&B prices affected? Do they go up or down?
+- Does the amount of rented out B&B's go change?
+- Are the reviews affected?
+- Is there a difference in price change between professional hosts and ordinary ones?
+
+Cities of interest to use (all large student cities with Universities):
+- Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna). 
+
+*Alternative RQ: Do changes in the weather influence the B&B market?*
+--This would use a secondairy dataset(s) with the temperature and percipitation rate 
+-Does an increase in the percipitation rate impact the rate of rented out B&B's?
+-Does an increase in the percipitation rate impact the reviews?
+-Does colder weather impact the price of B&B? Or the rent out rate?
+-Are less B&B's listed when there is worse weather? 
+
 ## Dependencies
 - R 
 - R packages: `install.packages("stargazer")`
