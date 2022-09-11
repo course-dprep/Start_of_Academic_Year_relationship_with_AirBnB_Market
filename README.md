@@ -5,23 +5,30 @@
 
 ## Contents
 [1. Introduction](##-1.-introduction) 
-
-   [1.1 Problem Background and Research Motivation](###-1.1-problem-background-and-research-motivation)
-   [1.2 Problem Statement and Research Questions](###-1.2-problem-statement-and-research-questions)
-   [1.3 Conceptual Model](###-1.3-conceptual-model)
+      
+   - [Problem Background and Research Motivation](###-1.1-problem-background-and-research-motivation)
+   
+   - [Problem Statement and Research Questions](###-1.2-problem-statement-and-research-questions)
+   
+   - [Conceptual Model](###-1.3-conceptual-model)
 
 [2. Methodology](##-2.-methodology)
-   - Data
-   - Research Method
-   - Analysis
+ 
+   - [Data](###-2.1-data)
 
-[3. Results and Interpretation](3.-results-and-interpretation)
+   - [Research Method](###-2.2-research-method)
 
-[4. Repository Overview](4.-repository-overview)
-   - Contents
-   - Structure
+   - [Analysis](###-2.3-analysis)
 
-[5. Instructions to Run the Project](5.-instructions-to-run-the-project)
+[3. Results and Interpretation](##-3.-results-and-interpretation)
+
+[4. Repository Overview](##-4.-repository-overview)
+   
+   - [Contents](###-4.1-contents)
+   
+   - [Structure](###-4.2-structure)
+
+[5. Instructions to Run the Project](##-5.-instructions-to-run-the-project)
 
 
 ## 1. Introduction
