@@ -7,7 +7,7 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 2. Run some analysis
 3. Present results in a final pdf generated using LaTeX
 
-##Literature/Motivation: 
+## Literature/Motivation: 
 
 ## Research question(s):
 
@@ -27,7 +27,7 @@ Cities of interest to use (all large student cities with Universities):
 - Does colder weather impact the price of B&B? Or the rent out rate?
 - Are less B&B's listed when there is worse weather? 
 
-##File path
+## File path
 - Structure of repository 
 
 ## Dependencies
