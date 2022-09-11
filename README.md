@@ -19,11 +19,11 @@ Cities of interest to use (all large student cities with Universities):
 - Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna). 
 
 *Alternative RQ: Do changes in the weather influence the B&B market?*
---This would use a secondairy dataset(s) with the temperature and percipitation rate 
--Does an increase in the percipitation rate impact the rate of rented out B&B's?
--Does an increase in the percipitation rate impact the reviews?
--Does colder weather impact the price of B&B? Or the rent out rate?
--Are less B&B's listed when there is worse weather? 
+--> This would use a secondairy dataset(s) with the temperature and percipitation rate 
+- Does an increase in the percipitation rate impact the rate of rented out B&B's?
+- Does an increase in the percipitation rate impact the reviews?
+- Does colder weather impact the price of B&B? Or the rent out rate?
+- Are less B&B's listed when there is worse weather? 
 
 ## Dependencies
 - R 
