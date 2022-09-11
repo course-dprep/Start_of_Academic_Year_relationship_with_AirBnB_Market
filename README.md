@@ -1,14 +1,26 @@
-# Example of reproducible research workflow 
+# TITLE
 
-This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
+## Project Summarry
+/ describe shortly the goal of this project /
 
-The main aim of this to have a basic structure, which can be easily adjusted to use in an actual project.  In this example project, the following is done: 
-1. Download and prepare data
-2. Run some analysis
-3. Present results in a final pdf generated using LaTeX
+## Contents
+1. Introduction
+    - Problem Background and Research Motivation
+    - Problem Statement and Research Questions
+    - Conceptual Model
+2. Methodology
+    - Data
+    - Research Method
+    - Analysis
+3. Results and Interpretation
+4. Repository Overview
+5. Instructions to Run the Project
 
+## 1. Introduction
+### Problem Background and Research Motivation
+/ add text /
 
-## Research question(s):
+### Problem Statement and Research Qestions
 
 *How is the market affected in populair student cities in Europe by the start of the Academic year?*
 - How are the Air BnB prices affected? Do they go up or down?
@@ -17,7 +29,7 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 - Is there a difference in price change between professional hosts and ordinary ones?
 
 Cities of interest to use (all large student cities with Universities):
-- Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna). 
+- The Netherlands (Amsterdam, Rotterdam), Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna) 
 
 *Alternative RQ: Do changes in the weather influence the European B&B market?*
 --> This would use a secondairy dataset(s) with the temperature and percipitation rate 
@@ -26,6 +38,35 @@ Cities of interest to use (all large student cities with Universities):
 - Does colder weather impact the price of B&B? Or the rent out rate?
 - Are less B&B's listed when there is worse weather? 
 
+## 2. Methodology
+### Data
+/ describe the data /
+
+### Research Method
+/ explain the research method /
+
+### Analysis
+/ explain the analysis /
+
+## 3. Results and Interpretation
+/ add text /
+
+## 4. Repository Overview
+/ provide an overview of the directory structure and files (use the tree command) /
+
+## 5. Instructions to Run the Project
+/ add clear instructions /
+
+
+
+# Example of reproducible research workflow 
+
+This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
+
+The main aim of this to have a basic structure, which can be easily adjusted to use in an actual project.  In this example project, the following is done: 
+1. Download and prepare data
+2. Run some analysis
+3. Present results in a final pdf generated using LaTeX
 
 ## Dependencies
 - R 
