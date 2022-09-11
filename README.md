@@ -7,10 +7,12 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 2. Run some analysis
 3. Present results in a final pdf generated using LaTeX
 
+##Literature/Motivation: 
+
 ## Research question(s):
 
 *How is the market affected in populair student cities in Europe by the start of the Academic year?*
-- How are the Air B&B prices affected? Do they go up or down?
+- How are the Air BnB prices affected? Do they go up or down?
 - Does the amount of rented out B&B's go change?
 - Are the reviews affected?
 - Is there a difference in price change between professional hosts and ordinary ones?
@@ -24,6 +26,9 @@ Cities of interest to use (all large student cities with Universities):
 - Does an increase in the percipitation rate impact the reviews?
 - Does colder weather impact the price of B&B? Or the rent out rate?
 - Are less B&B's listed when there is worse weather? 
+
+##File path
+- Structure of repository 
 
 ## Dependencies
 - R 
