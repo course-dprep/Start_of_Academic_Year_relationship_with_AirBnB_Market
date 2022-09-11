@@ -4,38 +4,44 @@
 / describe shortly the goal of this project /
 
 ## Contents
-[1. Introduction](##-1.-introduction) 
+[1. Introduction](#1-introduction) 
       
-   - [Problem Background and Research Motivation](###-1.1-problem-background-and-research-motivation)
+   - [Problem Background and Research Motivation](#11-problem-background-and-research-motivation)
    
-   - [Problem Statement and Research Questions](###-1.2-problem-statement-and-research-questions)
+   - [Problem Statement and Research Questions](#12-problem-statement-and-research-questions)
    
-   - [Conceptual Model](###-1.3-conceptual-model)
+   - [Conceptual Model](#13-conceptual-model)
 
-[2. Methodology](##-2.-methodology)
+[2. Methodology](#2-methodology)
  
-   - [Data](###-2.1-data)
+   - [Data](#21-data)
 
-   - [Research Method](###-2.2-research-method)
+   - [Research Method](#22-research-method)
 
-   - [Analysis](###-2.3-analysis)
+   - [Analysis](#23-analysis)
 
-[3. Results and Interpretation](##-3.-results-and-interpretation)
+[3. Results and Interpretation](#3-results-and-interpretation)
 
-[4. Repository Overview](##-4.-repository-overview)
+[4. Repository Overview](#4-repository-overview)
    
-   - [Contents](###-4.1-contents)
+   - [Repository Contents](#41-repository-contents)
    
-   - [Structure](###-4.2-structure)
+   - [Repository Structure](#42-repository-structure)
 
-[5. Instructions to Run the Project](##-5.-instructions-to-run-the-project)
+[5. Instructions to Run the Project](#5-instructions-to-run-the-project)
+   - [Software Setup](#51-software-setup)
+   - [Run the Code](#52-run-the-code)
+
+[About Us](#about-us)
+
+[References](#references)
 
 
 ## 1. Introduction
 ### 1.1 Problem Background and Research Motivation
 / add text /
 
-### 1.2 Problem Statement and Research Qestions
+### 1.2 Problem Statement and Research Questions
 
 *To what extent does the start of the Academic year affect the AirBnB market in popular student cities in Europe?*
 - How are the Air BnB prices affected? Do they go up or down?
@@ -73,7 +79,7 @@ Cities of interest to use (all large student cities with Universities):
 
 ## 4. Repository Overview
 ### 4.1 Repository Contents
-### 4.2 Repository structure
+### 4.2 Repository Structure
 / provide an overview of the directory structure and files (use the tree command) /
 
 ## 5. Instructions to Run the Project
