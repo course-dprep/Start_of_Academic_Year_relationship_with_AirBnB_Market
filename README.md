@@ -5,24 +5,26 @@
 
 ## Contents
 1. Introduction
-    - Problem Background and Research Motivation
-    - Problem Statement and Research Questions
-    - Conceptual Model
+   - Problem Background and Research Motivation
+   - Problem Statement and Research Questions
+   - Conceptual Model
 2. Methodology
-    - Data
-    - Research Method
-    - Analysis
+   - Data
+   - Research Method
+   - Analysis
 3. Results and Interpretation
 4. Repository Overview
+   - Contents
+   - Structure
 5. Instructions to Run the Project
 
 ## 1. Introduction
-### Problem Background and Research Motivation
+### 1.1 Problem Background and Research Motivation
 / add text /
 
-### Problem Statement and Research Qestions
+### 1.2 Problem Statement and Research Qestions
 
-*How is the market affected in populair student cities in Europe by the start of the Academic year?*
+*To what extent does the start of the Academic year affect the AirBnB market in popular student cities in Europe?*
 - How are the Air BnB prices affected? Do they go up or down?
 - Does the amount of rented out B&B's go change?
 - Are the reviews affected?
@@ -31,31 +33,46 @@
 Cities of interest to use (all large student cities with Universities):
 - The Netherlands (Amsterdam, Rotterdam), Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna) 
 
-*Alternative RQ: Do changes in the weather influence the European B&B market?*
+*Alternative RQ: To what extent do changes in the weather influence the European B&B market?*
 --> This would use a secondairy dataset(s) with the temperature and percipitation rate 
 - Does an increase in the percipitation rate impact the rate of rented out B&B's?
 - Does an increase in the percipitation rate impact the reviews?
 - Does colder weather impact the price of B&B? Or the rent out rate?
 - Are less B&B's listed when there is worse weather? 
 
-## 2. Methodology
-### Data
-/ describe the data /
+### 1.3 Conceptual model
+/ visualize the conceptual model (e.g. with draw.io) and add the file here /
 
-### Research Method
+## 2. Methodology
+### 2.1 Data
+    - Data Sources
+    - Overview of the Variables
+        / describe the data - maybe add a table /
+
+### 2.2 Research Method
 / explain the research method /
 
-### Analysis
+### 2.3 Analysis
 / explain the analysis /
 
 ## 3. Results and Interpretation
 / add text /
 
 ## 4. Repository Overview
+### 4.1 Repository Contents
+### 4.2 Repository structure
 / provide an overview of the directory structure and files (use the tree command) /
 
 ## 5. Instructions to Run the Project
+### 5.1 Software Setup
+### 5.2 Run the Code
 / add clear instructions /
+
+## About Us
+/ add the names and roles of all contributors /
+
+## References
+/ add all references in APA style /
 
 
 
