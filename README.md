@@ -9,7 +9,7 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 
 ## Research question(s):
 
-*How is the market affected in populair student cities by the start of the Academic year?*
+*How is the market affected in populair student cities in Europe by the start of the Academic year?*
 - How are the Air B&B prices affected? Do they go up or down?
 - Does the amount of rented out B&B's go change?
 - Are the reviews affected?
@@ -18,7 +18,7 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 Cities of interest to use (all large student cities with Universities):
 - Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna). 
 
-*Alternative RQ: Do changes in the weather influence the B&B market?*
+*Alternative RQ: Do changes in the weather influence the European B&B market?*
 --> This would use a secondairy dataset(s) with the temperature and percipitation rate 
 - Does an increase in the percipitation rate impact the rate of rented out B&B's?
 - Does an increase in the percipitation rate impact the reviews?
