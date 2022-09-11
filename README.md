@@ -4,19 +4,25 @@
 / describe shortly the goal of this project /
 
 ## Contents
-1. Introduction
-   - Problem Background and Research Motivation
-   - Problem Statement and Research Questions
-   - Conceptual Model
-2. Methodology
+[1. Introduction](1.-introduction) 
+
+   [1.1 Problem Background and Research Motivation](1.1-problem-background-and-research-motivation)
+   [1.2 Problem Statement and Research Questions](1.2-problem-statement-and-research-questions)
+   [1.3 Conceptual Model](1.3-conceptual-model)
+
+[2. Methodology](2.-methodology)
    - Data
    - Research Method
    - Analysis
-3. Results and Interpretation
-4. Repository Overview
+
+[3. Results and Interpretation](3.-results-and-interpretation)
+
+[4. Repository Overview](4.-repository-overview)
    - Contents
    - Structure
-5. Instructions to Run the Project
+
+[5. Instructions to Run the Project](5.-instructions-to-run-the-project)
+
 
 ## 1. Introduction
 ### 1.1 Problem Background and Research Motivation
