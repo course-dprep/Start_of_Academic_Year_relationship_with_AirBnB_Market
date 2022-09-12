@@ -45,7 +45,7 @@
 
 *To what extent does the start of the Academic year affect the AirBnB market in popular student cities in Europe?*
 - How are the Air BnB prices affected? Do they go up or down?
-- Does the amount of rented out B&B's go change?
+- Does the amount of rented out B&B's change?
 - Are the reviews affected?
 - Is there a difference in price change between professional hosts and ordinary ones?
 
