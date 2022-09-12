@@ -106,6 +106,17 @@ Cities of interest to use (all large student cities with Universities):
 ## References
 / add all references in APA style /
 
+
+
+# Example of reproducible research workflow 
+
+This is a basic example repository using Gnu make for a reproducible research workflow, as described in detail here: [tilburgsciencehub.com](http://tilburgsciencehub.com/). 
+
+The main aim of this to have a basic structure, which can be easily adjusted to use in an actual project.  In this example project, the following is done: 
+1. Download and prepare data
+2. Run some analysis
+3. Present results in a final pdf generated using LaTeX
+
 ## Dependencies
 - R 
 - R packages: `install.packages("stargazer")`
