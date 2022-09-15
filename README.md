@@ -66,7 +66,20 @@ Cities of interest to use (all large student cities with Universities):
 ### 2.1 Data
     - Data Sources
     - Overview of the Variables
-        / describe the data - maybe add a table /
+        We have access to data going back 12 months.
+
+        Variables that are important for our research are:
+        - id                              = Airbnb's unique identifier for the listing 
+        - host_location                   = The host's self reported location
+        - host_about                      = Description about the host
+        - host_is_superhost               = boolean [t=true; f=false]
+        - neighbourhood_cleansed          = The neighbourhood as geocoded using the latitude and longitude against neighborhoods as defined by open or public digital                                               shapefiles.
+        - property_type                   = Self selected property type. Hotels and Bed and Breakfasts are described as such by their hosts in this field
+        - price                           = daily price in local currency
+        - availability_30                 = avaliability_x. The availability of the listing x days in the future as determined by the calendar. Note a listing may not be                                           available because it has been booked by a guest or blocked by the host.
+        - number_of_reviews               = The number of reviews the listing has
+        - number_of_reviews_l30d          = The number of reviews the listing has (in the last 30 days)
+        - calculated_host_listings_count  = The number of listings the host has in the current scrape, in the city/region geography.
 
 ### 2.2 Research Method
 / explain the research method /
