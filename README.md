@@ -7,8 +7,6 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 2. Run some analysis
 3. Present results in a final pdf generated using LaTeX
 
-## Literature/Motivation: 
-
 ## Research question(s):
 
 *How is the market affected in populair student cities in Europe by the start of the Academic year?*
@@ -21,6 +19,19 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 Cities of interest to use (all large student cities with Universities):
 -The Netherlands (Rotterdam, Amsterdam), Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna). 
 
+## Reasoning for data choices 
+To decide on what date to use as comparison dates we looked up the start of the academic year in each city:
+Gent Belgium 27/09/22
+Antwerp Belgium 26/9/22
+The Netherlands - 01/09/22
+Denmark - 05/09/22
+
+We use the two week before the starting date as well as the first two weeks of the academic year.
+We compare it to 4 consequative weeks earlier in the year, where no mayor events or holidays are planned. 
+
+For the availability variable we opted to assume the locations listed as False for availability are not available to book/rented out (PICK ONE!). 
+
+## Analysis 
 
 ## File path
 - Structure of repository 
