@@ -14,11 +14,12 @@ The main aim of this to have a basic structure, which can be easily adjusted to 
 *How is the market affected in populair student cities in Europe by the start of the Academic year?*
 - How are the Air BnB prices affected? Do they go up or down?
 - Does the amount of B&B available to rent change?
+- Is the maximum number of night impacted?
 - Are the reviews affected?
 - Is there a difference in price change between professional hosts and ordinary ones?
 
 Cities of interest to use (all large student cities with Universities):
-- Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna). 
+-The Netherlands (Rotterdam, Amsterdam), Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna). 
 
 
 ## File path
