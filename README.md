@@ -39,13 +39,13 @@
 
 ## 1. Introduction
 ### 1.1 Problem Background and Research Motivation
-The start of the academic year for university students can be a stressful period for many reasons, finding housing is one of them. In this current research we aim to investigate how the AirBnb market is affected in different Western-European cities by the start of the academic year. The Berlin Spectator recently described the ease with which students can find housing in Berlin is largely base on luck. In a popular Belgian student city, after publishing an advertisement for student rooms, housing agents needed to ignore students' phone calls, as distress among them for rooms and studios was increasing. NL Times published an article in which University of Amsterdam is warninh students not to come to the Netherlands without housing. It is obvious that in all these three countries finding student accomodation is a serious problem for newcomers. However, it is less obvious how this crisis affects the AirBnb market as a possible alternative for students looking for (temporary) accomodation. To what extent does the situation differ across cities in different countries? As a result of our research, we hope to answer the following main research question and sub-questions.
+The start of the academic year for university students can be a stressful period for many reasons, finding housing is one of them. In this current research we aim to investigate how the AirBnb market is affected in different Western-European cities by the start of the academic year. In a recent study on the determinants of AirBnB listings' performance, Sainaghi et al. concluded that seasonality, and certain events can have a significant impact on the prices of listings. The Berlin Spectator recently described the ease with which students can find housing in Berlin is largely base on luck. In a popular Belgian student city, after publishing an advertisement for student rooms, housing agents needed to ignore students' phone calls, as distress among them for rooms and studios was increasing. NL Times published an article in which University of Amsterdam is warning students not to come to the Netherlands without housing. It is obvious that in all these three countries finding student accomodation is a serious problem for newcomers. However, it is less obvious how this crisis affects the AirBnb market as a possible alternative for students looking for (temporary) accomodation. To what extent does the situation differ across cities in different countries? As a result of our research, we hope to answer the following main research question and sub-questions.
 
 ### 1.2 Problem Statement and Research Questions
 
 *To what extent does the start of the Academic year affect the AirBnB market in popular student cities in Europe?*
-- Do the the Air BnB prices change? Do they increase or decrease?
-- Does the minimum number of nights per which an accomodation change? If so, does it increase or decrease?
+- Do the the AirBnB prices change? Do they increase or decrease?
+- Does the minimum number of nights per accomodation change? If so, does it increase or decrease?
 - Is there a difference in price change between professional hosts and ordinary ones?
 
 Cities of interest to use (all large student cities with Universities):
@@ -53,7 +53,10 @@ Cities of interest to use (all large student cities with Universities):
 
 
 ### 1.3 Conceptual model
-/ visualize the conceptual model (e.g. with draw.io) and add the file here /
+
+![Screenshot 2022-09-20 at 21 19 52](https://user-images.githubusercontent.com/111375016/191346617-2959a699-6043-47e3-9d02-2266ca13e4ba.png)
+
+
 
 ## 2. Methodology
 ### 2.1 Data
@@ -99,3 +102,4 @@ Cities of interest to use (all large student cities with Universities):
 ## References
 / add all references in APA style /
 
+Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
