@@ -82,7 +82,7 @@ For the analysis, several repeated-measures ANOVA seem the best option. A repeat
 
 Another option for the analysis is the MANOVA. This is a variant of the ANOVA which makes it possible to investigate more than one dependent variable at the same time. This might be helpful for this project, since we want to measure e.g. price, availability and the number of listings. 
 
-For both the repeated-measures ANOVA and the MANOVA, it is necessary to get the means of every DV we would like to research, since an ANOVA is built to compare means. This means we have to combine the data of the 14 days for September and March respectively. 
+For both the repeated-measures ANOVA and the MANOVA, it is necessary to get the means of every DV we would like to research, since an ANOVA is built to compare means. This means we have to combine the data of the 28 days for September and March respectively. 
 
 ## 3. Results and Interpretation
 / add text /
