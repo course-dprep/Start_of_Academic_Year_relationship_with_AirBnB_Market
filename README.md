@@ -78,7 +78,11 @@ Cities of interest to use (all large student cities with Universities):
 / explain the research method /
 
 ### 2.3 Analysis
-/ explain the analysis /
+For the analysis, several repeated-measures ANOVA seem the best option. A repeated-measures ANOVA is used to measure the means of same objects over time. The repeated-measures ANOVA is usually performed if there is one independent variable that influences a dependent variable, measured on more than one occasion. In this case, the data of the same cities in September and March is compared. The drawback of this measure is that you have to perform an ANOVA for *each* dependent variable, which increases the chance of a Type B error.
+
+Another option for the analysis is the MANOVA. This is a variant of the ANOVA which makes it possible to investigate more than one dependent variable at the same time. This might be helpful for this project, since we want to measure e.g. price, availability and the number of listings. 
+
+For both the repeated-measures ANOVA and the MANOVA, it is necessary to get the means of every DV we would like to research, since an ANOVA is built to compare means. This means we have to combine the data of the 14 days for September and March respectively. 
 
 ## 3. Results and Interpretation
 / add text /
