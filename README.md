@@ -56,12 +56,14 @@ Cities of interest to use (all large student cities with Universities):
 / visualize the conceptual model (e.g. with draw.io) and add the file here /
 
 ## 2. Methodology
+
 ### 2.1 Data
     - Data Sources
     - Overview of the Variables
         We have access to data going back 12 months.
 
         Variables that are important for our research are:
+		```
         - id                              = Airbnb's unique identifier for the listing 
         - host_location                   = The host's self reported location
         - host_about                      = Description about the host
@@ -73,7 +75,8 @@ Cities of interest to use (all large student cities with Universities):
         - number_of_reviews               = The number of reviews the listing has
         - number_of_reviews_l30d          = The number of reviews the listing has (in the last 30 days)
         - calculated_host_listings_count  = The number of listings the host has in the current scrape, in the city/region geography.
-
+		```
+		
 ### 2.2 Research Method
 / explain the research method /
 
