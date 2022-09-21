@@ -56,12 +56,14 @@ Cities of interest to use (all large student cities with Universities):
 / visualize the conceptual model (e.g. with draw.io) and add the file here /
 
 ## 2. Methodology
+
 ### 2.1 Data
     - Data Sources
     - Overview of the Variables
         We have access to data going back 12 months.
 
         Variables that are important for our research are:
+		```
         - id                              = Airbnb's unique identifier for the listing 
         - host_location                   = The host's self reported location
         - host_about                      = Description about the host
@@ -73,12 +75,17 @@ Cities of interest to use (all large student cities with Universities):
         - number_of_reviews               = The number of reviews the listing has
         - number_of_reviews_l30d          = The number of reviews the listing has (in the last 30 days)
         - calculated_host_listings_count  = The number of listings the host has in the current scrape, in the city/region geography.
-
+		```
+		
 ### 2.2 Research Method
 / explain the research method /
 
 ### 2.3 Analysis
-/ explain the analysis /
+For the analysis, several repeated-measures ANOVA seem the best option. A repeated-measures ANOVA is used to measure the means of same objects over time. The repeated-measures ANOVA is usually performed if there is one independent variable that influences a dependent variable, measured on more than one occasion. In this case, the data of the same cities in September and March is compared. The drawback of this measure is that you have to perform an ANOVA for *each* dependent variable, which increases the chance of a Type B error.
+
+Another option for the analysis is the MANOVA. This is a variant of the ANOVA which makes it possible to investigate more than one dependent variable at the same time. This might be helpful for this project, since we want to measure e.g. price, availability and the number of listings. 
+
+For both the repeated-measures ANOVA and the MANOVA, it is necessary to get the means of every DV we would like to research, since an ANOVA is built to compare means. This means we have to combine the data of the 28 days for September and March respectively. 
 
 ## 3. Results and Interpretation
 / add text /
