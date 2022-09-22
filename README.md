@@ -39,28 +39,24 @@
 
 ## 1. Introduction
 ### 1.1 Problem Background and Research Motivation
-/ add text /
+The start of the academic year for university students can be a stressful period for many reasons, finding housing is one of them. In this current research we aim to investigate how the AirBnb market is affected in different Western-European cities by the start of the academic year. In a recent study on the determinants of AirBnB listings' performance, Sainaghi et al. concluded that seasonality, and certain events can have a significant impact on the prices of listings. The Berlin Spectator recently described the ease with which students can find housing in Berlin is largely base on luck. In a popular Belgian student city, after publishing an advertisement for student rooms, housing agents needed to ignore students' phone calls, as distress among them for rooms and studios was increasing. NL Times published an article in which University of Amsterdam is warning students not to come to the Netherlands without housing. It is obvious that in all these three countries finding student accomodation is a serious problem for newcomers. However, it is less obvious how this crisis affects the AirBnb market as a possible alternative for students looking for (temporary) accomodation. To what extent does the situation differ across cities in different countries? As a result of our research, we hope to answer the following main research question and sub-questions..
 
 ### 1.2 Problem Statement and Research Questions
 
 *To what extent does the start of the Academic year affect the AirBnB market in popular student cities in Europe?*
-- How are the Air BnB prices affected? Do they go up or down?
-- Does the amount of rented out B&B's go change?
-- Are the reviews affected?
+- Do the the AirBnB prices change? Do they increase or decrease?
+- Does the minimum number of nights per accomodation change? If so, does it increase or decrease?
 - Is there a difference in price change between professional hosts and ordinary ones?
 
 Cities of interest to use (all large student cities with Universities):
 - The Netherlands (Amsterdam, Rotterdam), Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna) 
 
-*Alternative RQ: To what extent do changes in the weather influence the European B&B market?*
---> This would use a secondairy dataset(s) with the temperature and percipitation rate 
-- Does an increase in the percipitation rate impact the rate of rented out B&B's?
-- Does an increase in the percipitation rate impact the reviews?
-- Does colder weather impact the price of B&B? Or the rent out rate?
-- Are less B&B's listed when there is worse weather? 
 
 ### 1.3 Conceptual model
-/ visualize the conceptual model (e.g. with draw.io) and add the file here /
+
+![Screenshot 2022-09-20 at 21 19 52](https://user-images.githubusercontent.com/111375016/191346617-2959a699-6043-47e3-9d02-2266ca13e4ba.png)
+
+
 
 ## 2. Methodology
 
@@ -88,7 +84,11 @@ Cities of interest to use (all large student cities with Universities):
 / explain the research method /
 
 ### 2.3 Analysis
-/ explain the analysis /
+For the analysis, several repeated-measures ANOVA seem the best option. A repeated-measures ANOVA is used to measure the means of same objects over time. The repeated-measures ANOVA is usually performed if there is one independent variable that influences a dependent variable, measured on more than one occasion. In this case, the data of the same cities in September and March is compared. The drawback of this measure is that you have to perform an ANOVA for *each* dependent variable, which increases the chance of a Type B error.
+
+Another option for the analysis is the MANOVA. This is a variant of the ANOVA which makes it possible to investigate more than one dependent variable at the same time. This might be helpful for this project, since we want to measure e.g. price, availability and the number of listings. 
+
+For both the repeated-measures ANOVA and the MANOVA, it is necessary to get the means of every DV we would like to research, since an ANOVA is built to compare means. This means we have to combine the data of the 28 days for September and March respectively. 
 
 ## 3. Results and Interpretation
 / add text /
@@ -109,17 +109,4 @@ Cities of interest to use (all large student cities with Universities):
 ## References
 / add all references in APA style /
 
-## Dependencies
-- R 
-- R packages: `install.packages("stargazer")`
-- [Gnu Make](https://tilburgsciencehub.com/get/make) 
-- [TeX distribution](https://tilburgsciencehub.com/get/latex/?utm_campaign=referral-short)
-- For the `makefile` to work, R, Gnu make and the TeX distribution (specifically `pdflatex`) need to be made available in the system path 
-- Detailed installation instructions can be found here: [tilburgsciencehub.com](http://tilburgsciencehub.com/)
-
-
-## Notes
-- `make clean` removes all unncessary temporary files. 
-- Tested under Linux Mint (should work in any linux distro, as well as on Windows and Mac) 
-- IMPORTANT: In `makefile`, when using `\` to split code into multiple lines, no space should follow `\`. Otherwise Gnu make aborts with error 193. 
-- Many possible improvements remain. Comments and contributions are welcome!
+Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
