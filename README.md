@@ -27,7 +27,7 @@
    - [Repository Contents](#41-repository-contents)
    
    - [Repository Structure](#42-repository-structure)
-
+      
 [5. Instructions to Run the Project](#5-instructions-to-run-the-project)
    - [Software Setup](#51-software-setup)
    - [Run the Code](#52-run-the-code)
@@ -54,7 +54,7 @@ Cities of interest to use (all large student cities with Universities):
 
 ### 1.3 Conceptual model
 
-![Screenshot 2022-09-20 at 21 19 52](https://user-images.githubusercontent.com/111375016/191346617-2959a699-6043-47e3-9d02-2266ca13e4ba.png)
+![conceptual-model](https://user-images.githubusercontent.com/112591530/191712535-b43028be-b387-4126-904b-368c49214c18.jpg)
 
 
 
@@ -66,7 +66,7 @@ Cities of interest to use (all large student cities with Universities):
         We have access to data going back 12 months.
 
         Variables that are important for our research are:
-		```
+		
         - id                              = Airbnb's unique identifier for the listing 
         - host_location                   = The host's self reported location
         - host_about                      = Description about the host
@@ -78,7 +78,7 @@ Cities of interest to use (all large student cities with Universities):
         - number_of_reviews               = The number of reviews the listing has
         - number_of_reviews_l30d          = The number of reviews the listing has (in the last 30 days)
         - calculated_host_listings_count  = The number of listings the host has in the current scrape, in the city/region geography.
-		```
+		
 		
 ### 2.2 Research Method
 / explain the research method /
@@ -95,8 +95,45 @@ For both the repeated-measures ANOVA and the MANOVA, it is necessary to get the 
 
 ## 4. Repository Overview
 ### 4.1 Repository Contents
+The raw data used is contained in a folder called "data".
+
+   The source code is stored in a folder called "src".
+   
+   The generated files are stored in the generated folder "gen".
+   
+   Within the "gen" folder there are separate folders for the data preparation and the data analysis stages, as well as the final deliverable of the project; namely, "data-preparation", "analysis", and "paper".
+   
+   Any temporary files will be stored in "temp".
+   
+   Any final products from the various stages in the pipeline will be stored in the "output" folder.
+   
+   Any files related to issues with the data or the model estimation will be stored in the "audit folder".
+	 
 ### 4.2 Repository Structure
 / provide an overview of the directory structure and files (use the tree command) /
+
+
+    ├── README.md
+	├── data
+	│   ├── dataset1
+	│   └── dataset2
+	├── gen
+	│   ├── analysis
+	│   │   ├── audit
+	│   │   ├── input
+	│   │   ├── output
+	│   │   └── temp
+	│   ├── data-preparation
+	│   │   ├── audit
+	│   │   ├── input
+	│   │   ├── output
+	│   │   └── temp
+	│   └── paper
+	└── src
+ 	   ├── analysis
+ 	   └── data-preparation
+
+
 
 ## 5. Instructions to Run the Project
 ### 5.1 Software Setup
