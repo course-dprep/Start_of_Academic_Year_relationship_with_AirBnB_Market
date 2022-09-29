@@ -51,15 +51,6 @@ The start of the academic year for university students can be a stressful period
 Cities of interest to use (all large student cities with Universities):
 - The Netherlands (Amsterdam, Rotterdam), Germany (Berlin, Munich), Denmark (Copenhagen), Belgium (Brussels, Ghent, Antwerp), Austria (Vienna) 
 
-## Research motivation alternative RQ
-
-The weather is a phenomenon which can be very unpredictable. The aim of this research is to investigate if weather changes affect the human behavior on the Airbnb market in Western-European cities. Especially in Western Europe, the weather can change quickly and people tend to believe weather and weather changes can affect their mood and behavior (e.g. winter depression). According to the New York Times, negative weather changes can for example cause people to act more irrational. This irrational behavior might be reflected in the Airbnb data. Therefore, a more in-depth analysis of Airbnb and weather data is desirable. In this research, an answer to the following research question and subquestions is searched: 
-Do changes in the weather influence the European B&B market? (This would use a secondairy dataset(s) with the temperature and percipitation rate) 
-- Does an increase in the percipitation rate impact the rate of rented out B&B's?
-- Does an increase in the percipitation rate impact the reviews?
-- Does colder weather impact the price of B&B? Or the rent-out rate?
-- Are less B&B's listed when there is worse weather?
-
 
 
 ### 1.3 Conceptual model
