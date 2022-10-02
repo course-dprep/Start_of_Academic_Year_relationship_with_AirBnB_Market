@@ -1,40 +1,52 @@
-dir <- "C:/Universiteit/Skills Data Prep. & Workflow Mgt/"
-setwd(dir)
-
-# dir.create("data")
-# dir.create("data_output")
-# dir.create("documents")
-# dir.create("fig_output")
-# dir.create("scripts")
-
-dirdata <- paste0(dir,"data/")
-dirdata_output <- paste0(dir,"data_output/")
-dirdocuments <- paste0(dir,"documents/")
-dirfig_output <- paste0(dir,"fig_output/")
-dirscripts <- paste0(dir,"scripts/")
-
-
-#install.packages("dplyr")
 library(dplyr)
-
-#install.packages("tidyr")
 library(tidyr)
-
-#install.packages("tidyverse")
 library(tidyverse)
 
 
 # Select urls you want to download
-urls = c('http://data.insideairbnb.com/belgium/vlg/antwerp/2022-06-22/data/listings.csv.gz', 'http://data.insideairbnb.com/belgium/vlg/antwerp/2022-06-22/data/calendar.csv.gz')
+listing_urls = c('http://data.insideairbnb.com/belgium/vlg/antwerp/2022-06-22/data/listings.csv.gz', 'http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2022-06-05/data/listings.csv.gz', 'http://data.insideairbnb.com/the-netherlands/south-holland/rotterdam/2022-06-15/data/listings.csv.gz', 'http://data.insideairbnb.com/belgium/bru/brussels/2022-09-18/data/listings.csv.gz', 'http://data.insideairbnb.com/germany/be/berlin/2022-06-13/data/listings.csv.gz')
+calendar_urls = c('http://data.insideairbnb.com/belgium/vlg/antwerp/2022-06-22/data/calendar.csv.gz', 'http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2022-06-05/data/calendar.csv.gz', 'http://data.insideairbnb.com/the-netherlands/south-holland/rotterdam/2022-06-15/data/calendar.csv.gz', 'http://data.insideairbnb.com/belgium/bru/brussels/2022-09-18/data/calendar.csv.gz', 'http://data.insideairbnb.com/germany/be/berlin/2022-06-13/data/calendar.csv.gz')
+
+download_data <- function(url, filename){
+    filename = "listings" 
+  download.file(url = url, destfile = paste0(filename, ".csv"))
+  
+}
+
+
+  
+
+
+urls <- c('http://data.insideairbnb.com/belgium/vlg/antwerp/2022-06-22/data/listings.csv.gz', 'http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2022-06-05/data/listings.csv.gz', 'http://data.insideairbnb.com/the-netherlands/south-holland/rotterdam/2022-06-15/data/listings.csv.gz', 'http://data.insideairbnb.com/belgium/bru/brussels/2022-09-18/data/listings.csv.gz', 'http://data.insideairbnb.com/germany/be/berlin/2022-06-13/data/listings.csv.gz')
 
 for (url in urls) {
   filename = paste0(gsub('[^a-zA-Z]', '', url), '.csv') # keep only letter
   filename = gsub('httpdatainsideairbnbcom','', filename) # wipe httpdatainsideairbnbcom from filename
-  download.file(url, destfile = paste0(dirdata, filename)) # download file
+  filename = gsub('belgiumvlg', '', filename) # wipe belgiumvlg from filename
+  filename = gsub('thenetherlandsnorthholland', '', filename) # wipe thenetherlandsnorthholland from filename
+  filename = gsub('thenetherlandssouthholland', '', filename) # wipe thenetherlandssouthholland from filename
+  filename = gsub('belgiumbru', '', filename) # wipe belgiumvlg from filename
+  filename = gsub('germanybe', '', filename) # wipe belgiumvlg from filename
+  filename = gsub('data', '', filename) # wipe data from file name
+  filename = gsub('csvgz', '', filename) # wipe csvgz from file name
+  download.file(url, destfile = paste0(filename)) # download file
 }
 
+datasets <- lapply(urls, read_csv)
+
+datasets <- c('antwerplistings.csv', 'amsterdamlistings.csv', 'rotterdamlistings.csv', 'brusselslistings.csv', 'berlinlistings.csv')
+
+for (i in 1:length(dataframes)) {
+  nam <- paste("r", i, sep = ".")
+  assign(nam, 1:i)
+
+}
+
+amsterdam_lis <- datasets[[2]]
+
+rotterdam_lis <- datasets[[3]]
 # Create data sets
-antwerp_lis <- read_csv(file = paste0(dirdata, 'belgiumvlgantwerpdatalistingscsvgz.csv'))
+antwerp_lis <- read_csv(file = 'antwerplistings.csv')
 
 antwerp_cal <- read_csv(file = paste0(dirdata, 'belgiumvlgantwerpdatacalendarcsvgz.csv'))
 
