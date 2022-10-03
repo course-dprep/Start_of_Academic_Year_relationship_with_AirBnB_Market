@@ -55,7 +55,7 @@ Cities of interest to use (all large student cities with Universities):
 
 ### 1.3 Conceptual model
 
-![conceptual-model](https://user-images.githubusercontent.com/112591530/191712535-b43028be-b387-4126-904b-368c49214c18.jpg)
+![conceptual-model](https://user-images.githubusercontent.com/113091815/193538600-fc932b75-1a21-448d-8a76-0b53944fac39.png)
 
 
 
