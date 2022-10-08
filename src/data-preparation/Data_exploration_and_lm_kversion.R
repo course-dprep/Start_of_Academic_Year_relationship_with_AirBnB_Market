@@ -152,6 +152,19 @@ clean_lis <- function(dataset) {
 # Clean all listings data sets and put them into a new list
 clean_lis_datasets <- lapply(lis_datasets, clean_lis)
 
+add_dummy_aug <- function(dataset) {
+  dataset$dummy_month_aug <- 1
+  dataset <- dataset %>% select(id, average_price, dummy_month_aug)
+}
+
+clean_cal_price_aug_datasets <- lapply(clean_cal_price_aug_datasets, add_dummy_aug)
+
+add_dummy_mar <- function(dataset) {
+  dataset$dummy_month_aug <- 0
+  dataset <- dataset %>% select(id, average_price, dummy_month_aug)
+}
+
+clean_cal_price_mar_datasets <- lapply(clean_cal_price_mar_datasets, add_dummy_mar)
 
 # Merge price_aug_datasets with nights_aug_datasets and listings 
 total_antwerp_aug <- merge(clean_cal_price_aug_datasets[[1]], clean_cal_nights_aug_datasets[[1]]) %>%  merge(clean_lis_datasets[[1]])
@@ -166,20 +179,6 @@ total_amsterdam_mar <-  merge(clean_cal_price_mar_datasets[[2]], clean_cal_night
 total_rotterdam_mar <-  merge(clean_cal_price_mar_datasets[[3]], clean_cal_nights_mar_datasets[[3]]) %>%  merge(clean_lis_datasets[[3]])
 total_brussels_mar <-  merge(clean_cal_price_mar_datasets[[4]], clean_cal_nights_mar_datasets[[4]]) %>%  merge(clean_lis_datasets[[4]])
 total_berlin_mar <-  merge(clean_cal_price_mar_datasets[[5]], clean_cal_nights_mar_datasets[[5]]) %>%  merge(clean_lis_datasets[[5]])
-
-
-##try some stuff 
-
-total_antwerp_aug$dummy_month_aug <- 1
-total_antwerp_mar$dummy_month_aug <- 0
-total_amsterdam_aug$dummy_month_aug <- 1
-total_amsterdam_mar$dummy_month_aug <- 0
-total_berlin_aug$dummy_month_aug <- 1
-total_berlin_mar$dummy_month_aug <- 0
-total_brussels_aug$dummy_month_aug <- 1
-total_brussels_mar$dummy_month_aug <- 0
-total_rotterdam_aug$dummy_month_aug <- 1
-total_rotterdam_mar$dummy_month_aug <- 0
 
 
 # Bind rows to get complete dataset
