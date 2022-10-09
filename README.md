@@ -95,8 +95,6 @@ For the Amsterdam dataset for example these were the occurrences of each type;
 
 After making boxplots and checking the summary output for our variable of interest. We remove the outliers for average_price and average_nights for all cities. And we remove the outliers for the minimum number of nights for Berlin. As all these had very extreme outliers which biased the mean and skewed the data.  
 
-=======
-Since the project uses archival data, the type of research is correlational. 
 
 ### 2.3 Analysis
 The independent variables in the model ("start of the academic year", "type of host", and "type of accomodation") are binary variables, whereas the dependent variables ("price" and "number of maximum nights") are continuous.
@@ -104,7 +102,12 @@ Since there are three categorical explanatory variables and two continuous depen
 
 
 ## 3. Results and Interpretation
-/ add text /
+Regression output explanation
+
+When running the regression we have checked for each of the five cities the effect of the independent variable namely ‘dummy_month_aug’, on the two dependent variables; ‘average_price’ and ‘maximum_nights’. As the focus of our research is to identify whether the start of the academic, represented by ‘dummy_month_aug’, has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely ‘room’ and ‘host_is_superhostTRUE’.
+
+For the first city, Antwerp, we could not find any significant effects for the variables of interest. For Amsterdam there is a significant effect for the interaction between ‘dummy_month_aug’ and ‘host_is_superhostTRUE’, meaning that at the start of the academic year there is an increase of 11.5 euros in average price for AirBnB super hosts. For the other dependent variable we could not find any significant effects. In the case of Berlin we have a highly significant effect between the DV ‘average price’ and the start of the academic year. Another significant effect for this DV is the interaction between start of the academic year and the room dummy, meaning that the average price at the start of the academic year increases by 24.3 euros for homes and apartments. For the other DV, ‘maximum_nights’ no significant effects were found. The next city is Brussels for which no significant effects were found for either of the DVs. Lastly, for Rotterdam for the DV ‘average price’ there is a significant effect with the IV ‘dummy_month_aug’.
+
 
 ## 4. Repository Overview
 ### 4.1 Repository Contents
