@@ -107,8 +107,7 @@ Since the project uses archival data, the type of research is correlational.
 
 ### 2.3 Analysis
 
-The independent variables in the model ("start of the academic year", "type of host", and "type of accomodation") are binary variables, whereas the dependent variables ("price" and "number of maximum nights") are continuous.
-Since there are three categorical explanatory variables and two continuous dependent variables, we perform a multivariate multiple regression.
+In order to answer our research questions, we will make use of linear regression models. A linear regression is used to predict the effects of one or more predictors on one dependent variable. In the regression, interaction effects can be measured as well. Since we will do one regression with the independent variable 'dummy_month_aug' for each city (Amsterdam, Antwerp, Berlin, Brussels and Rotterdam) and on each dependent variable ('average_price' and 'maximum nights'), ten linear regressions will be performed.
 
 
 ## 3. Results and Interpretation
