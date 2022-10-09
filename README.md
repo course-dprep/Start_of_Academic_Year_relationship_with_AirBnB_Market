@@ -75,6 +75,29 @@ The final variables in the datasets are as follows:
 ### 2.2 Research Method
 Since the project uses archival data, the type of research is correlational. 
 
+Data Transformation
+
+A selection was made for all cities to take the dates from 15th of march to the 15th of April  2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices. 
+
+We selected just the variables which interested us when loading the data for each city into a dataframe. So id, price, room_type, minimum_nights and maximum_nights. We also created two new variables by taking the mean average of the price and the mean average of the maximum number of nights. 
+
+For the availability variable, we’ve chosen to use every datapoint regardless of if it’s listed as available or not. This is because the ones listed as not available might be rented-out which is exactly the rooms we want to know about.
+
+After the selection of the data we also create a new dummy variable called dummy_month_august which is 1 if the row is in August/September (start of academic year) and 0 if it’s in March/April. 
+
+Turn room_type into a dummy variable called room. There are 4 different room types given but, as 2 of them make up a very small percentage of the dataset they were combined with one of the larger ones. The dummy variable is coded as “Entire home/apt” = 1 and 0 = “Private room”&” Shared room“& “Hotel room”. We also theorized grouping these together made sense as these would be the type we thought popular with students as these accommodations are normally for 1 or 2 people. 
+
+For the Amsterdam dataset for example these were the occurrences of each type; 
+
+| Entire home/apt  | Hotel room | Private room  | Shared room  |
+| ------------- | ------------- | ------------- | ------------- |
+| 8446 | 152 | 3680 | 64 | 
+
+After making boxplots and checking the summary output for our variable of interest. We remove the outliers for average_price and average_nights for all cities. And we remove the outliers for the minimum number of nights for Berlin. As all these had very extreme outliers which biased the mean and skewed the data.  
+
+=======
+Since the project uses archival data, the type of research is correlational. 
+
 ### 2.3 Analysis
 The independent variables in the model ("start of the academic year", "type of host", and "type of accomodation") are binary variables, whereas the dependent variables ("price" and "number of maximum nights") are continuous.
 Since there are three categorical explanatory variables and two continuous dependent variables, we perform a multivariate multiple regression.
