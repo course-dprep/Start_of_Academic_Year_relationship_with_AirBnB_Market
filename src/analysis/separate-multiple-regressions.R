@@ -1,5 +1,3 @@
-# load 
-load("./gen/analysis/input/data_cleaned.RData")
 
 # Multiple linear regressions for each city for DV maximum_nights
 lm1 <- lm(average_price ~ dummy_month_aug*room*host_is_superhost, total_antwerp)
