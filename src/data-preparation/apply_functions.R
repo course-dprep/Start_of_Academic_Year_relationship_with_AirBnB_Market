@@ -2,6 +2,8 @@ library(dplyr)
 library(tidyr)
 library(tidyverse)
 
+load("./gen/data-preparation/output/cal_datasets.RData")
+load("./gen/data-preparation/output/lis_datasets.RData")
 
 # Create function that calculates average price in August/September and then only extracts those columns with the id column  
 clean_cal_price_aug <- function (dataset) {
@@ -38,16 +40,16 @@ clean_cal_price_aug <- function (dataset) {
 # Clean up all calendar data sets and only extract the average price in August/September and put them into a new list
 clean_cal_price_aug_datasets <- lapply(cal_datasets, clean_cal_price_aug)
 
-# Create function that calculates average minimum nights in August/September and then only extracts those columns with the id column  
+# Create function that calculates average maximum nights in August/September and then only extracts those columns with the id column  
 clean_cal_nights_aug <- function(dataset){
   # Select 3 important columns
-  dataset_clean <- dataset %>% select(listing_id, date, minimum_nights)
+  dataset_clean <- dataset %>% select(listing_id, date, maximum_nights)
   
   # Pivot the data set wide
   dataset_wide <- dataset_clean %>% 
     
     pivot_wider(names_from = date,
-                values_from = minimum_nights,
+                values_from = maximum_nights,
     )
   
   # Select only the columns with the listing id and dates from 2022-08-15 to 2022-09-15
@@ -66,7 +68,7 @@ clean_cal_nights_aug <- function(dataset){
   
 }
 
-# Clean up all calendar data sets and only extract the average minimum nights in August/September and put them into a new list
+# Clean up all calendar data sets and only extract the average maximum nights in August/September and put them into a new list
 clean_cal_nights_aug_datasets <- lapply(cal_datasets, clean_cal_nights_aug)
 
 # Create function that calculates average price in March/April and then only extracts those columns with the id column  
@@ -104,16 +106,16 @@ clean_cal_price_mar <- function (dataset) {
 # Clean up all calendar data sets and only extract the average price in March/April and put them into a new list
 clean_cal_price_mar_datasets <- lapply(cal_datasets, clean_cal_price_mar)
 
-# Create function that calculates average minimum nights in August/September and then only extracts those columns with the id column  
+# Create function that calculates average maximum nights in August/September and then only extracts those columns with the id column  
 clean_cal_nights_mar <- function(dataset){
   # Select 3 important columns
-  dataset_clean <- dataset %>% select(listing_id, date, minimum_nights)
+  dataset_clean <- dataset %>% select(listing_id, date, maximum_nights)
   
   # Pivot the data set wide
   dataset_wide <- dataset_clean %>% 
     
     pivot_wider(names_from = date,
-                values_from = minimum_nights,
+                values_from = maximum_nights,
     )
   
   # Select only the columns with the listing id and dates from 2022-03-15 to 2022-04-15
@@ -132,7 +134,7 @@ clean_cal_nights_mar <- function(dataset){
   
 }
 
-# Clean up all calendar data sets and only extract the average minimum nights in August/September and put them into a new list
+# Clean up all calendar data sets and only extract the average maximum nights in August/September and put them into a new list
 clean_cal_nights_mar_datasets <- lapply(cal_datasets, clean_cal_nights_mar)
 
 # Create function that only selects relevant columns from the listings data set
@@ -170,47 +172,11 @@ add_dummy_roomtype <- function(dataset){
 # Apply function to the datasets
 clean_lis_datasets <- lapply(clean_lis_datasets, add_dummy_roomtype)
 
-# Merge price_aug_datasets with nights_aug_datasets and listings 
-total_antwerp_aug <- merge(clean_cal_price_aug_datasets[[1]], clean_cal_nights_aug_datasets[[1]]) %>%  merge(clean_lis_datasets[[1]])
-total_amsterdam_aug <-  merge(clean_cal_price_aug_datasets[[2]], clean_cal_nights_aug_datasets[[2]]) %>%  merge(clean_lis_datasets[[2]])
-total_rotterdam_aug <-  merge(clean_cal_price_aug_datasets[[3]], clean_cal_nights_aug_datasets[[3]]) %>%  merge(clean_lis_datasets[[3]])
-total_brussels_aug <-  merge(clean_cal_price_aug_datasets[[4]], clean_cal_nights_aug_datasets[[4]]) %>%  merge(clean_lis_datasets[[4]])
-total_berlin_aug <-  merge(clean_cal_price_aug_datasets[[5]], clean_cal_nights_aug_datasets[[5]]) %>%  merge(clean_lis_datasets[[5]])
+text <- 'Apply functions'
+write_lines(text, "gen/data-preparation/temp/apply_functions.txt")
 
-# Merge price_mar_datasets with nights_mar_datasets and listings 
-total_antwerp_mar <- merge(clean_cal_price_mar_datasets[[1]], clean_cal_nights_mar_datasets[[1]]) %>%  merge(clean_lis_datasets[[1]])
-total_amsterdam_mar <-  merge(clean_cal_price_mar_datasets[[2]], clean_cal_nights_mar_datasets[[2]]) %>%  merge(clean_lis_datasets[[2]])
-total_rotterdam_mar <-  merge(clean_cal_price_mar_datasets[[3]], clean_cal_nights_mar_datasets[[3]]) %>%  merge(clean_lis_datasets[[3]])
-total_brussels_mar <-  merge(clean_cal_price_mar_datasets[[4]], clean_cal_nights_mar_datasets[[4]]) %>%  merge(clean_lis_datasets[[4]])
-total_berlin_mar <-  merge(clean_cal_price_mar_datasets[[5]], clean_cal_nights_mar_datasets[[5]]) %>%  merge(clean_lis_datasets[[5]])
-
-
-# Bind rows to get complete dataset
-total_antwerp <- bind_rows(total_antwerp_aug, total_antwerp_mar)
-total_amsterdam <- bind_rows(total_amsterdam_aug, total_amsterdam_mar)
-total_rotterdam <- bind_rows(total_rotterdam_aug, total_rotterdam_mar)
-total_brussels <- bind_rows(total_brussels_aug, total_brussels_mar)
-total_berlin <- bind_rows(total_berlin_aug, total_berlin_mar)
-
-# Write all data sets as .csv file
-write_csv(total_antwerp, "total_antwerp.csv")
-write_csv(total_amsterdam, "total_amsterdam.csv")
-write_csv(total_rotterdam, "total_rotterdam.csv")
-write_csv(total_brussels, "total_brussels.csv")
-write_csv(total_berlin, "total_berlin.csv")
-
-
-
-##regression
-lm1<- lm(average_price ~ room_type + host_is_superhost + dummy_month_aug, total_antwerp)
-lm2<- lm(average_price ~ room_type + host_is_superhost + dummy_month_aug, total_amsterdam)
-lm3<- lm(average_price ~ room_type + host_is_superhost + dummy_month_aug, total_berlin)
-lm4<- lm(average_price ~ room_type + host_is_superhost + dummy_month_aug, total_brussels)
-lm5<- lm(average_price ~ room_type + host_is_superhost + dummy_month_aug, total_rotterdam)
-
-summary(lm1)
-summary(lm2)
-summary(lm3)
-summary(lm4)
-summary(lm5)
-
+save(clean_cal_nights_aug_datasets,file="./gen/data-preparation/output/clean_cal_nights_aug_datasets.Rdata")
+save(clean_cal_nights_mar_datasets,file="./gen/data-preparation/output/clean_cal_nights_mar_datasets.Rdata")
+save(clean_cal_price_aug_datasets,file="./gen/data-preparation/output/clean_cal_price_aug_datasets.Rdata")
+save(clean_cal_price_mar_datasets,file="./gen/data-preparation/output/clean_cal_price_mar_datasets.Rdata")
+save(clean_lis_datasets,file="./gen/data-preparation/output/clean_lis_datasets.Rdata")
