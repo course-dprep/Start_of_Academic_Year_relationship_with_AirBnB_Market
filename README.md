@@ -81,7 +81,24 @@ Cities of interest to use (all large student cities with Universities):
 
 
 ### 2.2 Research Method
-/ explain the research method /
+Data Transformation
+
+A selection was made for all cities to take the dates from 15th of march to the 15th of April  2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices. 
+
+We selected just the variables which interested us when loading the data for each city into a dataframe. So id, price, room_type, minimum_nights and maximum_nights. We also created two new variables by taking the mean average of the price and the mean average of the maximum number of nights. 
+
+For the availability variable, we’ve chosen to use every datapoint regardless of if it’s listed as available or not. This is because the ones listed as not available might be rented-out which is exactly the rooms we want to know about.
+
+After the selection of the data we also create a new dummy variable called dummy_month_august which is 1 if the row is in August/September (start of academic year) and 0 if it’s in March/April. 
+
+Turn room_type into a dummy variable called room. There are 4 different room types given but, as 2 of them make up a very small percentage of the dataset they were combined with one of the larger ones. The dummy variable is coded as “Entire home/apt” = 1 and 0 = “Private room”&” Shared room“& “Hotel room”. We also theorized grouping these together made sense as these would be the type we thought popular with students as these accommodations are normally for 1 or 2 people. 
+
+For the Amsterdam dataset for example these were the occurrences of each type; 
+Entire home/apt      Hotel room    Private room     Shared room 
+           8446             152            3680              64 
+
+After making boxplots and checking the summary output for our variable of interest. We remove the outliers for average_price and average_nights for all cities. And we remove the outliers for the minimum number of nights for Berlin. As all these had very extreme outliers which biased the mean and skewed the data.  
+
 
 ### 2.3 Analysis
 For the analysis, several repeated-measures ANOVA seem the best option. A repeated-measures ANOVA is used to measure the means of same objects over time. The repeated-measures ANOVA is usually performed if there is one independent variable that influences a dependent variable, measured on more than one occasion. In this case, the data of the same cities in September and March is compared. The drawback of this measure is that you have to perform an ANOVA for *each* dependent variable, which increases the chance of a Type B error.
