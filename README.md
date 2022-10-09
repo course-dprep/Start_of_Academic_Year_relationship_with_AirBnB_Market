@@ -100,13 +100,12 @@ The repository consists of three main directories, namely, "data", "src", and "g
 ### 4.2 Repository Structure
 / provide an overview of the directory structure and files (use the tree command) /
 
-
-  ├── README.md
+	├── README.md
 	├── data
 	│   ├── datasets Amsterdam
 	│   ├── datasets Antwerp
 	│   ├── datasets Berlin
-  │   ├── datasets Brussels	
+  	│   ├── datasets Brussels	
 	│   └── datasets Rotterdam
 	├── gen
 	│   ├── analysis
