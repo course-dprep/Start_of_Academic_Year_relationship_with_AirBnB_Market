@@ -65,22 +65,6 @@ The research will be executed for five major student cities in three Western-Eur
 ### 2.1 Data
 This project uses publicly available archival data from AirBnB. In total, ten datasets are retreived from the AirBnB website, two for each city of interest. Every two datasets per city are merged into one based on listing id and the data is explored and prepared.
 
-The final variables in the datasets are as follows:
-
-        - id                    = Airbnb's unique identifier for the listing 
-        - host_is_superhost     = boolean [t=true; f=false]
-        - room_type             = categorical variable diplaying the the type of room, 4 options are given; Entire home/apt, Hotel room, Private room or Shared room.
-	- room                  = binary variable. Transformed room_type, listing “Entire home/apt” as 1 and “Private room”&” Shared room“& “Hotel room” combined as 0.
-        - price                 = daily price in local currency, numeric. 
-	- average_price         = mean price for each listing over 30 days, numeric.
-	- maximum_nights        = maximum number of nights a listing can be rented out. 
-	- average_nights        = mean maximum_nights for each listing over 30 days, numeric. 
-	- minimum_nights        = minimum number of nights a listing can be rented out. 
-	- dummy_month_aug       = dummy variable listing Aug/Sept listings as 1 and March/April as 0. 
-
-### 2.2 Research Method
-Since the project uses archival data, the type of research is correlational. 
-
 Data Transformation
 
 A selection was made for all cities to take the dates from 15th of march to the 15th of April  2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices. 
@@ -101,8 +85,27 @@ For the Amsterdam dataset for example these were the occurrences of each type;
 
 After making boxplots and checking the summary output for our variable of interest. We remove the outliers for average_price and average_nights for all cities. And we remove the outliers for the minimum number of nights for Berlin. As all these had very extreme outliers which biased the mean and skewed the data.  
 
-### 2.3 Analysis
 We use a multiple methods to examine the datasets after tranforming them. The full analysis on this can be found in the Report. 
+
+The final variables in the datasets are as follows:
+
+        - id                    = Airbnb's unique identifier for the listing 
+        - host_is_superhost     = boolean [t=true; f=false]
+        - room_type             = categorical variable diplaying the the type of room, 4 options are given; Entire home/apt, Hotel room, Private room or Shared room.
+	- room                  = binary variable. Transformed room_type, listing “Entire home/apt” as 1 and “Private room”&” Shared room“& “Hotel room” combined as 0.
+        - price                 = daily price in local currency, numeric. 
+	- average_price         = mean price for each listing over 30 days, numeric.
+	- maximum_nights        = maximum number of nights a listing can be rented out. 
+	- average_nights        = mean maximum_nights for each listing over 30 days, numeric. 
+	- minimum_nights        = minimum number of nights a listing can be rented out. 
+	- dummy_month_aug       = dummy variable listing Aug/Sept listings as 1 and March/April as 0. 
+
+### 2.2 Research Method
+Since the project uses archival data, the type of research is correlational. 
+
+
+
+### 2.3 Analysis
 
 The independent variables in the model ("start of the academic year", "type of host", and "type of accomodation") are binary variables, whereas the dependent variables ("price" and "number of maximum nights") are continuous.
 Since there are three categorical explanatory variables and two continuous dependent variables, we perform a multivariate multiple regression.
