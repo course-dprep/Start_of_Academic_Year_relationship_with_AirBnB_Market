@@ -152,6 +152,7 @@ clean_lis <- function(dataset) {
 # Clean all listings data sets and put them into a new list
 clean_lis_datasets <- lapply(lis_datasets, clean_lis)
 
+# Add dummy variables for start of academic year
 add_dummy_aug <- function(dataset) {
   dataset$dummy_month_aug <- 1
   dataset <- dataset %>% select(id, average_price, dummy_month_aug)
@@ -165,6 +166,15 @@ add_dummy_mar <- function(dataset) {
 }
 
 clean_cal_price_mar_datasets <- lapply(clean_cal_price_mar_datasets, add_dummy_mar)
+
+# Add dummy variable for room type
+add_dummy_roomtype <- function(dataset){
+  dataset$room <- ifelse(dataset$room_type == 'Entire home/apt', 1, 0)
+  dataset <- dataset %>% select(id, room_type, price, minimum_nights, maximum_nights, host_is_superhost, room)
+}
+
+# Apply function to the datasets
+clean_lis_datasets <- lapply(clean_lis_datasets, add_dummy_roomtype)
 
 # Merge price_aug_datasets with nights_aug_datasets and listings 
 total_antwerp_aug <- merge(clean_cal_price_aug_datasets[[1]], clean_cal_nights_aug_datasets[[1]]) %>%  merge(clean_lis_datasets[[1]])
