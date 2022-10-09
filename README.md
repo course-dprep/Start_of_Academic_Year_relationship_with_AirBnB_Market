@@ -95,8 +95,9 @@ For the Amsterdam dataset for example these were the occurrences of each type;
 
 After making boxplots and checking the summary output for our variable of interest. We remove the outliers for average_price and average_nights for all cities. And we remove the outliers for the minimum number of nights for Berlin. As all these had very extreme outliers which biased the mean and skewed the data.  
 
-
 ### 2.3 Analysis
+We use a multiple methods to examine the datasets after tranforming them. The full analysis on this can be found in the Report. 
+
 The independent variables in the model ("start of the academic year", "type of host", and "type of accomodation") are binary variables, whereas the dependent variables ("price" and "number of maximum nights") are continuous.
 Since there are three categorical explanatory variables and two continuous dependent variables, we perform a multivariate multiple regression.
 
