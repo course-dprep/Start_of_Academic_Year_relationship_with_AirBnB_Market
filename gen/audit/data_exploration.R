@@ -142,7 +142,7 @@ summary(total_berlin$average_price) #check outliers are gone
 outlierst <- boxplot(total_berlin$average_nights, plot=FALSE)$out
 total_berlin <- total_berlin[-which(total_berlin$average_nights %in% outlierst),]
 
-summary(total_brussels$average_nights) #check outliers are gone 
+summary(total_berlin$average_nights) #check outliers are gone 
 
 #make table with count for categorical variables
 table(total_berlin$room_type)
