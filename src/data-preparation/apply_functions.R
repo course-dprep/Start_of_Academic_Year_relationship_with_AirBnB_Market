@@ -174,3 +174,9 @@ clean_lis_datasets <- lapply(clean_lis_datasets, add_dummy_roomtype)
 
 text <- 'Apply functions'
 write_lines(text, "gen/data-preparation/temp/apply_functions.txt")
+
+save(clean_cal_nights_aug_datasets,file="./gen/data-preparation/output/clean_cal_nights_aug_datasets.Rdata")
+save(clean_cal_nights_mar_datasets,file="./gen/data-preparation/output/clean_cal_nights_mar_datasets.Rdata")
+save(clean_cal_price_aug_datasets,file="./gen/data-preparation/output/clean_cal_price_aug_datasets.Rdata")
+save(clean_cal_price_mar_datasets,file="./gen/data-preparation/output/clean_cal_price_mar_datasets.Rdata")
+save(clean_lis_datasets,file="./gen/data-preparation/output/clean_lis_datasets.Rdata")
