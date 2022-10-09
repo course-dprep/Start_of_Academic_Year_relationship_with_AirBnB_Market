@@ -59,7 +59,7 @@ clean_cal_nights_aug <- function(dataset){
   # Select only the columns with the listing id and dates from 2022-08-15 to 2022-09-15
   dataset_wide_clean <- select(dataset_wide, listing_id, "2022-08-15":"2022-09-15")
   
-  # Take the average price per listing from August/September and March/April
+  # Take the average price per listing from August/September
   dataset_wide_clean <- dataset_wide_clean %>% 
     mutate(average_nights = rowMeans(dataset_wide_clean[,2:33]))
   
@@ -122,10 +122,10 @@ clean_cal_nights_mar <- function(dataset){
                 values_from = minimum_nights,
     )
   
-  # Select only the columns with the listing id and dates from 2022-08-15 to 2022-09-15
+  # Select only the columns with the listing id and dates from 2022-03-15 to 2022-04-15
   dataset_wide_clean <- select(dataset_wide, listing_id, "2023-03-15":"2023-04-15")
   
-  # Take the average price per listing from August/September and March/April
+  # Take the average price per listing from March/April
   dataset_wide_clean <- dataset_wide_clean %>% 
     mutate(average_nights= rowMeans(dataset_wide_clean[,2:33]))
   

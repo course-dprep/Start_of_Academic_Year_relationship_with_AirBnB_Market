@@ -5,15 +5,15 @@ This project uses archival data from the AirBnB website to investigate the relat
 
 ## Contents
 [1. Introduction](#1-introduction) 
-      
+
    - [Problem Background and Research Motivation](#11-problem-background-and-research-motivation)
-   
+
    - [Problem Statement and Research Questions](#12-problem-statement-and-research-questions)
-   
+
    - [Conceptual Model](#13-conceptual-model)
 
 [2. Methodology](#2-methodology)
- 
+
    - [Data](#21-data)
 
    - [Research Method](#22-research-method)
@@ -23,11 +23,11 @@ This project uses archival data from the AirBnB website to investigate the relat
 [3. Results and Interpretation](#3-results-and-interpretation)
 
 [4. Repository Overview](#4-repository-overview)
-   
+
    - [Repository Contents](#41-repository-contents)
-   
+
    - [Repository Structure](#42-repository-structure)
-      
+
 [5. Instructions to Run the Project](#5-instructions-to-run-the-project)
    - [Software Setup](#51-software-setup)
    - [Run the Code](#52-run-the-code)
@@ -75,8 +75,6 @@ The final variables in the datasets are as follows:
         - property_type                   = 
         - price                           = daily price in local currency
 
-		
-		
 ### 2.2 Research Method
 Since the project uses archival data, the type of research is correlational. 
 
@@ -92,22 +90,23 @@ Since there are three categorical explanatory variables and two continuous depen
 ### 4.1 Repository Contents
 The repository consists of three main directories, namely, "data", "src", and "gen". The "data" directory is used to store raw data (which is not uploaded on GitHub but can be retreived from the AirBnB website or by running the respective script), the "src" directory contains the source code of the project, and the "gen" directory stores all generated files.
 
-   Within the "gen" and "src" directories, there are sub-directories for the data preparation and the data analysis stages; namely, "data-preparation", "analysis", and "paper".
+   Within the "gen" and "src" directories, there are sub-directories for the data preparation and the data analysis stages; namely, "data-preparation" and "analysis".
    
    Within these sub-directories, there folders aimed for storing any temporary files ("temp"), final products from the various stages in the pipeline ("output"), and any files related to issues with the data or the model estimation ("audit folder").
    
    The final deliverable of the project is stored in the "paper" sub-directory within the "gen" directory.
 	 
+
 ### 4.2 Repository Structure
 / provide an overview of the directory structure and files (use the tree command) /
 
 
-    ├── README.md
+  ├── README.md
 	├── data
 	│   ├── datasets Amsterdam
 	│   ├── datasets Antwerp
 	│   ├── datasets Berlin
-        │   ├── datasets Brussels	
+  │   ├── datasets Brussels	
 	│   └── datasets Rotterdam
 	├── gen
 	│   ├── analysis
