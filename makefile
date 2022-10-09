@@ -1,15 +1,11 @@
 
-all: apply_functions.txt
+all: gen/data-preparation/temp/download.txt gen/data-preparation/temp/apply_functions.txt 
 
-download.txt:download_datasets.R 
-	Rscript download_datasets.R 
+gen/data-preparation/temp/download.txt: src/data-preparation/download_datasets.R 
+	Rscript src/data-preparation/download_datasets.R 
 
-
-apply_functions.txt: apply_functions.R download.txt 
-	Rscript apply_functions.R
-
-clean:
-	R -e "unlink('*.txt')"
+gen/data-preparation/temp/apply_functions.txt: src/data-preparation/apply_functions.R gen/data-preparation/temp/download.txt
+	Rscript src/data-preparation/apply_functions.R
 
 
 
