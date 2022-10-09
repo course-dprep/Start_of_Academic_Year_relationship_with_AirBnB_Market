@@ -11,3 +11,6 @@ gen/data-preparation/temp/apply_functions.txt: src/data-preparation/apply_functi
 gen/data-preparation/temp/write_datasets.txt: src/data-preparation/write_datasets.R gen/data-preparation/temp/apply_functions.txt
 	Rscript src/data-preparation/write_datasets.R
 
+clean:
+	R -e "unlink('*.csv')"
+	R -e "unlink('*.txt')"
