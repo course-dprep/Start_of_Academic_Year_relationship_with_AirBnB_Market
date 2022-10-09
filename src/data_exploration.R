@@ -4,7 +4,7 @@ library(tidyverse)
 
 #load datasets
 total_antwerp <- read.csv("total_antwerp.csv")
-total_amsterdam <- read.csv("total_rotterdam.csv")
+total_amsterdam <- read.csv("total_amsterdam.csv")
 total_rotterdam <- read.csv("total_rotterdam.csv")
 total_brussels <- read.csv("total_brussels.csv")
 total_berlin <- read.csv("total_berlin.csv")
@@ -279,3 +279,6 @@ plot_pr
 plot(total_rotterdam$average_price, total_rotterdam$minimum_nights)
 plot(total_rotterdam$average_price, total_rotterdam$maximum_nights)
 plot(total_rotterdam$average_price, total_rotterdam$average_nights)
+
+text <- 'Data exploration'
+write_lines(text, "gen/data-preparation/temp/data_exploration.txt")
