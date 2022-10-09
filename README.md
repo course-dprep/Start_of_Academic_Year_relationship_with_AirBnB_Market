@@ -67,10 +67,16 @@ This project uses publicly available archival data from AirBnB. In total, ten da
 
 The final variables in the datasets are as follows:
 
-        - id                              = Airbnb's unique identifier for the listing 
-        - host_is_superhost               = boolean [t=true; f=false]
-        - property_type                   = 
-        - price                           = daily price in local currency
+        - id                    = Airbnb's unique identifier for the listing 
+        - host_is_superhost     = boolean [t=true; f=false]
+        - room_type             = categorical variable diplaying the the type of room, 4 options are given; Entire home/apt, Hotel room, Private room or Shared room.
+	- room                  = binary variable. Transformed room_type, listing “Entire home/apt” as 1 and “Private room”&” Shared room“& “Hotel room” combined as 0.
+        - price                 = daily price in local currency, numeric. 
+	- average_price         = mean price for each listing over 30 days, numeric.
+	- maximum_nights        = maximum number of nights a listing can be rented out. 
+	- average_nights        = mean maximum_nights for each listing over 30 days, numeric. 
+	- minimum_nights        = minimum number of nights a listing can be rented out. 
+	- dummy_month_aug       = dummy variable listing Aug/Sept listings as 1 and March/April as 0. 
 
 ### 2.2 Research Method
 Since the project uses archival data, the type of research is correlational. 
