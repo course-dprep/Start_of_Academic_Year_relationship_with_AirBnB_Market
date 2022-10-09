@@ -2,6 +2,8 @@ library(dplyr)
 library(tidyr)
 library(tidyverse)
 
+load("./gen/data-preparation/output/cal_datasets.RData")
+load("./gen/data-preparation/output/lis_datasets.RData")
 
 # Create function that calculates average price in August/September and then only extracts those columns with the id column  
 clean_cal_price_aug <- function (dataset) {
