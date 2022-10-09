@@ -133,21 +133,20 @@ The repository consists of three main directories, namely, "data", "src", and "g
 
    Within the "gen" and "src" directories, there are sub-directories for the data preparation and the data analysis stages; namely, "data-preparation" and "analysis".
    
-   Within these sub-directories, there folders aimed for storing any temporary files ("temp"), final products from the various stages in the pipeline ("output"), and any files related to issues with the data or the model estimation ("audit folder").
+   Within these sub-directories, there are folders aimed for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output").
    
    The final deliverable of the project is stored in the "paper" sub-directory within the "gen" directory.
 	 
 
 ### 4.2 Repository Structure
-/ provide an overview of the directory structure and files (use the tree command) /
 
 	├── README.md
 	├── data
-	│   ├── datasets Amsterdam
-	│   ├── datasets Antwerp
-	│   ├── datasets Berlin
-  	│   ├── datasets Brussels	
-	│   └── datasets Rotterdam
+	│   ├── datasets_Amsterdam
+	│   ├── datasets_Antwerp
+	│   ├── datasets_Berlin
+  	│   ├── datasets_Brussels	
+	│   └── datasets_Rotterdam
 	├── gen
 	│   ├── analysis
 	│   │   ├── audit
