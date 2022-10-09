@@ -9,4 +9,7 @@ lis_datasets <- lapply(lis_urls, read_csv)
 cal_datasets <- lapply(cal_urls, read_csv)
 
 text <- 'Download datasets'
-write_lines(text, "download.txt")
+write_lines(text, "gen/data-preparation/temp/download.txt")
+
+save(cal_datasets,file="./gen/data-preparation/output/cal_datasets.RData")
+save(lis_datasets,file="./gen/data-preparation/output/lis_datasets.RData")

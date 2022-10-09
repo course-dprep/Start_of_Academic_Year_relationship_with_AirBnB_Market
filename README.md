@@ -65,23 +65,59 @@ The research will be executed for five major student cities in three Western-Eur
 ### 2.1 Data
 This project uses publicly available archival data from AirBnB. In total, ten datasets are retreived from the AirBnB website, two for each city of interest. Every two datasets per city are merged into one based on listing id and the data is explored and prepared.
 
+Data Transformation
+
+A selection was made for all cities to take the dates from 15th of march to the 15th of April  2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices. 
+
+We selected just the variables which interested us when loading the data for each city into a dataframe. So id, price, room_type, minimum_nights and maximum_nights. We also created two new variables by taking the mean average of the price and the mean average of the maximum number of nights. 
+
+For the availability variable, we’ve chosen to use every datapoint regardless of if it’s listed as available or not. This is because the ones listed as not available might be rented-out which is exactly the rooms we want to know about.
+
+After the selection of the data we also create a new dummy variable called dummy_month_august which is 1 if the row is in August/September (start of academic year) and 0 if it’s in March/April. 
+
+Turn room_type into a dummy variable called room. There are 4 different room types given but, as 2 of them make up a very small percentage of the dataset they were combined with one of the larger ones. The dummy variable is coded as “Entire home/apt” = 1 and 0 = “Private room”&” Shared room“& “Hotel room”. We also theorized grouping these together made sense as these would be the type we thought popular with students as these accommodations are normally for 1 or 2 people. 
+
+For the Amsterdam dataset for example these were the occurrences of each type; 
+
+| Entire home/apt  | Hotel room | Private room  | Shared room  |
+| ------------- | ------------- | ------------- | ------------- |
+| 8446 | 152 | 3680 | 64 | 
+
+After making boxplots and checking the summary output for our variable of interest. We remove the outliers for average_price and average_nights for all cities. And we remove the outliers for the minimum number of nights for Berlin. As all these had very extreme outliers which biased the mean and skewed the data.  
+
+We use a multiple methods to examine the datasets after tranforming them. The full analysis on this can be found in the Report. 
+
 The final variables in the datasets are as follows:
 
-        - id                              = Airbnb's unique identifier for the listing 
-        - host_is_superhost               = boolean [t=true; f=false]
-        - property_type                   = 
-        - price                           = daily price in local currency
+        - id                    = Airbnb's unique identifier for the listing 
+        - host_is_superhost     = boolean [t=true; f=false]
+        - room_type             = categorical variable diplaying the the type of room, 4 options are given; Entire home/apt, Hotel room, Private room or Shared room.
+	- room                  = binary variable. Transformed room_type, listing “Entire home/apt” as 1 and “Private room”&” Shared room“& “Hotel room” combined as 0.
+        - price                 = daily price in local currency, numeric. 
+	- average_price         = mean price for each listing over 30 days, numeric.
+	- maximum_nights        = maximum number of nights a listing can be rented out. 
+	- average_nights        = mean maximum_nights for each listing over 30 days, numeric. 
+	- minimum_nights        = minimum number of nights a listing can be rented out. 
+	- dummy_month_aug       = dummy variable listing Aug/Sept listings as 1 and March/April as 0. 
 
 ### 2.2 Research Method
 Since the project uses archival data, the type of research is correlational. 
 
+
+
 ### 2.3 Analysis
+
 The independent variables in the model ("start of the academic year", "type of host", and "type of accomodation") are binary variables, whereas the dependent variables ("price" and "number of maximum nights") are continuous.
 Since there are three categorical explanatory variables and two continuous dependent variables, we perform a multivariate multiple regression.
 
 
 ## 3. Results and Interpretation
-/ add text /
+Regression output explanation
+
+When running the regression we have checked for each of the five cities the effect of the independent variable namely ‘dummy_month_aug’, on the two dependent variables; ‘average_price’ and ‘maximum_nights’. As the focus of our research is to identify whether the start of the academic, represented by ‘dummy_month_aug’, has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely ‘room’ and ‘host_is_superhostTRUE’.
+
+For the first city, Antwerp, we could not find any significant effects for the variables of interest. For Amsterdam there is a significant effect for the interaction between ‘dummy_month_aug’ and ‘host_is_superhostTRUE’, meaning that at the start of the academic year there is an increase of 11.5 euros in average price for AirBnB super hosts. For the other dependent variable we could not find any significant effects. In the case of Berlin we have a highly significant effect between the DV ‘average price’ and the start of the academic year. Another significant effect for this DV is the interaction between start of the academic year and the room dummy, meaning that the average price at the start of the academic year increases by 24.3 euros for homes and apartments. For the other DV, ‘maximum_nights’ no significant effects were found. The next city is Brussels for which no significant effects were found for either of the DVs. Lastly, for Rotterdam for the DV ‘average price’ there is a significant effect with the IV ‘dummy_month_aug’.
+
 
 ## 4. Repository Overview
 ### 4.1 Repository Contents
