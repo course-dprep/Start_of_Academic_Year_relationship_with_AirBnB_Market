@@ -39,3 +39,15 @@ save(table_lm1,table_lm2, table_lm3, table_lm4, table_lm5, table_lm6, table_lm7,
 
 text <- 'Multiple regressions'
 write_lines(text, "gen/data-preparation/temp/multiple_regressions.txt")
+
+# Plots to check assumptions
+plot(lm1)
+plot(lm2)
+plot(lm3)
+plot(lm4)
+plot(lm5)
+plot(lm6)
+plot(lm7)
+plot(lm8)
+plot(lm9)
+plot(lm10)
