@@ -94,14 +94,10 @@ After the selection of the data we also create a new dummy variable called dummy
 Turn room_type into a dummy variable called room. There are 4 different room types given but, as 2 of them make up a very small percentage of the dataset they were combined with one of the larger ones. The dummy variable is coded as “Entire home/apt” = 1 and 0 = “Private room”&” Shared room“& “Hotel room”. We also theorized grouping these together made sense as these would be the type we thought popular with students as these accommodations are normally for 1 or 2 people. 
 
 For the Amsterdam dataset for example these were the occurrences of each type; 
-Entire home/apt      Hotel room    Private room     Shared room 
-           8446             152            3680              64 
 
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Entire home/apt  | Hotel room | Private room  | Shared room  |
+| ------------- | ------------- | ------------- | ------------- |
+| 8446 | 152 | 3680 | 64 | 
 
 After making boxplots and checking the summary output for our variable of interest. We remove the outliers for average_price and average_nights for all cities. And we remove the outliers for the minimum number of nights for Berlin. As all these had very extreme outliers which biased the mean and skewed the data.  
 
