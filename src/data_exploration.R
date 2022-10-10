@@ -280,6 +280,3 @@ plot_pr
 plot(total_rotterdam$average_price, total_rotterdam$minimum_nights)
 plot(total_rotterdam$average_price, total_rotterdam$maximum_nights)
 plot(total_rotterdam$average_price, total_rotterdam$average_nights)
-
-text <- 'Data exploration'
-write_lines(text, "gen/data-preparation/temp/data_exploration.txt")
