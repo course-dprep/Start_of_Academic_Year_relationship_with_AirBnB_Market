@@ -33,7 +33,8 @@ total_antwerp <- total_antwerp[-which(total_antwerp$average_price %in% outliers)
 summary(total_antwerp$average_price) #check outliers are gone
 
 outlierst <- boxplot(total_antwerp$average_nights, plot=FALSE)$out
-total_antwerp <- total_antwerp[-which(total_antwerp$average_nights %in% outlierst),]
+
+if (length(outlierst)>0) total_antwerp <- total_antwerp[-which(total_antwerp$average_nights %in% outlierst),]
 
 summary(total_antwerp$average_nights) #check outliers are gone 
 
