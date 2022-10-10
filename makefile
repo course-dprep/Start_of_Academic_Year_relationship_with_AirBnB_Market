@@ -1,5 +1,5 @@
 
-all: gen/data-preparation/temp/download.txt gen/data-preparation/temp/apply_functions.txt total_berlin.csv gen/data-preparation/temp/multiple_regressions.txt
+all: gen/data-preparation/temp/multiple_regressions.txt
 
 gen/data-preparation/temp/download.txt: src/data-preparation/download_datasets.R 
 	Rscript src/data-preparation/download_datasets.R 
