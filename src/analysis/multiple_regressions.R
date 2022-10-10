@@ -37,9 +37,6 @@ table_lm10 <- summary(lm10)
 # Save results
 save(table_lm1,table_lm2, table_lm3, table_lm4, table_lm5, table_lm6, table_lm7, table_lm8, table_lm9, table_lm10, file="./gen/analysis/output/model_results.RData")
 
-text <- 'Multiple regressions'
-write_lines(text, "gen/data-preparation/temp/multiple_regressions.txt")
-
 # Plots to check assumptions
 plot(lm1)
 plot(lm2)

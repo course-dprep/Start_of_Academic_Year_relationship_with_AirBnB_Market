@@ -36,6 +36,3 @@ write_csv(total_amsterdam, "total_amsterdam.csv")
 write_csv(total_rotterdam, "total_rotterdam.csv")
 write_csv(total_brussels, "total_brussels.csv")
 write_csv(total_berlin, "total_berlin.csv")
-
-text <- 'Write datasets'
-write_lines(text, "gen/data-preparation/temp/write_datasets.txt")

@@ -89,7 +89,7 @@ total_amsterdam <- total_amsterdam[-which(total_amsterdam$average_price %in% out
 summary(total_amsterdam$average_price) #check outliers are gone
 
 outlierst <- boxplot(total_amsterdam$average_nights, plot=FALSE)$out
-total_amsterdam <- total_amsterdam[-which(total_amsterdam$average_nights %in% outlierst),]
+if (length(outlierst)>0) total_amsterdam <- total_amsterdam[-which(total_amsterdam$average_nights %in% outlierst),]
 
 summary(total_amsterdam$average_nights) #check outliers are gone 
 
@@ -141,7 +141,7 @@ total_berlin <- total_berlin[-which(total_berlin$average_price %in% outliers),]
 summary(total_berlin$average_price) #check outliers are gone
 
 outlierst <- boxplot(total_berlin$average_nights, plot=FALSE)$out
-total_berlin <- total_berlin[-which(total_berlin$average_nights %in% outlierst),]
+if (length(outlierst)>0) total_berlin <- total_berlin[-which(total_berlin$average_nights %in% outlierst),]
 
 summary(total_berlin$average_nights) #check outliers are gone 
 
@@ -193,7 +193,7 @@ total_brussels <- total_brussels[-which(total_brussels$average_price %in% outlie
 summary(total_brussels$average_price) #check outliers are gone
 
 outlierst <- boxplot(total_brussels$average_nights, plot=FALSE)$out
-total_brussels <- total_brussels[-which(total_brussels$average_nights %in% outlierst),]
+if (length(outlierst)>0) total_brussels <- total_brussels[-which(total_brussels$average_nights %in% outlierst),]
 
 summary(total_brussels$average_nights) #check outliers are gone 
 
@@ -249,7 +249,7 @@ total_rotterdam <- total_rotterdam[-which(total_rotterdam$average_price %in% out
 summary(total_rotterdam$average_price) #check outliers are gone
 
 outlierst <- boxplot(total_rotterdam$average_nights, plot=FALSE)$out
-total_rotterdam <- total_rotterdam[-which(total_rotterdam$average_nights %in% outlierst),]
+if (length(outlierst)>0) total_rotterdam <- total_rotterdam[-which(total_rotterdam$average_nights %in% outlierst),]
 
 summary(total_rotterdam$average_nights) #check outliers are gone 
 
