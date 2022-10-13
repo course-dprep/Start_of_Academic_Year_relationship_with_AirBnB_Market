@@ -31,8 +31,8 @@ total_brussels <- bind_rows(total_brussels_aug, total_brussels_mar)
 total_berlin <- bind_rows(total_berlin_aug, total_berlin_mar)
 
 # Write all data sets as .csv file
-write_csv(total_antwerp, "total_antwerp.csv")
-write_csv(total_amsterdam, "total_amsterdam.csv")
-write_csv(total_rotterdam, "total_rotterdam.csv")
-write_csv(total_brussels, "total_brussels.csv")
-write_csv(total_berlin, "total_berlin.csv")
+write_csv(total_antwerp, "data/datasets_Antwerp/total_antwerp.csv")
+write_csv(total_amsterdam, "data/datasets_Amsterdam/total_amsterdam.csv")
+write_csv(total_rotterdam, "data/datasets_Rotterdam/total_rotterdam.csv")
+write_csv(total_brussels, "data/datasets_Brussels/total_brussels.csv")
+write_csv(total_berlin, "data/datasets_Berlin/total_berlin.csv")

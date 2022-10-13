@@ -7,10 +7,10 @@ gen/data-preparation/output/cal_datasets.RData: src/data-preparation/download_da
 gen/data-preparation/output/clean_lis_datasets.Rdata: src/data-preparation/apply_functions.R gen/data-preparation/output/cal_datasets.RData
 	Rscript src/data-preparation/apply_functions.R
 
-total_berlin.csv: src/data-preparation/write_datasets.R gen/data-preparation/output/clean_lis_datasets.Rdata
+data/datasets_Berlin/total_berlin.csv: src/data-preparation/write_datasets.R gen/data-preparation/output/clean_lis_datasets.Rdata
 	Rscript src/data-preparation/write_datasets.R
 
-Rplots.pdf: src/data_exploration.R total_berlin.csv
+Rplots.pdf: src/data_exploration.R data/datasets_Berlin/total_berlin.csv
 	Rscript src/data_exploration.R
 
 /gen/analysis/output/model_results.RData: src/analysis/multiple_regressions.R Rplots.pdf
@@ -21,6 +21,6 @@ clean:
 	R -e "unlink('gen/data-preparation/output/*.RData')"
 	R -e "unlink('gen/analysis/output/*.RData')"
 	R -e "unlink('*.pdf')"
-	
+	R -e "unlink('data/*.csv')"
 	
 	

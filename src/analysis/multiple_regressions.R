@@ -2,11 +2,11 @@ library(dplyr)
 library(tidyr)
 library(tidyverse)
 
-total_antwerp <- read_csv("total_antwerp.csv")
-total_amsterdam <- read_csv("total_amsterdam.csv")
-total_rotterdam <- read_csv("total_rotterdam.csv")
-total_brussels <- read_csv("total_brussels.csv")
-total_berlin <- read_csv("total_berlin.csv")
+total_antwerp <- read_csv("data/datasets_Antwerp/total_antwerp.csv")
+total_amsterdam <- read_csv("data/datasets_Amsterdam/total_amsterdam.csv")
+total_rotterdam <- read_csv("data/datasets_Rotterdam/total_rotterdam.csv")
+total_brussels <- read_csv("data/datasets_Brussels/total_brussels.csv")
+total_berlin <- read_csv("data/datasets_Berlin/total_berlin.csv")
 
 # Multiple linear regressions for each city for DV maximum_nights
 lm1 <- lm(average_price ~ dummy_month_aug*room*host_is_superhost, total_antwerp)
