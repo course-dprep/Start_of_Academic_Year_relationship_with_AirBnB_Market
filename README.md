@@ -1,6 +1,6 @@
 # The relationship between the start of the academic year and the AirBnB market in student cities in Western Europe
 
-## Project Summarry
+## Project Summary
 This project uses archival data from the AirBnB website to investigate the relationship between the beginning of the academic year and the AirBnB market in five major Western-European cities.
 
 ## Contents
@@ -39,7 +39,7 @@ This project uses archival data from the AirBnB website to investigate the relat
 
 ## 1. Introduction
 ### 1.1 Problem Background and Research Motivation
-At the start of the academic year, many university students need temporary accomodation while they are arranging their documents and looking for permanent housing. Therefore, they often stay temporarily at AirBnB accomodations. In a recent study on the determinants of AirBnB listings' performance, Sainaghi et al. (2021) concludes that seasonality, and certain events can have a significant impact on the prices of listings. Hence, this project aims to investigate how the AirBnb market in various Western-European cities is related to the period of the start of the academic year. The research will focus on analyzing the relationships between the start of the academic year and the AirBnB prices, as well as the maximum nights and accomodation can be booked for. In addition, the effect of the type of host (ordinary vs proffessional) and type of accomodation (room vs apartment) on the abovementioned relationships will be investigated.
+At the start of the academic year, many university students need temporary accomodation while they are arranging their documents and looking for permanent housing. Therefore, they often stay temporarily at AirBnB accommodations. In a recent study on the determinants of AirBnB listings' performance, Sainaghi et al. (2021) concludes that seasonality, and certain events can have a significant impact on the prices of listings. Hence, this project aims to investigate how the AirBnb market in various Western-European cities is related to the period of the start of the academic year. The research will focus on analyzing the relationships between the start of the academic year and the AirBnB prices, as well as the maximum nights and accommodation can be booked for. In addition, the effect of the type of host (ordinary vs proffessional) and type of accommodation (room vs apartment) on the abovementioned relationships will be investigated.
 
 The research will be executed for five major student cities in three Western-European countries: Belgium (Antwerp, Brussels), Germany (Berlin), The Netherlands (Amsterdam, Rotterdam).
 
@@ -49,11 +49,11 @@ The research will be executed for five major student cities in three Western-Eur
 
 - How are the AirBnB prices related to the period of the academic year (beginning vs regular period)?
 - How does the relationship between AirBnB prices and period of the academic year depend on the type of host (ordinary vs superhost)?
-- How does the relationship between AirBnB prices and period of the academic year depend on the type of accomodation (room vs apartment)?
+- How does the relationship between AirBnB prices and period of the academic year depend on the type of accommodation (room vs apartment)?
 
-- How is the maximum number of nights per accomodation related to the period of the academic year (beginning vs regular period)?
-- How does the relationship between the maximum number of nights per accomodation and period of the academic year depend on the type of host (ordinary vs superhost)?
-- How does the relationship between the maximum number of nights per accomodation and period of the academic year depend on the type of accomodation (room vs apartment)?
+- How is the maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
+- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of host (ordinary vs superhost)?
+- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of accommodation (room vs apartment)?
 
 
 ### 1.3 Conceptual model
@@ -63,11 +63,11 @@ The research will be executed for five major student cities in three Western-Eur
 ## 2. Methodology
 
 ### 2.1 Data
-This project uses publicly available archival data from AirBnB. In total, ten datasets are retreived from the AirBnB website, two for each city of interest. Every two datasets per city are merged into one based on listing id and the data is explored and prepared.
+This project uses publicly available archival data from AirBnB. In total, ten datasets are retrieved from the AirBnB website, two for each city of interest. Every two datasets per city are merged into one based on listing id and the data is explored and prepared.
 
 *Data Transformation*
 
-A selection was made for all cities to take the dates from 15th of march to the 15th of April  2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices. 
+A selection was made for all cities to take the dates from 15th of March to the 15th of April  2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices. 
 
 We selected just the variables which interested us when loading the data for each city into a dataframe. So id, price, room_type, minimum_nights and maximum_nights. We also created two new variables by taking the mean average of the price and the mean average of the maximum number of nights. 
 
@@ -124,7 +124,7 @@ For the first city, Antwerp, we could not find any significant effects for the v
 
 *Discussion*
 
-Lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use AirBnB's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time. Furthermore with all the price increases recently it's possible that the price going up for March/April seen in Berlin is caused by the room owners expecting increases in the cost of material or goods they need for the room. But this would presumabily be the case for all cities, unless there were cultural differences between the countries. 
+Lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use AirBnB's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time. Furthermore with all the price increases recently it's possible that the price going up for March/April seen in Berlin is caused by the room owners expecting increases in the cost of material or goods they need for the room. But this would presumably be the case for all cities, unless there were cultural differences between the countries. 
 
 ## 4. Repository Overview
 ### 4.1 Repository Contents
