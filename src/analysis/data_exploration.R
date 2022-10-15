@@ -3,11 +3,11 @@ library(tidyr)
 library(tidyverse)
 
 #load datasets
-total_antwerp <- read_csv("data/datasets_Antwerp/total_antwerp.csv")
-total_amsterdam <- read_csv("data/datasets_Amsterdam/total_amsterdam.csv")
-total_rotterdam <- read_csv("data/datasets_Rotterdam/total_rotterdam.csv")
-total_brussels <- read_csv("data/datasets_Brussels/total_brussels.csv")
-total_berlin <- read_csv("data/datasets_Berlin/total_berlin.csv")
+total_antwerp <- read_csv("../../data/datasets_Antwerp/total_antwerp.csv")
+total_amsterdam <- read_csv("../../data/datasets_Amsterdam/total_amsterdam.csv")
+total_rotterdam <- read_csv("../../data/datasets_Rotterdam/total_rotterdam.csv")
+total_brussels <- read_csv("../../data/datasets_Brussels/total_brussels.csv")
+total_berlin <- read_csv("../../data/datasets_Berlin/total_berlin.csv")
 
 #create function which creates boxplots for all variables of interest
 boxplots_interest <- function(df) { 
