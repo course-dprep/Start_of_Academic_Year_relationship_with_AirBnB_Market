@@ -2,11 +2,11 @@ library(dplyr)
 library(tidyr)
 library(tidyverse)
 
-load("./gen/data-preparation/output/clean_cal_nights_aug_datasets.Rdata")
-load("./gen/data-preparation/output/clean_cal_nights_mar_datasets.Rdata")
-load("./gen/data-preparation/output/clean_cal_price_aug_datasets.Rdata")
-load("./gen/data-preparation/output/clean_cal_price_mar_datasets.Rdata")
-load("./gen/data-preparation/output/clean_lis_datasets.Rdata")
+load("./gen/data-preparation/temp/clean_cal_nights_aug_datasets.Rdata")
+load("./gen/data-preparation/temp/clean_cal_nights_mar_datasets.Rdata")
+load("./gen/data-preparation/temp/clean_cal_price_aug_datasets.Rdata")
+load("./gen/data-preparation/temp/clean_cal_price_mar_datasets.Rdata")
+load("./gen/data-preparation/temp/clean_lis_datasets.Rdata")
 
 # Merge price_aug_datasets with nights_aug_datasets and listings 
 total_antwerp_aug <- merge(clean_cal_price_aug_datasets[[1]], clean_cal_nights_aug_datasets[[1]]) %>%  merge(clean_lis_datasets[[1]])
