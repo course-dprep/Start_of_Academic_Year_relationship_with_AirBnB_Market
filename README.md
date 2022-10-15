@@ -65,7 +65,7 @@ The research will be executed for five major student cities in three Western-Eur
 ### 2.1 Data
 This project uses publicly available archival data from AirBnB. In total, ten datasets are retreived from the AirBnB website, two for each city of interest. Every two datasets per city are merged into one based on listing id and the data is explored and prepared.
 
-Data Transformation
+*Data Transformation*
 
 A selection was made for all cities to take the dates from 15th of march to the 15th of April  2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices. 
 
@@ -101,7 +101,6 @@ The final variables in the datasets are as follows:
 	- dummy_month_aug       = dummy variable listing Aug/Sept listings as 1 and March/April as 0. 
 
 ### 2.2 Research Method
-Since the project uses archival data, the type of research is correlational. 
 
 
 
@@ -112,12 +111,20 @@ Since there are three categorical explanatory variables and two continuous depen
 
 
 ## 3. Results and Interpretation
-Regression output explanation
+*Regression results explanation*
 
 When running the regression we have checked for each of the five cities the effect of the independent variable namely ‘dummy_month_aug’, on the two dependent variables; ‘average_price’ and ‘maximum_nights’. As the focus of our research is to identify whether the start of the academic, represented by ‘dummy_month_aug’, has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely ‘room’ and ‘host_is_superhostTRUE’.
 
-For the first city, Antwerp, we could not find any significant effects for the variables of interest. For Amsterdam there is a significant effect for the interaction between ‘dummy_month_aug’ and ‘host_is_superhostTRUE’, meaning that at the start of the academic year there is an increase of 11.5 euros in average price for AirBnB super hosts. For the other dependent variable we could not find any significant effects. In the case of Berlin we have a highly significant effect between the DV ‘average price’ and the start of the academic year. Another significant effect for this DV is the interaction between start of the academic year and the room dummy, meaning that the average price at the start of the academic year increases by 24.3 euros for homes and apartments. For the other DV, ‘maximum_nights’ no significant effects were found. The next city is Brussels for which no significant effects were found for either of the DVs. Lastly, for Rotterdam for the DV ‘average price’ there is a significant effect with the IV ‘dummy_month_aug’.
+For the first city, Antwerp, we could not find any significant effects for the variables of interest. For Amsterdam there is a significant effect for the interaction between ‘dummy_month_aug’ and ‘host_is_superhostTRUE’, meaning that at the start of the academic year there is an increase of 11.5 euros in average price for AirBnB super hosts. For the other dependent variable we could not find any significant effects. In the case of Berlin we have a highly significant negative effect between the DV ‘average price’ and the start of the academic year. Meaning there is a decrease of 28.56 euro's in the price at the start of the academic year compared to March/April.  Another significant effect for this DV is the interaction between start of the academic year and the room dummy, meaning that the average price at the start of the academic year increases by 24.3 euros for homes and apartments. For the other DV, ‘maximum_nights’ no significant effects were found. The next city is Brussels for which no significant effects were found for either of the DVs. Lastly, for Rotterdam for the DV ‘average price’ there is a significant effect with the IV ‘dummy_month_aug’.
 
+*Conclusion*
+
+?
+
+
+*Discussion*
+
+Lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use AirBnB's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time. Furthermore with all the price increases recently it's possible that the price going up for March/April seen in Berlin is caused by the room owners expecting increases in the cost of material or goods they need for the room. But this would presumabily be the case for all cities, unless there were cultural differences between the countries. 
 
 ## 4. Repository Overview
 ### 4.1 Repository Contents
@@ -125,21 +132,20 @@ The repository consists of three main directories, namely, "data", "src", and "g
 
    Within the "gen" and "src" directories, there are sub-directories for the data preparation and the data analysis stages; namely, "data-preparation" and "analysis".
    
-   Within these sub-directories, there folders aimed for storing any temporary files ("temp"), final products from the various stages in the pipeline ("output"), and any files related to issues with the data or the model estimation ("audit folder").
+   Within these sub-directories, there are folders aimed for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output").
    
    The final deliverable of the project is stored in the "paper" sub-directory within the "gen" directory.
 	 
 
 ### 4.2 Repository Structure
-/ provide an overview of the directory structure and files (use the tree command) /
 
 	├── README.md
 	├── data
-	│   ├── datasets Amsterdam
-	│   ├── datasets Antwerp
-	│   ├── datasets Berlin
-  	│   ├── datasets Brussels	
-	│   └── datasets Rotterdam
+	│   ├── datasets_Amsterdam
+	│   ├── datasets_Antwerp
+	│   ├── datasets_Berlin
+  	│   ├── datasets_Brussels	
+	│   └── datasets_Rotterdam
 	├── gen
 	│   ├── analysis
 	│   │   ├── audit
