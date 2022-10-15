@@ -142,11 +142,6 @@ The repository consists of three main directories, namely, "data", "src", and "g
 
 	├── README.md
 	├── data
-	│   ├── datasets_Amsterdam
-	│   ├── datasets_Antwerp
-	│   ├── datasets_Berlin
-  	│   ├── datasets_Brussels	
-	│   └── datasets_Rotterdam
 	├── gen
 	│   ├── analysis
 	│   │   ├── audit
