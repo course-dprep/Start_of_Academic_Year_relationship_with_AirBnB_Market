@@ -101,7 +101,6 @@ The final variables in the datasets are as follows:
 	- dummy_month_aug       = dummy variable listing Aug/Sept listings as 1 and March/April as 0. 
 
 ### 2.2 Research Method
-Since the project uses archival data, the type of research is correlational. 
 
 
 
