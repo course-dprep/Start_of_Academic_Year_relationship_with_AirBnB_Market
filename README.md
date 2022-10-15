@@ -129,13 +129,20 @@ Lack of significant effects in the model can be due to the large amount of obser
 
 ## 4. Repository Overview
 ### 4.1 Repository Contents
-The repository consists of three main directories, namely, "data", "src", and "gen". The "data" directory is used to store raw data (which is not uploaded on GitHub but can be retreived from the AirBnB website or by running the respective script), the "src" directory contains the source code of the project, and the "gen" directory stores all generated files.
+The repository consists of three main directories, namely, "data", "src", and "gen". 
 
-   Within the "gen" and "src" directories, there are sub-directories for the data preparation and the data analysis stages; namely, "data-preparation" and "analysis".
+The "data" directory is used to store the data files. (Those are not uploaded on GitHub but can be retreived on the user's local machine by running the respective script. In GitHub, the user will find a readme file which gives information about the data files contents and the data manipulation performed). 
+
+The "src" directory contains the source code of the project, and the "gen" directory stores all generated files.
+ 
+Within the "gen" and "src" directories, there are sub-directories for the data preparation and the data analysis stages, as well as the final deliverable of the project; namely, "data-preparation", "analysis", and "paper".
    
-   Within these sub-directories, there are folders aimed for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output").
-   
-   The final deliverable of the project is stored in the "paper" sub-directory within the "gen" directory.
+ 
+Within these sub-directories, there are folders aimed for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output").
+
+The final deliverable of the project is stored in the "paper" sub-directory within the "gen" directory.
+
+(Note: There are makefiles in the general directory, as well as all sub-directories of the "src" folder as those are used for the pipeline automation.)
 	 
 
 ### 4.2 Repository Structure
@@ -145,18 +152,18 @@ The repository consists of three main directories, namely, "data", "src", and "g
 	├── gen
 	│   ├── analysis
 	│   │   ├── audit
-	│   │   ├── input
 	│   │   ├── output
 	│   │   └── temp
 	│   ├── data-preparation
-	│   │   ├── audit
-	│   │   ├── input
 	│   │   ├── output
 	│   │   └── temp
 	│   └── paper
+	│       ├── output
+	│       └── temp
 	└── src
  	   ├── analysis
- 	   └── data-preparation
+ 	   ├── data-preparation
+	   └── paper
 
 
 
@@ -169,19 +176,23 @@ In addition, Make /add link/ needs to be installed to run the Makefile that will
 We advise the use of the Makefile for correct execution of the project. 
 
 Otherwise, one can execute the scripts in the following order:
-		install_packages.R
-		data_download.R
-		data_merge.R
-		data_exploration.R
+		
+		download_datasets.R
+		
+		apply_functions.R
+		
+		write_datasets.R
+		
 		data_preparation.R
-		data_analysis.R
+		
+		data_exploration.R
+		
+		multiple_regressions.R
 
 
 ## About Us
 This project is created for the course Data Preparation and Workflow Management, which is part of the Marketing Analytics Master program at Tilburg University. The project is executed by Czenkár, L., Hilman, L., Nikiforova, L., Schrouff, K., and Sonneveldt, T. 
 
 ## References
-/ add all references in APA style /
-
 Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
 
