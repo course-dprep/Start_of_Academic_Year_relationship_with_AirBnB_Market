@@ -8,5 +8,5 @@ cal_urls <- c('http://data.insideairbnb.com/belgium/vlg/antwerp/2022-06-22/data/
 lis_datasets <- lapply(lis_urls, read_csv)
 cal_datasets <- lapply(cal_urls, read_csv)
 
-save(cal_datasets,file="./gen/data-preparation/temp/cal_datasets.RData")
-save(lis_datasets,file="./gen/data-preparation/temp/lis_datasets.RData")
+save(cal_datasets,file="../../gen/data-preparation/temp/cal_datasets.RData")
+save(lis_datasets,file="../../gen/data-preparation/temp/lis_datasets.RData")

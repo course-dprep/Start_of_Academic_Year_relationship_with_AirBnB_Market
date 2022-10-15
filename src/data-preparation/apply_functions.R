@@ -2,8 +2,8 @@ library(dplyr)
 library(tidyr)
 library(tidyverse)
 
-load("./gen/data-preparation/temp/cal_datasets.RData")
-load("./gen/data-preparation/temp/lis_datasets.RData")
+load("../../gen/data-preparation/temp/cal_datasets.RData")
+load("../../gen/data-preparation/temp/lis_datasets.RData")
 
 # Create function that calculates average price in August/September and then only extracts those columns with the id column  
 clean_cal_price_aug <- function (dataset) {
@@ -173,8 +173,8 @@ add_dummy_roomtype <- function(dataset){
 clean_lis_datasets <- lapply(clean_lis_datasets, add_dummy_roomtype)
 
 
-save(clean_cal_nights_aug_datasets,file="./gen/data-preparation/temp/clean_cal_nights_aug_datasets.RData")
-save(clean_cal_nights_mar_datasets,file="./gen/data-preparation/temp/clean_cal_nights_mar_datasets.RData")
-save(clean_cal_price_aug_datasets,file="./gen/data-preparation/temp/clean_cal_price_aug_datasets.RData")
-save(clean_cal_price_mar_datasets,file="./gen/data-preparation/temp/clean_cal_price_mar_datasets.RData")
-save(clean_lis_datasets,file="./gen/data-preparation/temp/clean_lis_datasets.RData")
+save(clean_cal_nights_aug_datasets,file="../../gen/data-preparation/temp/clean_cal_nights_aug_datasets.RData")
+save(clean_cal_nights_mar_datasets,file="../../gen/data-preparation/temp/clean_cal_nights_mar_datasets.RData")
+save(clean_cal_price_aug_datasets,file="../../gen/data-preparation/temp/clean_cal_price_aug_datasets.RData")
+save(clean_cal_price_mar_datasets,file="../../gen/data-preparation/temp/clean_cal_price_mar_datasets.RData")
+save(clean_lis_datasets,file="../../gen/data-preparation/temp/clean_lis_datasets.RData")
