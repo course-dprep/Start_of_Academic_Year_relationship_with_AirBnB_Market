@@ -2,19 +2,24 @@
           D A T A S E T   D E S C R I P T I O N
 ==========================================================
 
-Name of the dataset: datasets_Amsterdam
+Name of the dataset: 
+total_amsterdam
+total_antwerp
+total_brussels
+total_berlin
+total_rotterdam 
 
 ----------------------------------------------------------
 
 1. Motivation of data collection (why was the data collected?)
 
-To explore and investigate the B&B market in Amsterdam.
+To explore and investigate the B&B market in several cities.
 In our case to look at how B&B prices are affected by the start of the academic year. 
 
 2. Composition of dataset (what's in the data?)
 
 A large set of variables describing various aspects of each B&B listing.
-Data consists of two seperate dataset "Listings" and "Calender" which were combined to create the Amsterdam dataset. 
+Data consists of two seperate dataset "Listings" and "Calender" which were combined to create the dataset for each city. 
 These are scraped from the B&B website by Inside B&B and are real world data. 
 After filtering these are the variables in the dataset;
 - id                    = Airbnb's unique identifier for the listing 
