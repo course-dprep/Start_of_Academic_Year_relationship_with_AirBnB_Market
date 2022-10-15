@@ -57,7 +57,7 @@ t.test(average_price ~ host_is_superhost, data=total_antwerp) #y = average_price
 t.test(average_price ~ room, data=total_antwerp) #y = average_price, room = x
 
 #visualize, plot variables 
-plot_pr <- ggplot(total_amsterdam, mapping = aes(x = average_price, y = minimum_nights)) +
+plot_pr <- ggplot(total_antwerp, mapping = aes(x = average_price, y = minimum_nights)) +
   geom_line()
 
 plot_pr
