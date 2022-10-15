@@ -72,6 +72,6 @@ plots_maxnights_rotterdam <- plot(lm10)
 
 # Save results
 save(lm1, lm2, lm3, lm4, lm5, lm6, lm7, lm8, lm9, lm10, file="./gen/analysis/output/model_results.RData")
-save(regression_price_antwerp,regression_price_amsterdam, regression_price_berlin, regression_price_brussels, regression_price_rotterdam, regression_maxnights_antwerp, regression_maxnights_amsterdam, regression_maxnights_berlin, regression_maxnights_brussels, regression_maxnights_rotterdam, file="./gen/analysis/audit/model_estimation1.RData")
-save(plots_price_antwerp, plots_price_amsterdam, plots_price_berlin, plots_price_brussels, plots_price_rotterdam, plots_maxnights_antwerp, plots_maxnights_amsterdam, plots_maxnights_berlin, plots_maxnights_brussels, plots_maxnights_rotterdam, file="./gen/analysis/audit/model_estimation2.RData")
+save(regression_price_antwerp,regression_price_amsterdam, regression_price_berlin, regression_price_brussels, regression_price_rotterdam, regression_maxnights_antwerp, regression_maxnights_amsterdam, regression_maxnights_berlin, regression_maxnights_brussels, regression_maxnights_rotterdam, file="./gen/analysis/temp/model_estimation1.RData")
+save(plots_price_antwerp, plots_price_amsterdam, plots_price_berlin, plots_price_brussels, plots_price_rotterdam, plots_maxnights_antwerp, plots_maxnights_amsterdam, plots_maxnights_berlin, plots_maxnights_brussels, plots_maxnights_rotterdam, file="./gen/analysis/temp/model_estimation2.RData")
 
