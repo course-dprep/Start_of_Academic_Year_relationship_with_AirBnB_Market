@@ -30,11 +30,11 @@ After filtering these are the variables in the dataset;
 
 3. Collection process (how was the data collected?)
 
-Data is downloaded from web. See src/data-preparation/download_data.R.  ###?????
+Data is downloaded from web. See src/data-preparation/download_datasets.R. 
 
 4. Preprocessing/cleaning/labeling (how was the data cleaned, if at all?)
 
-No preprocessing. All done in data-preparation stage.  ##????
+
 Price was converted into a numeric variable. 
 Data selection was made to just include data for 15 August to 15 September 2022 and 15 March to 15 April 2023. 
 Two datasets for calender and listings were combined to one based on matching "id". 
