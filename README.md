@@ -3,6 +3,8 @@
 ## Project Summary
 This project uses archival data from the AirBnB website to investigate the relationship between the beginning of the academic year and the AirBnB market in five major Western-European cities.
 
+![airbnb-logo-and-student](https://user-images.githubusercontent.com/112591530/196049503-b96ab980-aee0-4f80-bfdb-2bf7ac652ed6.png)
+
 ## Contents
 [1. Introduction](#1-introduction) 
 
