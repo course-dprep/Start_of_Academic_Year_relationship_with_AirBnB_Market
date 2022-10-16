@@ -1,9 +1,11 @@
 # The relationship between the start of the academic year and the AirBnB market in student cities in Western Europe
 
 ## Project Summary
-This project uses archival data from the AirBnB website to investigate the relationship between the beginning of the academic year and the AirBnB market in five major Western-European cities.
+This project uses archival data from the AirBnB website to analyse the relationship between the beginning of the academic year and the AirBnB market in five major Western-European cities.
+It investigates whether the prices and the average nights for which an accomodation can be rented differ significantly at the beggining of the academic year compared to a regular period during the academic year (not close to beginning/end of academic year and when no official big holidays take place) and takes into consideration the moderating role of the type of AirBnB host (ordinary vs superhost) and the type of accomodation (entire apartment vs single room).
 
-![airbnb-logo-and-student](https://user-images.githubusercontent.com/112591530/196049503-b96ab980-aee0-4f80-bfdb-2bf7ac652ed6.png)
+![airbnb-logo-and-student3](https://user-images.githubusercontent.com/112591530/196049694-3585dc9d-d527-43d3-90ce-d4c8500ae052.png)
+
 
 ## Contents
 [1. Introduction](#1-introduction) 
