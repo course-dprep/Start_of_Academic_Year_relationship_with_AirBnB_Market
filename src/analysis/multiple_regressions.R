@@ -8,6 +8,8 @@ total_rotterdam <- read_csv("../../data/total_rotterdam.csv")
 total_brussels <- read_csv("../../data/total_brussels.csv")
 total_berlin <- read_csv("../../data/total_berlin.csv")
 
+all_datasets <- list(total_antwerp, total_amsterdam, total_berlin, total_brussels, total_rotterdam)
+
 #########################
 #########################
 ####### DV price ########
@@ -15,19 +17,18 @@ total_berlin <- read_csv("../../data/total_berlin.csv")
 #########################
 
 # Multiple linear regressions for each city for DV=price (two two-way interactions)
-# this regression gives the individual effects of each variable and the interactions between the IV and each moderator (but not between the two moderators)
-lm1 <- lm(average_price ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_antwerp)
-lm2 <- lm(average_price ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_amsterdam)
-lm3 <- lm(average_price ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_berlin)
-lm4 <- lm(average_price ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_brussels)
-lm5 <- lm(average_price ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_rotterdam)
+lm_average_price <- function (dataset) {
+  lm(average_price ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, dataset)
+}
+
+all_lm_average_price <- lapply(all_datasets, lm_average_price)
 
 #Regression summary for each city (DV=price)
-regression_price_antwerp <- summary(lm1)
-regression_price_amsterdam <- summary(lm2)
-regression_price_berlin <- summary(lm3)
-regression_price_brussels <- summary(lm4)
-regression_price_rotterdam <- summary(lm5)
+regression_price_antwerp <- summary(all_lm_average_price[[1]])
+regression_price_amsterdam <- summary(all_lm_average_price[[2]])
+regression_price_berlin <- summary(all_lm_average_price[[3]])
+regression_price_brussels <- summary(all_lm_average_price[[4]])
+regression_price_rotterdam <- summary(all_lm_average_price[[5]])
 
 
 #########################
@@ -38,39 +39,33 @@ regression_price_rotterdam <- summary(lm5)
 
 # Multiple linear regressions for each city for DV=maximum_nights (two two-way interactions)
 # this regression gives the individual effects of each variable and the interactions between the IV and each moderator (but not between the two moderators)
-lm6 <- lm(average_nights ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_antwerp)
-lm7 <- lm(average_nights ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_amsterdam)
-lm8 <- lm(average_nights ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_berlin)
-lm9 <- lm(average_nights ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_brussels)
-lm10 <- lm(average_nights ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, total_rotterdam)
+lm_avg_nights <- function(dataset) {
+  lm_avg_nights <- lm(average_nights ~ dummy_month_aug*room + dummy_month_aug*host_is_superhost, dataset)
+}
 
-# Regression summary for each city (DV=maximum_nights)
-regression_avgnights_antwerp <- summary(lm6)
-regression_avgnights_amsterdam <- summary(lm7)
-regression_avgnights_berlin <- summary(lm8)
-regression_avgnights_brussels <- summary(lm9)
-regression_avgnights_rotterdam <- summary(lm10)
+all_lm_avg_nights <- lapply(all_datasets, lm_avg_nights)
 
-regression_avgnights_antwerp
-regression_avgnights_amsterdam
-regression_avgnights_berlin
-regression_avgnights_brussels
-regression_avgnights_rotterdam
-
+# Regression summary for each city (DV=average_nights)
+regression_avgnights_antwerp <- summary(all_lm_avg_nights[[1]])
+regression_avgnights_amsterdam <- summary(all_lm_avg_nights[[2]])
+regression_avgnights_berlin <- summary(all_lm_avg_nights[[3]])
+regression_avgnights_brussels <- summary(all_lm_avg_nights[[4]])
+regression_avgnights_rotterdam <- summary(all_lm_avg_nights[[5]])
 
 # Plots to check assumptions
-plots_price_antwerp <- plot(lm1)
-plots_price_amsterdam <- plot(lm2)
-plots_price_berlin <- plot(lm3)
-plots_price_brussels <- plot(lm4)
-plots_price_rotterdam <- plot(lm5)
-plots_avgnights_antwerp <- plot(lm6)
-plots_avgnights_amsterdam <- plot(lm7)
-plots_avgnights_berlin <- plot(lm8)
-plots_avgnights_brussels <- plot(lm9)
-plots_avgnights_rotterdam <- plot(lm10)
+plots_price_antwerp <- plot(all_lm_average_price[[1]])
+plots_price_amsterdam <- plot(all_lm_average_price[[2]])
+plots_price_berlin <- plot(all_lm_average_price[[3]])
+plots_price_brussels <- plot(all_lm_average_price[[4]])
+plots_price_rotterdam <- plot(all_lm_average_price[[5]])
+plots_avgnights_antwerp <- plot(all_lm_avg_nights[[1]])
+plots_avgnights_amsterdam <- plot(all_lm_avg_nights[[2]])
+plots_avgnights_berlin <- plot(all_lm_avg_nights[[3]])
+plots_avgnights_brussels <- plot(all_lm_avg_nights[[4]])
+plots_avgnights_rotterdam <- plot(all_lm_avg_nights[[5]])
+
 
 # Save results
-save(lm1, lm2, lm3, lm4, lm5, lm6, lm7, lm8, lm9, lm10, file="../../gen/analysis/output/model_results.RData")
+save(all_lm_average_price, all_lm_avg_nights, file="../../gen/analysis/output/model_results.RData")
 save(regression_price_antwerp,regression_price_amsterdam, regression_price_berlin, regression_price_brussels, regression_price_rotterdam, regression_avgnights_antwerp, regression_avgnights_amsterdam, regression_avgnights_berlin, regression_avgnights_brussels, regression_avgnights_rotterdam, file="../../gen/analysis/temp/model_estimation1.RData")
 save(plots_price_antwerp, plots_price_amsterdam, plots_price_berlin, plots_price_brussels, plots_price_rotterdam, plots_avgnights_antwerp, plots_avgnights_amsterdam, plots_avgnights_berlin, plots_avgnights_brussels, plots_avgnights_rotterdam, file="../../gen/analysis/temp/model_estimation2.RData")
