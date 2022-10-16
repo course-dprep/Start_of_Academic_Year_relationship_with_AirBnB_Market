@@ -96,6 +96,7 @@ Due to the fact that the focus of our research is to identify whether the start 
 ## 3. Main Results and conclusion
 
 *Main Results*
+
 When running the regression we have checked the effect of the independent variable namely 'dummy_month_aug' for each of the five cities on the two dependent variables; 'average_price' and 'average_nights'. As the focus of our research is to identify whether the start of the academic year, represented by 'dummy_month_aug', has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely 'room' and 'host_is_superhostTRUE'.
 
 Regarding the relationship between the start of the academic and the AirBnB prices, there were no significant results that we obtained are for the cities. 
