@@ -242,36 +242,62 @@ When running the regression we have checked the effect of the independent variab
 
 ```
 
-For the first city, Antwerp, we could not find any significant effects for the variables of interest.
+First regression on price 
+
+For Antwerp There is no significant effect observed for the start of the academic year on price. Room type and superhost do appear to have a significant effect on the price. With entire apartments (value 1) the price goes up €28.43 compared to the other room types. When the host is a superhost the price actually goes up by €6.25. The interactions between the independent variables are insignificant. 
+
+For Amsterdam there is no significant effect observed for the start of the academic year on price. The room type is a very significant with a p-value below 0.001 and shows a increase of €54.22 when the room type is entire apartment.  Host_is_superhost  is also significant causing a €8.11 decrease and the interactions are not significant. 
+
+For Berlin there is no significant effect observed for the start of the academic year on price. The p-value is very high with 0.26. The only significant moderators are room type which has a very low p-value bellow 0.01 and increases the price by €37.74 and host_is_superhost increasing the price by €14.34.  
+
+For Brussels there is no significant effect observed for the start of the academic year on price. The room type is a very significant with a p-value below 0.001 and shows a increase of €26.18 when the room type is entire apartment.  Host_is_superhost  is also significant causing a €3.74 increase and the interactions are not significant. 
+
+For Rotterdam there is no significant effect observed for the start of the academic year on price. The room type is significant causing a €39.48 increase. And the host_is_superhost IV is also significant and causes a €8.47 decrease in price. 
+
+
+```{r}
+
+```
+Second regression on average nights
+
+For Antwerp there is no significant effect observed for the start of the academic year on average nights. Only the moderator host_is_superhost is significant causing a 131.14 increase.
+
+For Amsterdam there is no significant effect observed for the start of the academic year on average nights. Only the moderator host_is_superhost is significant causing a 152.34 increase and room type causes a 135.13 decrease. 
+
+For Berlin there is no significant effect observed for the start of the academic year on average nights. The moderator room causes a significant 47.40 increase and as significant 88.54 increase for host_is_superhost. 
+
+For Brussels there is no significant effect observed for the start of the academic year on average nights. Here room type has a significant effect, causing an increase of 80.45 and host_is_superhost is causing a significant 71.11 increase. 
+
+For Rotterdam there is no significant effect observed for the start of the academic year on average nights. None of the moderators are significant.
+
 
 ```{r}
 
 ```
 
-For Amsterdam there is a significant effect for the interaction between 'dummy_month_aug' and 'host_is_superhostTRUE', meaning that at the start of the academic year there is an increase of 11.5 euros in average price for Airbnb super hosts. For the other dependent variable we could not find any significant effects.
-
-```{r}
-
-```
-
-In the case of Berlin we have a highly significant negative effect between the DV 'average price' and the start of the academic year, meaning there is a decrease of 28.56 euros in the price at the start of the academic year compared to March/April. Another significant effect for this DV is the interaction between start of the academic year and the room dummy, meaning that the average price at the start of the academic year increases by 24.3 euros for homes and apartments. For the other DV, 'average_nights' no significant effects were found.
-
-```{r}
-
-```
-
-For Brussels, no significant effects were found for either of the DVs.
-
-```{r}
-
-```
-
-Lastly, for Rotterdam for the DV 'average price' there is a significant effect with the IV 'dummy_month_aug'. On average prices are lower by 22.9 euros in August/September compared to March/April.
 
 ## 4. Conclusion
 
-According to the expectations of this analysis we would have found that the start of the academic year will positively influence the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. However, the results did not confirm our expectations as Airbnb prices were considerably lower in August than in March in all the cities where we found significant effects. Another expectation of the study was that average nights would increase as well at the start of the academic year, since students looking for permanent accommodation might need a few weeks or even months to succeed. Despite these expectations we found no significant effects for average nights for any of the cities, therefore, we can conclude that the start of the academic year has no significant effect on the average nights Airbnb users spend at an accommodation.
+According to the expectations of this analysis we would have found that the start of the academic year will positively influence the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. Unfortunately none of our regression had significant results for the effect of the start of the academic year on the price.
 
+Another expectation of the study was that average nights would increase as well at the start of the academic year, since students looking for permanent accommodation might need a few weeks or even months to succeed. Despite these expectations we found no significant effects for average nights for any of the cities, therefore, we can conclude that the start of the academic year has no significant effect on the average nights Airbnb users spend at an accommodation.
+
+Next we will answer the questions we formulated at the start of this paper:
+
+\- How are the Airbnb prices related to the period of the academic year (beginning vs regular period)?
+Based on our results it does not appear to be as our regression models did not find any significant effects for the start of the academic year. 
+
+\- How does the relationship between Airbnb prices and period of the academic year depend on the type of host (ordinary vs superhost)?
+Yes it does, for most cities there was a positive effect. With superhost causing an increase in price of 3.74 euros to over 14 euros depending on the city. But it does cause a decrease for Amsterdam and Rotterdam.  
+
+\- How does the relationship between Airbnb prices and period of the academic year depend on the type of accommodation (room vs apartment)?
+
+
+\- How is the maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
+
+\- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of host (ordinary vs superhost)?
+
+\- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of accommodation (room vs apartment)?
 ## 5. Discussion
 
 Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of such research. Therefore, we could not control for the quality of the data. The lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time. Furthermore with all the price increases recently it's possible that the price going up for March/April seen in Berlin is caused by the room owners expecting increases in the cost of material or goods they need for the room. But this would presumably be the case for all cities, unless there were cultural differences between the countries.
