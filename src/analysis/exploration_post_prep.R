@@ -280,3 +280,9 @@ plot_pr
 plot(total_rotterdam$average_price, total_rotterdam$minimum_nights)
 plot(total_rotterdam$average_price, total_rotterdam$maximum_nights)
 plot(total_rotterdam$average_price, total_rotterdam$average_nights)
+
+save(total_antwerp, file="../../gen/analysis/temp/total_antwerp.RData")
+save(total_amsterdam, file="../../gen/analysis/temp/total_amsterdam.RData")
+save(total_berlin, file="../../gen/analysis/temp/total_berlin.RData")
+save(total_brussels, file="../../gen/analysis/temp/total_brussels.RData")
+save(total_rotterdam, file="../../gen/analysis/temp/total_rotterdam.RData")

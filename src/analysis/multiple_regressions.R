@@ -2,11 +2,11 @@ library(dplyr)
 library(tidyr)
 library(tidyverse)
 
-total_antwerp <- read_csv("../../data/total_antwerp.csv")
-total_amsterdam <- read_csv("../../data/total_amsterdam.csv")
-total_rotterdam <- read_csv("../../data/total_rotterdam.csv")
-total_brussels <- read_csv("../../data/total_brussels.csv")
-total_berlin <- read_csv("../../data/total_berlin.csv")
+load("../../gen/analysis/temp/total_antwerp.RData")
+load("../../gen/analysis/temp/total_amsterdam.RData")
+load("../../gen/analysis/temp/total_rotterdam.RData")
+load("../../gen/analysis/temp/total_brussels.RData")
+load("../../gen/analysis/temp/total_berlin.RData")
 
 all_datasets <- list(total_antwerp, total_amsterdam, total_berlin, total_brussels, total_rotterdam)
 
