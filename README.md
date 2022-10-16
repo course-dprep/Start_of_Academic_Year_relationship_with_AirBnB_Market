@@ -93,7 +93,7 @@ As we investigate the relationships for each of the two models with data for 5 d
 Due to the fact that the focus of our research is to identify whether the start of the academic year, represented by "dummy_month_aug" is related to the DVs, and also to see whether this relationship depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators ("room" and "host_is_superhostTRUE").
 
 
-## 3. Main Results and Conclusion
+## 3. Main Results and conclusion
 
 *Main Results*
 When running the regression we have checked the effect of the independent variable namely 'dummy_month_aug' for each of the five cities on the two dependent variables; 'average_price' and 'average_nights'. As the focus of our research is to identify whether the start of the academic year, represented by 'dummy_month_aug', has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely 'room' and 'host_is_superhostTRUE'.
@@ -102,50 +102,24 @@ Regarding the relationship between the start of the academic and the AirBnB pric
 With regards to the relationship between the start of the academic and the average maximum nights for which an accomodation is available there was no significant relationship. 
 
 There were some significant effect from the moderators on price and on average maximum nights. 
+The prices increased when the host is a superhost for all cities besides Amsterdam and Rotterdam.
+The type of room causing an increase in price for all cities.
+The average number of maximum nights goes up for superhost for all cities but Rotterdam.
+The average number of maximum nights going up for roomtype for Amsterdam, Berlin and Brussels
 
-```{r}
-```
-
-
-## 4. Conclusion
+*Conclusion*
 
 According to the expectations of this analysis we would have found that the start of the academic year will positively influence the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. Unfortunately none of our regression had significant results for the effect of the start of the academic year on the price.
 
 Another expectation of the study was that average nights would increase as well at the start of the academic year, since students looking for permanent accommodation might need a few weeks or even months to succeed. Despite these expectations we found no significant effects for average nights for any of the cities, therefore, we can conclude that the start of the academic year has no significant effect on the average maximum nights Airbnbs are available. 
 
-Next we will answer the questions we formulated at the start of this paper:
-
-\- How are the Airbnb prices related to the period of the academic year (beginning vs regular period)?
-Based on our results it does not appear to be as our regression models did not find any significant effects for the start of the academic year. 
-
-\- How does the relationship between Airbnb prices and period of the academic year depend on the type of host (ordinary vs superhost)?
-This interaction is not significant for any of the cities. But for most cities there was a positive effect caused by superhost. With superhost causing an increase in price of 3.74 euros to over 14 euros depending on the city. But it does cause a decrease for Amsterdam and Rotterdam.  
-
-\- How does the relationship between Airbnb prices and period of the academic year depend on the type of accommodation (room vs apartment)?
-This interaction is not significant for any of the cities. But the type of accommodation does have a positive effect on price for all of the cities. 
-
-\- How is the maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
-Based on our results it does not appear to be as our regression models did not find any significant effects for the start of the academic year. 
-
-\- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of host (ordinary vs superhost)?
-This interaction is not significant for any of the cities. But for all of the cities besides Rotterdam there is a positive effect caused by superhost on average maximum number of nights.
-
-\- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of accommodation (room vs apartment)?
-This interaction is not significant for any of the cities. But for Amsterdam, Berlin, Brussels there is a positive effect caused by roomtype on average maximum number of nights.
-
 ```{r}
 ```
-## 5. Discussion
+*Discussion*
 
 Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of such research. Therefore, we could not control for the quality of the data. The lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time.
 
-The prices increasing when the host is a superhost for all cities besides Amsterdam and Rotterdam is interesting as we thought the superhost might have lower pricing as they can access bulk buying options for materials and can hire cleaners. That Rotterdam and Amsterdam are different is also curious. The type of room causing an increase in price for all cities makes sense. As it is logical a whole appartement will be more expencive than a single room.
-
-The average number of maximum nights going up for superhost for all cities but Rotterdam makes sense. As superhost are not renting out just a room in their home they might need themselves at times but a professional business. So having their bnb's available for longer is logical.
-
-The average number of maximum nights going up for roomtype for Amsterdam, Berlin and Brussels makes sense too. As the cleaning and such for a large appartement is likely more work than for a single room, so offering the appartement for longer means less work for them. Furthermore full appartements likely attract people renting for different reasons than those renting a single room. 
-
-We do not have enough information to make conclusions on the few significant relationships we see between our DV and the moderators. 
+Some of the impact of the moderators on the DV makes sense, others do not. We do not have enough information to make conclusions on the few significant relationships we see between our DV and the moderators. 
 
 In conclusion, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities.
 
