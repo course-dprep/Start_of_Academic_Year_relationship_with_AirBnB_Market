@@ -177,3 +177,13 @@ This project is created for the course Data Preparation and Workflow Management,
 ## References
 Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
 
+## Sources
+*Data sources:* 
+[Inside AirBnB](http://insideairbnb.com/)
+
+*Image sources:* 
+
+[Freebie Supply](https://freebiesupply.com/logos/airbnb-logo/)
+
+[The Noun Project](https://thenounproject.com/icon/student-search-732583/) 
+
