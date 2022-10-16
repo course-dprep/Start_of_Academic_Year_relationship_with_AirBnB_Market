@@ -10,4 +10,4 @@ $(TEMP)/model_estimation1.RData: multiple_regressions.R Rplots.pdf
 	Rscript multiple_regressions.R
 
 data_exploration.pdf: data_exploration.Rmd $(TEMP)/model_estimation1.RData
-	R --vanilla < run_data_exploration.R
+	Rscript -e 'rmarkdown::render("data_exploration.Rmd")'
