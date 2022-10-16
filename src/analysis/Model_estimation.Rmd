@@ -25,6 +25,12 @@ However, since the sample is large, we proceed with the model despite the fact t
 
 The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~8%).
 
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_average_price[[1]])
+
+```
 
 ### Amsterdam
 ```{r echo=FALSE}
