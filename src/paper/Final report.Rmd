@@ -80,16 +80,9 @@ To answer our research questions, we designed the following conceptual model. We
 ##### Data exploration raw data 
 For this project we used publicly available archival data from Airbnb. In total, ten datasets were retrieved from the website www.insideairbnb.com, two for each city of interest. First the raw data was explored. For this we looked at the variable of interest to our research question. For the metric variables we made boxplots and took the summary statistics. For the categorical variable we took the count of each one to get a insight into their comperative numbers. 
 
-# THIS IS THE NEW ONE!!!
-|Dataset: | Min. | 1st quartile |Median | Mean | #rd quartile | Max. |
-|---|---|---|---|---|---|---|
-|Antwerp| 1 | 35 | 365| 617| 1125 | 1125 |
-|Amsterdam| 1| 22 | 180| 493 | 1125 | 1825 |
-
-#  IGNORE ALL ELSE
-
+|Maximum nights | | | | | | |
 |Dataset: | Min. | 1st quartile | Median | Mean | 3rd quartile | Max. |
-|----------|------------|------------|-------------|-------------|-------------|-------------|
+|:----------|:------------|:------------|:-------------|:-------------|:-------------|:-------------|
 | Antwerp   | 1    |   35 |  365   |  617   |  1125   | 1125    |
 | Amsterdam  |  1   |  22  |  180   |  493   | 1125    |  1825   |
 | Brussels  |  1   |  90  |  365   | 631.8    | 1125    | 1555    |
