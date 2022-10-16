@@ -65,6 +65,7 @@ plot(all_lm_avg_nights[[4]])
 plot(all_lm_avg_nights[[5]])
 
 
+
 # Save results
 save(all_lm_average_price, all_lm_avg_nights, file="../../gen/analysis/output/model_results.RData")
 save(regression_price_antwerp,regression_price_amsterdam, regression_price_berlin, regression_price_brussels, regression_price_rotterdam, regression_avgnights_antwerp, regression_avgnights_amsterdam, regression_avgnights_berlin, regression_avgnights_brussels, regression_avgnights_rotterdam, file="../../gen/analysis/temp/model_estimation1.RData")
