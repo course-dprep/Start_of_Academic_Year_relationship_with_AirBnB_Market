@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## Regression summary for DV = price
+## Regression summary and plots for DV = price
 ### Antwerp
 ```{r echo=FALSE}
 load("../../gen/analysis/temp/model_estimation1.RData")
