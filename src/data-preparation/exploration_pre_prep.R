@@ -135,4 +135,4 @@ boxplots_interest(tot_berlin)
 table(tot_berlin$room_type)
 table(tot_berlin$host_is_superhost)
 
-save(tot_rotterdam, file="../../gen/analysis/temp/tot_rotterdam.RData")
+save(tot_rotterdam, file="../../gen/data-preparation/temp/tot_rotterdam.RData")

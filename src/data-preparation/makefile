@@ -9,7 +9,10 @@ $(TEMP)/install_packages.txt: install_packages.R
 $(TEMP)/cal_datasets.RData: download_datasets.R $(TEMP)/install_packages.txt
 	Rscript download_datasets.R 
 
-$(TEMP)/clean_lis_datasets.RData: apply_functions.R $(TEMP)/cal_datasets.RData
+$(TEMP)/tot_rotterdam.RData: exploration_pre_prep.R $(TEMP)/cal_datasets.RData
+	Rscript exploration_pre_prep.R
+
+$(TEMP)/clean_lis_datasets.RData: apply_functions.R $(TEMP)/tot_rotterdam.RData
 	Rscript apply_functions.R
 
 $(DATA)/total_rotterdam.csv: write_datasets.R $(TEMP)/clean_lis_datasets.RData
