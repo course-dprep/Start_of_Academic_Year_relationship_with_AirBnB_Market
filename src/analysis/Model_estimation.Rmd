@@ -1,0 +1,232 @@
+---
+title: Model estimation
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+## Regression summary and plots for DV = price
+### Antwerp
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_antwerp
+
+```
+The negative median indicates that the residuals are skewed to the left.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~8%).
+
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_average_price[[1]])
+
+```
+
+### Amsterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_amsterdam
+
+```
+The negative median indicates that the residuals are skewed to the left.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~9%).
+
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_average_price[[2]])
+
+```
+
+
+### Berlin
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_berlin
+
+```
+The negative median indicates that the residuals are skewed to the left.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. 24% of the variance in the DV is explained by the model.
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_average_price[[3]])
+
+```
+
+
+### Brussels
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_brussels
+
+```
+The negative median indicates that the residuals are skewed to the left.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~12%).
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_average_price[[4]])
+
+```
+
+
+
+### Rotterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_rotterdam
+
+```
+
+The negative median indicates that the residuals are skewed to the left.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~12%). 
+
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_average_price[[5]])
+
+```
+
+
+
+## Regression summary for DV = average nights
+### Antwerp
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_antwerp
+
+```
+The positive median indicates that the residuals are skewed to the right.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~1%).
+
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_avg_nights[[1]])
+
+```
+
+
+### Amsterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_amsterdam
+
+```
+The positive median indicates that the residuals are skewed to the right.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~3%).
+
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_avg_nights[[2]])
+
+```
+
+
+### Berlin
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_berlin
+
+```
+The positive median indicates that the residuals are skewed to the right.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, an extremely low percentage of the variance in the data is explained by the model (<1%).
+
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_avg_nights[[3]])
+
+```
+
+
+### Brussels
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_brussels
+
+```
+The positive median indicates that the residuals are skewed to the right.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, an extremely low percentage of the variance in the data is explained by the model (~1%).
+
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_avg_nights[[4]])
+
+```
+
+
+### Rotterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_rotterdam
+
+```
+The positive median indicates that the residuals are skewed to the right.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, an extremely low percentage of the variance in the data is explained by the model (<1%).
+
+```{r echo=FALSE}
+load("../../gen/analysis/output/model_results.RData")
+
+plot(all_lm_avg_nights[[5]])
+
+```

@@ -11,5 +11,5 @@ paper: analysis
 	make -C src/paper
 
 clean: 
-	Rscript src/data-preparation/clean-up.R
+	Rscript src/data-preparation/clean_up.R
 	
