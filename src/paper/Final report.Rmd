@@ -36,9 +36,11 @@ This project uses archival data from the Airbnb website to investigate the relat
 
 3.  Results
 
-4.  Discussion
+4.  Conclusion
 
-5.  References
+5.  Discussion
+
+6.  References
 
 ## 1. Introduction
 
@@ -77,8 +79,11 @@ To answer our research questions, we designed the following conceptual model. We
 ## 2. Methodology
 
 #### *2.1 Data*
+
+For this project we used publicly available archival data from Airbnb. In total, ten datasets were retrieved from the website www.insideairbnb.com, two for each city of interest. For each city of the five cities two datasets were downloaded "Listings.csv" and "calendar.csv" both containing different variables. The listings dataset contained information per listing about the type of property and it's features. The calendar dataset contained info on the price of the property on different dates and it's availability. We combined these datasets together on id to create one dataset for each city. This data was then explored (see: "Data exploration raw data"). Later a selection of the variables we were interested in was made as well as selecting only specific dates. This is described in more detail under "Data Transformation". 
+
 ##### Data exploration raw data 
-For this project we used publicly available archival data from Airbnb. In total, ten datasets were retrieved from the website www.insideairbnb.com, two for each city of interest. First the raw data was explored. For this we looked at the variable of interest to our research question. For the metric variables we made boxplots and took the summary statistics. For the categorical variable we took the count of each one to get a insight into their comperative numbers. 
+First the raw data was explored. For this we looked at the variable of interest to our research question. For the metric variables we made boxplots and took the summary statistics. For the categorical variable we took the count of each one to get a insight into their comperative numbers. 
 
 *Maximum Nights*
 |Dataset: | Min. | 1st quartile | Median | Mean | 3rd quartile | Max. |
@@ -255,14 +260,17 @@ For Brussels, no significant effects were found for either of the DVs.
 
 Lastly, for Rotterdam for the DV 'average price' there is a significant effect with the IV 'dummy_month_aug'. On average prices are lower by 22.9 euros in August/September compared to March/April.
 
-## 4. Discussion
+## 4. Conclusion
 
-Lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time. Furthermore with all the price increases recently it's possible that the price going up for March/April seen in Berlin is caused by the room owners expecting increases in the cost of material or goods they need for the room. But this would presumably be the case for all cities, unless there were cultural differences between the countries.
+According to the expectations of this analysis we would have found that the start of the academic year will positively influence the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. However, the results did not confirm our expectations as Airbnb prices were considerably lower in August than in March in all the cities where we found significant effects. Another expectation of the study was that average nights would increase as well at the start of the academic year, since students looking for permanent accommodation might need a few weeks or even months to succeed. Despite these expectations we found no significant effects for average nights for any of the cities, therefore, we can conclude that the start of the academic year has no significant effect on the average nights Airbnb users spend at an accommodation.
 
-*Conclusion*
+## 5. Discussion
 
-According to the expectations of this analysis we would have found that the start of the academic year will positively influence the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. However, the results did not confirm our expectations as Airbnb prices were considerably lower in August than in March in all the cities where we found significant effects. Another expectation of the study was that average nights would increase as well at the start of the academic year, since students looking for permanent accommodation might need a few weeks or even months to succeed. Despite these expectations we found no significant effects for average nights for any of the cities, therefore, we can conclude that the start of the academic year has no significant effect on the average nights Airbnb users spend at an accommodation.\
+Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of such research. Therefore, we could not control for the quality of the data. The lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time. Furthermore with all the price increases recently it's possible that the price going up for March/April seen in Berlin is caused by the room owners expecting increases in the cost of material or goods they need for the room. But this would presumably be the case for all cities, unless there were cultural differences between the countries.
 
-## 5. References
+In conclusion, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities.
+
+
+## 6. References
 
 Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
