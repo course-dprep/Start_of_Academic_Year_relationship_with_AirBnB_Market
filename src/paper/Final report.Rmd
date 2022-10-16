@@ -78,9 +78,34 @@ To answer our research questions, we designed the following conceptual model. We
 
 #### *2.1 Data*
 
-For this project we used publicly available archival data from Airbnb. In total, ten datasets were retrieved from the website www.insideairbnb.com, two for each city of interest. Every two datasets per city were merged into one, based on listing ID. Afterwards, the data was explored and prepared.
+For this project we used publicly available archival data from Airbnb. In total, ten datasets were retrieved from the website www.insideairbnb.com, two for each city of interest. First the raw data was explored. For this we looked at the variable of interest to our research question. For the metric variables we made boxplots and took the summary statistics. For the categorical variable we took the count of each one to get a insight into their comperative numbers. 
+
+*Maximum Nights*
+All dataset have the logical min. maximum number of nights at 1.The 3rd quartile number is the same for all cities. Brussels, Berlin and Rotterdam all have the same median. All the max. And 3rd quartile numbers don’t make much sense as they are so high that it would mean you could rent the property for several years in a row. Likely this is some automatically filled in number or people don’t think about it. Based on the differences between the median and mean for every city, the mean likely isn’t representative and heavily influenced by the large outliers. But even the median is very high as apparently you can rent out the property for a full year. 
+
+|Dataset: | Min. | 1st quartile | Median | Mean | 3rd quartile | Max. |
+|----------|------------|------------|-------------|-------------|-------------|-------------|
+|  Antwerp   | 1    |   35 |  365   |  617   |  1125   | 1125    |
+| Amsterdam  |  1   |  22  |  180   |  493   | 1125    |  1825   |
+| Brussels  |  1   |  90  |  365   | 631.8    | 1125    | 1555    |
+| Berlin  |  1   | 29   |  365   |  518.2   | 1125     | 9999    |
+| Rotterdam  |   1  |  30  |  365   |  515.8   |  1125   |  1125   |
+
+*Price*
+For price there are very different outputs for all cities. Three cities have 0 as their minimum price, which doesn't make sense as that would mean the property was available for free. So likely this means that the property is rented out or not available. Looking at the median and mean Amsterdam is the most pricy city. Followed by Rotterdam, Antwerp, Brussels and then Berlin. The max. For many of the cities is also insanely high, so far off from the median and mean that once again this is likely some automatic fill out to indicate it’s not available or a scrapping error. For all cities the price compared from the 1st quartile to the 3rd quartile is doubled, this can be because they are different types of rooms and have different price ranges. Or increase in price based on the tourist season or not. 
+
+
+*Minumum Nights*
+The minimum nights variable is similar for all cities. The mean once again differs greatly from the median and each city has a very large max. Values. So likely the outliers impact the mean strongly. The 2-3 minimum number of nights makes sense as cleaning and such gets more expensive and more to deal with the more often you have to do it. Demanding guest stay 2 nights is to lower the workload for the property manager. 
+
+
+Antwerp and Rotterdam are the smallest datasets. Berlin is the largest followed by Amsterdam and then Brussels. For all dataset the room_type show the same ratio for each type. Entire home has the largest occurrence count, followed by Private room, then Hotel room and finally Shared room. So as the difference in counts are so large the decision was made to group Hotel room, private room and shared room together as one group. 
+
+
 
 *Data Transformation*
+
+Every two datasets per city were merged into one, based on listing ID. Afterwards, the data was explored and prepared.
 
 A selection was made for all cities to take the dates from 15th of March to the 15th of April 2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices.
 
