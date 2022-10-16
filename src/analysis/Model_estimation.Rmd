@@ -1,0 +1,113 @@
+---
+title: Model estimation
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+## Regression summary for DV = price
+### Antwerp
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_antwerp
+
+```
+
+
+
+### Amsterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_amsterdam
+
+```
+
+### Berlin
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_berlin
+
+```
+
+### Brussels
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_brussels
+
+```
+
+
+
+### Rotterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_price_rotterdam
+
+```
+
+The negative median indicates that the residuals are skewed to the left.
+
+The difference between the magnitude of the first quartile (1Q) and the third quartile (3Q) indicate a skew to the left, too.
+
+However, since the sample is large, we proceed with the model despite the fact that the normality assumption is violated.
+
+The p-value of the F-statistic is below 0.05, which indicates that the model is significant. However, a very low percentage of the variance in the data is explained by the model (only ~4%). 
+
+
+
+
+
+## Regression summary for DV = average nights
+### Antwerp
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_antwerp
+
+```
+
+
+### Amsterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_amsterdam
+
+```
+
+### Berlin
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_berlin
+
+```
+
+### Brussels
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_brussels
+
+```
+
+
+
+### Rotterdam
+```{r echo=FALSE}
+load("../../gen/analysis/temp/model_estimation1.RData")
+
+regression_avgnights_rotterdam
+
+```
