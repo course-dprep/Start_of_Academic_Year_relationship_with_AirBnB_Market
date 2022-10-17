@@ -10,4 +10,4 @@ $(TEMP)/model_estimation1.RData: multiple_regressions.R Rplots.pdf
 	Rscript multiple_regressions.R
 
 data_exploration.pdf: data_exploration.Rmd $(TEMP)/model_estimation1.RData
-	Rscript -e 'rmarkdown::render("data_exploration.Rmd")'
+	Rscript -e "Sys.setenv(RSTUDIO_PANDOC='C:/Program Files/RStudio/bin/pandoc'); rmarkdown::render('data_exploration.Rmd')"
