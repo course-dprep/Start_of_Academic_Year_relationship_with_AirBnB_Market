@@ -1,8 +1,6 @@
 ---
 title: The relationship between the start of the academic year and the AirBnB market in student cities in Western Europe
-output:
-  html_document: default
-  pdf_document: default
+output: pdf_document
 date: "2022-10-15"
 ---
 
