@@ -168,11 +168,17 @@ The repository consists of three main directories, namely, "data", "src", and "g
 ## 5. Instructions to Run the Project
 ### 5.1 Software Setup
 In order to run the project, the user needs to install [R and RStudio](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/).
-In addition, [Make](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/) needs to be installed to run the makefile that will execute the scripts in the correct order.
-Finally, to run the .Rmd files, 
+In addition, [Gnu Make](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/) needs to be installed to run the makefile that will execute the scripts in the correct order.
+Moreover, [Git](https://git-scm.com/download) needs to be installed. Please follow [this link](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/git/) for instructions to set up Git correctly.
+Finally, to knit .pdf files from the RMarkdown files, the user needs to install [Pandoc](https://pandoc.org/installing.html). 
 
 ### 5.2 Run the Code
-The user needs to open their terminal/command prompt and use *make* to run the *makefile* that will execute all code files in the correct order.
+
+The user needs to fork this repository.
+
+Then, the user needs to clone the repository.
+
+Finally, the user needs to open their terminal/command prompt and use *make* to run the *makefile* that will execute all code files in the correct order.
 
 ## About Us
 This project is created for the course Data Preparation and Workflow Management, which is part of the Marketing Analytics Master program at Tilburg University. 
