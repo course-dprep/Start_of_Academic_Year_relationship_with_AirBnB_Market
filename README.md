@@ -4,6 +4,8 @@
 This project uses archival data from the AirBnB website to analyse the relationship between the beginning of the academic year and the AirBnB market in five major Western-European cities.
 It investigates whether the prices and the average nights for which an accomodation can be rented differ significantly at the beggining of the academic year compared to a regular period during the academic year (not close to beginning/end of academic year and when no official big holidays take place) and takes into consideration the moderating role of the type of AirBnB host (superhost vs ordinary host) and the type of accomodation (entire apartment vs single room).
 
+*Note: This Readme.md provides a basic overview of the project goals and results. For the full report, please see `..final_report.pdf` that is located in the root folder of this repository.*
+
 ![airbnb-logo-and-student3](https://user-images.githubusercontent.com/112591530/196049694-3585dc9d-d527-43d3-90ce-d4c8500ae052.png)
 
 
@@ -24,9 +26,10 @@ It investigates whether the prices and the average nights for which an accomodat
 
 [4. Repository Overview](#4-repository-overview)
 
-   - [Repository Contents](#41-repository-contents)
+   - [Repository Structure](#41-repository-structure)
+   
+   - [Repository Contents](#42-repository-contents)
 
-   - [Repository Structure](#42-repository-structure)
 
 [5. Instructions to Run the Project](#5-instructions-to-run-the-project)
    - [Software Setup](#51-software-setup)
@@ -113,25 +116,10 @@ In conclison, further research is needed to confirm or reject the relationships 
 
 
 ## 4. Repository Overview
-### 4.1 Repository Contents
-The repository consists of three main directories, namely, "data", "src", and "gen". 
-|Directory|Contents|Notes|
-|:---|:---|:---|
-|data| data files| those are not uploaded on GitHub but can be retreived on the user's local machine by running the respective script. In GitHub, the user will find a readme file which gives information about the data files contents and the data manipulation performed|
-|src| the source code of the project||
-|gen| stores all generated files||
-|src/data-preparation| source code for retrieving the data, raw data exploration, and data preparation||
-|gen/data-preparation| output from the data preparation|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output")|
-|src/analysis| source code for the prepared data exploration, source code for data analysis, and a .Rmd file for model estimation||
-|gen/analysis| output from the data analysis|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output"), and the knitted pdf of the model estimation is in "audit"|
-|src/paper| the .Rmd file for the final deliverable of the project||
-|gen/paper| the knitted pdf of the final report is in the "output" folder, and the images used in it are stored in the "temp" folder (not uploaded on GitHub)||
+### 4.1 Repository Structure
 
+The following tree illustrates only the directories (and this Readme.md). The contents of each folder are explained below.
 
-*(Additional Note: There are makefiles in the general directory, as well as all sub-directories of the "src" folder as those are used for the pipeline automation.)*
-	 
-
-### 4.2 Repository Structure
 
 	├── README.md
 	├── data
@@ -144,13 +132,29 @@ The repository consists of three main directories, namely, "data", "src", and "g
 	│   │   ├── output
 	│   │   └── temp
 	│   └── paper
-	│       ├── output
-	│       └── temp
 	└── src
  	   ├── analysis
  	   ├── data-preparation
 	   └── paper
 
+
+
+
+
+### 4.2 Repository Contents
+The repository consists of three main directories within the root folder, namely, "data", "src", and "gen". 
+|Root Directory|Directory|Sub-Directory|Contents|Notes|
+|:---|:---|:---|:---|:---|
+|root directory|||files: this `README.md` file; the `final_report.pdf` file (generated in the root directory for easy access); `.gitignore` file (used to control for files that should not be uploaded on GitHub)|There are `makefiles` in the general directory, as well as all sub-directories of the "src" folder as those are used for the pipeline automation.|
+||data||data files| those are not uploaded on GitHub but can be retreived on the user's local machine by running the respective script. In GitHub, the user will find a readme file which gives information about the data files contents and the data manipulation performed|
+||src||the source code of the project; `makefiles`||
+|||src/data-preparation| source code for retrieving the data, raw data exploration, and data preparation||
+|||src/analysis| source code for the prepared data exploration, source code for data analysis, and a '.Rmd' file for model estimation||
+|||src/paper| the '.Rmd' file for the final deliverable of the project||
+||gen||stores all generated files||
+|||gen/data-preparation| output from the data preparation|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output")|
+|||gen/analysis| output from the data analysis|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output"), and the knitted pdf of the model estimation is in "audit"|
+|||gen/paper| the images used for the final reprt pdf are stored in the "temp" folder (not uploaded on GitHub)||
 
 
 ## 5. Instructions to Run the Project
