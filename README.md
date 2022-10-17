@@ -134,8 +134,9 @@ The repository consists of three main directories, namely, "data", "src", and "g
 |gen| stores all generated files||
 |src/data-preparation| source code for retrieving the data, raw data exploration, and data preparation||
 |gen/data-preparation| output from the data preparation|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output")|
-|src/analysis| source code for the prepared data exploration and data analysis||
+|src/analysis| source code for the prepared data exploration, source code for data analysis, and a .Rmd file for model estimation||
 |gen/analysis| output from the data analysis|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output")|
+|gen/audit| the knitted pdf of the model estimation||
 |src/paper| the .Rmd file for the final deliverable of the project||
 |gen/paper| the knitted pdf of the final report||
 
