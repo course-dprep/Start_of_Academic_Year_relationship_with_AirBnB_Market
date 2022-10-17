@@ -1,5 +1,4 @@
-TEMP = ../../gen/analysis/temp/
-DATA = ../../data
+TEMP = ../../gen/analysis/temp
 OUTPUT = ../../gen/analysis/audit
 
 all: $(OUTPUT)/model_estimation.pdf
