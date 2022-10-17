@@ -18,7 +18,7 @@ It investigates whether the prices and the average nights for which an accomodat
 
 [2. Methodology](#2-methodology)
 
-[3. Main Results and conclusion](#3-main-results-and-conclusion)
+[3. Main Results, Conclusion and Discussion](#3-main-results-conclusion-and-discussion)
 
 [4. Repository Overview](#4-repository-overview)
 
@@ -86,44 +86,28 @@ The data transformation process is explained in detail in the *report* file with
 
 
 ### 2.3 Analysis
-
-In order to answer our research questions, we used linear regression models. A linear regression is used to predict the effects of one or more predictors on one dependent variable. Our aim was to investigate the relationship between a nonmetric independent variable and a metric dependent variable. To examine this, a linear regression was the most obvious analysis to do. Some other options were discussed, such as an ANOVA, a repeated-measures ANOVA and a MANOVA, but a regression analysis seemed both the most feasible as the best answering method of analysis. Another advantage of regression is that interaction effects can be measured. We wanted to examine if there are any moderation effects for host type and room type, which can be measured by linear regression. This made it even more clear we wanted to use regression as our statistical analysis.
-
 We have two models, each with three independent variables ("start of the academic year", "type of host", and "type of accomodation"), and a dependent variable ("price" in the first model and "number of maximum nights" in the second model).
-Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform linear regressions to analyze the relationships.
+Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform multiple linear regressions to analyze the relationships (Sekaran & Bogue, 2016).
 As we investigate the relationships for each of the two models with data for 5 different cities, there are ten linear regressions in total.
 Due to the fact that the focus of our research is to identify whether the start of the academic year, represented by "dummy_month_aug" is related to the DVs, and also to see whether this relationship depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators ("room" and "host_is_superhostTRUE").
 
 
-## 3. Main Results and conclusion
+## 3. Main Results, Conclusion and Discussion
 
-*Main Results*
+*Main Results and Conclusion*
 
-When running the regression we have checked the effect of the independent variable namely 'dummy_month_aug' for each of the five cities on the two dependent variables; 'average_price' and 'average_nights'. As the focus of our research is to identify whether the start of the academic year, represented by 'dummy_month_aug', has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely 'room' and 'host_is_superhostTRUE'.
+Based on the problem background, it was expected that there would be a positive relationship between the start of the academic year and the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. In addition, we hypothesized that the average nights would also be higher at the start of the academic year, since students looking for permanent accommodation might need to rent and AirBnB for few weeks or even months. Finally, it was expected that the type of room and the type of host would influence the relationship between the start of the academic year and each of the two dependent variables. 
+Nevertheless, no significant effects were found for the relationship between the start of the academic and the AirBnB prices, nor for the relationship between the start of the academic and the average maximum nights for which an accomodation is available. The interaction effects between the start of the academic year and the moderators were not significant for none of the models either. 
 
-Regarding the relationship between the start of the academic and the AirBnB prices, there were no significant results that were obtained for the cities. 
-With regards to the relationship between the start of the academic and the average maximum nights for which an accomodation is available there was no significant relationship. 
+There were some significant effects of the moderators on price and on average maximum nights. The prices were higher for superhosts compared to ordinary hosts for Antwerp, Brussels and Rotterdam. Entire homes were associated with higher prices compared to rooms for all cities. The average number of maximum nights was higher for superhost compared to ordinary host for all cities besides Rotterdam. The average number of maximum nights is also higher for entire homes compared to rooms for Amsterdam, Berlin and Brussels. 
 
-There were some significant effect from the moderators on price and on average maximum nights. 
-The prices increased when the host is a superhost for all cities besides Amsterdam and Rotterdam.
-The type of room causes an increase in price for all cities.
-The average number of maximum nights goes up for superhost for all cities but Rotterdam.
-The average number of maximum nights going up for roomtype for Amsterdam, Berlin and Brussels
+*Discussion and Reccomendations*
 
-*Conclusion*
+Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of this research. Therefore, we could not control for the quality of the data. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time.
 
-According to the expectations of this analysis we would have found that the start of the academic year will positively influence the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. Unfortunately none of our regression had significant results for the effect of the start of the academic year on the price.
+Some of the individual effects of the moderators were significant, but since they were not consistent for all cities, we cannot make conclusions without additional analysis.
 
-Another expectation of the study was that average nights would increase as well at the start of the academic year, since students looking for permanent accommodation might need a few weeks or even months to succeed. Despite these expectations we found no significant effects for average nights for any of the cities, therefore, we can conclude that the start of the academic year has no significant effect on the average maximum nights Airbnbs are available. 
-
-
-*Discussion*
-
-Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of such research. Therefore, we could not control for the quality of the data. The lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time.
-
-Some of the impact of the moderators on the DV makes sense, others do not. We do not have enough information to make conclusions on the few significant relationships we see between our DV and the moderators. 
-
-In conclusion, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities.
+In conclison, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities. In addition, two-way ANOVA could be performed for each model since the independent variables are categorical, whereas each DV is interval (Sekaran & Bogue, 2016), or the models could be tested together using a MANOVA analysis in order to take both dependent variables into consideration at once.
 
 
 ## 4. Repository Overview
@@ -180,12 +164,12 @@ Finally, to knit .pdf files from the RMarkdown files, the user needs to install 
 
 ### 5.2 Run the Code
 
-1. Fork this repository.
-2. Open your terminal/command prompt and clone the repository.
+1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository.
+2. Open your Terminal (for Mac users) or GitBash (for Windows users) and [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository.
 ``` 
-git clone https://github.com/{username}/Start_of_Academic_Year_relationship_with_AirBnB_Market.git
+git clone https://github.com/<your-username>/Start_of_Academic_Year_relationship_with_AirBnB_Market.git
 ```
-3. Make sure to set the working directory to `Start_of_Academic_Year_relationship_with_AirBnB_Market` and use `make` to run the `makefile` that will execute all code files in the correct order.
+3. Open your Terminal (for Mac users) or your command prompt (for Windows users) in the cloned repository and use `make` to run the `makefile` that will execute all code files in the correct order.
 ```
 make
 ```
@@ -215,6 +199,7 @@ The project is executed by
 
 ## References
 Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
+Sekaran, U., & Bougie, R. (2016). Research methods for business: a skill-building approach (Seventh). John Wiley & Sons.
 
 ## Sources
 *Data sources:*  [Inside AirBnB](http://insideairbnb.com/)
