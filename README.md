@@ -149,8 +149,8 @@ The repository consists of three main directories within the root folder, namely
 ||data||data files| those are not uploaded on GitHub but can be retreived on the user's local machine by running the respective script. In GitHub, the user will find a readme file which gives information about the data files contents and the data manipulation performed|
 ||src||the source code of the project; `makefiles`||
 |||src/data-preparation| source code for retrieving the data, raw data exploration, and data preparation||
-|||src/analysis| source code for the prepared data exploration, source code for data analysis, and a '.Rmd' file for model estimation||
-|||src/paper| the '.Rmd' file for the final deliverable of the project||
+|||src/analysis| source code for the prepared data exploration, source code for data analysis, and a `.Rmd` file for model estimation||
+|||src/paper| the `.Rmd` file for the final deliverable of the project||
 ||gen||stores all generated files||
 |||gen/data-preparation| output from the data preparation|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output")|
 |||gen/analysis| output from the data analysis|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output"), and the knitted pdf of the model estimation is in "audit"|
