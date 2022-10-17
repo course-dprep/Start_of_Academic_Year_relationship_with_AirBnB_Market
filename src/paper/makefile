@@ -1,4 +1,4 @@
-OUTPUT = ../../gen/paper/audit
+OUTPUT = ../../gen/paper/output
 
 all: $(OUTPUT)/final_report.pdf
 
