@@ -169,7 +169,7 @@ The repository consists of three main directories, namely, "data", "src", and "g
 ### 5.1 Software Setup
 In order to run the project, the user needs to install [R and RStudio](https://tilburgsciencehub.com/building-blocks/configure-your-computer/statistics-and-computation/r/).
 In addition, [Make](https://tilburgsciencehub.com/building-blocks/configure-your-computer/automation-and-workflows/make/) needs to be installed to run the makefile that will execute the scripts in the correct order.
-Finally, to run the .Rmd files, ????
+Finally, to run the .Rmd files, 
 
 ### 5.2 Run the Code
 The user needs to open their terminal/command prompt and use *make* to run the *makefile* that will execute all code files in the correct order.
