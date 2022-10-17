@@ -242,7 +242,9 @@ This project will use a correlational research method. This is because we will u
 ```
 #### 2.3 Analysis
 
-In order to answer our research questions, we used linear regression models. A linear regression is used to predict the effects of one or more predictors on one dependent variable. In the regression, interaction effects can be measured as well. Per city (Amsterdam, Antwerp, Berlin, Brussels and Rotterdam), we performed one regression with the independent variable ('dummy_month_aug') on the price ('average_price') and one regression with the independent variable ('dummy_month_aug') on the maximum nights a listing was available ('average_nights'). This means that in total, we performed ten regression analyses.
+In order to answer our research questions, we used linear regression models. A linear regression is used to predict the effects of one or more predictors on one dependent variable. Our aim was to investigate the relationship between a nonmetric independent variable and a metric dependent variable. To examine this, a linear regression was the most obvious analysis to do. Some other options were discussed, such as an ANOVA, a repeated-measures ANOVA and a MANOVA, but a regression analysis seemed both the most feasible as the best answering method of analysis. Another advantage of regression is that interaction effects can be measured. We wanted to examine if there are any moderation effects for host type and room type, which can be measured by linear regression. This made it even more clear we wanted to use regression as our statistical analysis.
+
+Per city (Amsterdam, Antwerp, Berlin, Brussels and Rotterdam), we performed one regression with the independent variable ('dummy_month_aug') on the price ('average_price') and one regression with the independent variable ('dummy_month_aug') on the maximum nights a listing was available ('average_nights'). This means that in total, we performed ten regression analyses.
 
 
 ```{r}
