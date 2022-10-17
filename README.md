@@ -2,7 +2,7 @@
 
 ## Project Summary
 This project uses archival data from the AirBnB website to analyse the relationship between the beginning of the academic year and the AirBnB market in five major Western-European cities.
-It investigates whether the prices and the average nights for which an accomodation can be rented differ significantly at the beggining of the academic year compared to a regular period during the academic year (not close to beginning/end of academic year and when no official big holidays take place) and takes into consideration the moderating role of the type of AirBnB host (ordinary vs superhost) and the type of accomodation (entire apartment vs single room).
+It investigates whether the prices and the average nights for which an accomodation can be rented differ significantly at the beggining of the academic year compared to a regular period during the academic year (not close to beginning/end of academic year and when no official big holidays take place) and takes into consideration the moderating role of the type of AirBnB host (superhost vs ordinary host) and the type of accomodation (entire apartment vs single room).
 
 ![airbnb-logo-and-student3](https://user-images.githubusercontent.com/112591530/196049694-3585dc9d-d527-43d3-90ce-d4c8500ae052.png)
 
@@ -109,7 +109,7 @@ Overall, this research did not find enough significant effects to draw meaningfu
 
 Some of the individual effects of the moderators were significant, but since they were not consistent for all cities, we cannot make conclusions without additional analysis.
 
-In conclison, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities. In addition, two-way ANOVA could be performed for each model since the independent variables are categorical, whereas each DV is interval (Sekaran & Bogue, 2016), or the models could be tested together using a MANOVA analysis in order to take both dependent variables into consideration at once.
+In conclison, further research is needed to confirm or reject the relationships between the variables in our models and uncover the relationship between the start of the academic year and the AirBnB market. It might be useful to repeat the research later in time, as well as for other student cities. In addition, two-way ANOVA could be performed for each model since the independent variables are categorical, whereas each DV is interval (Sekaran & Bogue, 2016), or the models could be tested together using a MANOVA analysis in order to take both dependent variables into consideration at once.
 
 
 ## 4. Repository Overview
