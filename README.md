@@ -26,7 +26,7 @@ It investigates whether the prices and the average nights for which an accomodat
 
    - [Repository Structure](#42-repository-structure)
 
-[. Instructions to Run the Project](#5-instructions-to-run-the-project)
+[5. Instructions to Run the Project](#5-instructions-to-run-the-project)
    - [Software Setup](#51-software-setup)
    - [Run the Code](#52-run-the-code)
 
