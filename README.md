@@ -17,6 +17,8 @@ It investigates whether the prices and the average nights for which an accomodat
    - [Conceptual Model](#13-conceptual-model)
 
 [2. Methodology](#2-methodology)
+   - [Data](#21-data)
+   - [Research Method](#22-research-method)
 
 [3. Main Results, Conclusion and Discussion](#3-main-results-conclusion-and-discussion)
 
@@ -26,7 +28,7 @@ It investigates whether the prices and the average nights for which an accomodat
 
    - [Repository Structure](#42-repository-structure)
 
-[. Instructions to Run the Project](#5-instructions-to-run-the-project)
+[5. Instructions to Run the Project](#5-instructions-to-run-the-project)
    - [Software Setup](#51-software-setup)
    - [Run the Code](#52-run-the-code)
 
@@ -86,8 +88,6 @@ The data transformation process is explained in detail in the *report* file with
 
 ### 2.2 Research Method
 
-
-### 2.3 Analysis
 We have two models, each with three independent variables ("start of the academic year", "type of host", and "type of accomodation"), and a dependent variable ("price" in the first model and "number of maximum nights" in the second model).
 Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform multiple linear regressions to analyze the relationships (Sekaran & Bogue, 2016).
 As we investigate the relationships for each of the two models with data for 5 different cities, there are ten linear regressions in total.
