@@ -7,6 +7,19 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 
 ```
+## Model estimation
+### Summary output
+All models have a p-value of the F-statistic that is below 0.05; therefore, the models are significant.
+However, the R squared of all models is low. 
+The five regressions with DV "price" perform better. The variance in the DV explained by the models is 8-9% (for Antwerp and Amsterdam),~12% for Brussels and Rotterdam, and 24% for Berlin. 
+A much lower percentage of variance in the DV "average nights" is explained by the models (1%-3% for all cities).
+
+
+### Plots
+Looking at the plots for the first dependent variable, ‘average_price’, we can draw conclusions on the independence and normality assumptions. For every city we can see a pattern across residuals, there is no randomness, therefore, the independence assumption seems to be violated. This can be due to the fact that the data for our research was collected over time. 
+In terms of normal distribution of residuals, for some cities like Antwerp or Brussels, residuals deviate more from the line of normality, while in the case of Amsterdam the deviation is smaller. Even though normality is violated, our statistical tests are still robust, since there is a large sample size.
+
+The other dependent variable is ‘average_nights’, for which the plots for each city show that there is dependence across residuals. Hence, the independence assumption is not met.  This is possibly due to the fact that our data was not collected at single point in time. The normality distribution assumption is clearly violated as the residuals for every city deviate from the line of normality. However, similarly to the previous case, the results can still be robust with a sufficiently large sample size.
 
 
 ## Regression summary and plots for DV = price
