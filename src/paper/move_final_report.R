@@ -1,2 +1,2 @@
 library(filesstrings)
-file.move("final_report.pdf", "../../gen/paper/audit", overwrite = TRUE)
+file.move("final_report.pdf", "../../gen/paper/output", overwrite = TRUE)
