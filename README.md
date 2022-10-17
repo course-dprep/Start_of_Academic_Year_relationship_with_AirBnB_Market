@@ -49,14 +49,15 @@ The research will be executed for five major student cities in three Western-Eur
 - How does the relationship between AirBnB prices and period of the academic year depend on the type of host (ordinary vs superhost)?
 - How does the relationship between AirBnB prices and period of the academic year depend on the type of accommodation (room vs apartment)?
 
-- How is the maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
+- How is the (average) maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
 - How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of host (ordinary vs superhost)?
 - How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of accommodation (room vs apartment)?
 
 
 ### 1.3 Conceptual model
 
-![conceptual-model-final-for-real](https://user-images.githubusercontent.com/112591530/196039306-1a0a3f17-5bad-40aa-863d-b69ba2840fca.jpg)
+![conceptual-model-use-this](https://user-images.githubusercontent.com/112591530/196250721-3a241662-ff75-49d7-80b2-5124e6455e42.jpg)
+
 
 
 ## 2. Methodology
@@ -65,7 +66,8 @@ The research will be executed for five major student cities in three Western-Eur
 This project uses publicly available archival data from AirBnB. In total, ten datasets are retrieved from the AirBnB website, two for each city of interest. Every two datasets per city are merged into one based on listing id and the data is explored and prepared.
 
 The data used in the analysis is for two time periods which serve as a "beginning of the academic year" period (Aug 15 - Sep 15 2022), and control period (March 15 - April 15, 2023.
-Note: the second time period is in the future, because AirBnB provides the information regarding listings ahead of time since the hosts set the prices and number of nights for which they rent out their accomodation in advance.
+Note 1: the second time period is in the future, because AirBnB provides the information regarding listings ahead of time since the hosts set the prices and number of nights for which they rent out their accomodation in advance.
+Note 2: the data is originally retrieved from the Inside AirBnB website which adds new datasets and deletes older ines, such that they provide data for 12 months in total. Therefore, the datasets that we use in this particular repository are uploaded in another github repository and loaded from it (the use of a cloud was not possible due to the large size of some of the raw data files.) This way, we avoid changes in the results that we interpret in the final report.
 
 The data transformation process is explained in detail in the *report* file within the *scr* directory in this repository, as well as the final paper of this project.
 
@@ -199,6 +201,7 @@ The project is executed by
 
 ## References
 Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
+
 Sekaran, U., & Bougie, R. (2016). Research methods for business: a skill-building approach (Seventh). John Wiley & Sons.
 
 ## Sources
