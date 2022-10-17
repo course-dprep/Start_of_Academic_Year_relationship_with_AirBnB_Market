@@ -147,7 +147,7 @@ The repository consists of three main directories within the root folder, namely
 |:---|:---|:---|:---|:---|
 |root directory|||files: this `README.md` file; the `final_report.pdf` file (generated in the root directory for easy access); `.gitignore` file (used to control for files that should not be uploaded on GitHub)|There are `makefiles` in the general directory, as well as all sub-directories of the "src" folder as those are used for the pipeline automation.|
 ||data||data files| those are not uploaded on GitHub but can be retreived on the user's local machine by running the respective script. In GitHub, the user will find a `.txt` file which gives some general information about the data|
-||src||the source code of the project; `makefiles`||
+||src||the source code of the project; `makefiles` within the sub-folders||
 |||src/data-preparation| source code for retrieving the data, raw data exploration, and data preparation||
 |||src/analysis| source code for the prepared data exploration, source code for data analysis, and a `.Rmd` file for model estimation||
 |||src/paper| the `.Rmd` file for the final deliverable of the project||
