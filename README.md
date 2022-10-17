@@ -17,6 +17,8 @@ It investigates whether the prices and the average nights for which an accomodat
    - [Conceptual Model](#13-conceptual-model)
 
 [2. Methodology](#2-methodology)
+   - [Data](#21-data)
+   - [Research Method and Analysis](#22-research-method-and-analysis)
 
 [3. Main Results, Conclusion and Discussion](#3-main-results-conclusion-and-discussion)
 
@@ -26,7 +28,7 @@ It investigates whether the prices and the average nights for which an accomodat
 
    - [Repository Structure](#42-repository-structure)
 
-[. Instructions to Run the Project](#5-instructions-to-run-the-project)
+[5. Instructions to Run the Project](#5-instructions-to-run-the-project)
    - [Software Setup](#51-software-setup)
    - [Run the Code](#52-run-the-code)
 
@@ -84,10 +86,8 @@ The data transformation process is explained in detail in the *report* file with
 |minimum_nights| Minimum number of nights a listing can be rented out.|
 |dummy_month_aug| Dummy variable to distinguish between the two time peridos: Aug/Sept listings as 1, and March/April as 0.|
 
-### 2.2 Research Method
+### 2.2 Research Method and Analysis
 
-
-### 2.3 Analysis
 We have two models, each with three independent variables ("start of the academic year", "type of host", and "type of accomodation"), and a dependent variable ("price" in the first model and "number of maximum nights" in the second model).
 Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform multiple linear regressions to analyze the relationships (Sekaran & Bogue, 2016).
 As we investigate the relationships for each of the two models with data for 5 different cities, there are ten linear regressions in total.
@@ -103,7 +103,7 @@ Nevertheless, no significant effects were found for the relationship between the
 
 There were some significant effects of the moderators on price and on average maximum nights. The prices were higher for superhosts compared to ordinary hosts for Antwerp, Brussels and Rotterdam. Entire homes were associated with higher prices compared to rooms for all cities. The average number of maximum nights was higher for superhost compared to ordinary host for all cities besides Rotterdam. The average number of maximum nights is also higher for entire homes compared to rooms for Amsterdam, Berlin and Brussels. 
 
-*Discussion and Reccomendations*
+*Discussion and Recommendations*
 
 Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of this research. Therefore, we could not control for the quality of the data. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time.
 
@@ -123,10 +123,9 @@ The repository consists of three main directories, namely, "data", "src", and "g
 |src/data-preparation| source code for retrieving the data, raw data exploration, and data preparation||
 |gen/data-preparation| output from the data preparation|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output")|
 |src/analysis| source code for the prepared data exploration, source code for data analysis, and a .Rmd file for model estimation||
-|gen/analysis| output from the data analysis|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output")|
-|gen/audit| the knitted pdf of the model estimation||
+|gen/analysis| output from the data analysis|sub-directories: for storing any temporary files ("temp"), and final products from the various stages in the pipeline ("output"), and the knitted pdf of the model estimation is in "audit"|
 |src/paper| the .Rmd file for the final deliverable of the project||
-|gen/paper| the knitted pdf of the final report||
+|gen/paper| the knitted pdf of the final report is in the "output" folder, and the images used in it are stored in the "temp" folder (not uploaded on GitHub)||
 
 
 *(Additional Note: There are makefiles in the general directory, as well as all sub-directories of the "src" folder as those are used for the pipeline automation.)*
