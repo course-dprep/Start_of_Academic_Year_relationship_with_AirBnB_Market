@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This project uses archival data from the Airbnb website to investigate the relationship between the beginning of the academic year and the Airbnb market in five major Western-European cities.
 
-![](../../gen/paper/temp/airbnb.png)
+![](../../gen/paper/airbnb.png)
 ## Contents
 
 1.  Introduction
@@ -72,7 +72,7 @@ To investigate this problem statement, we look at the following sub-questions th
 
 To answer our research questions, we designed the following conceptual model. We hypothesize that there will be positive relationshipts between the start of the academic year and the price, and the start of the academic year and the average number of nights a listing is available for. In addition, we expect that these relationships will be moderated by the type of host (whether a host has the "superhost" badge or not) and the type of accommodation (an entire apartment as opposed to a private, shared or hotel room).
 
-![](../../gen/paper/temp/model.png)
+![](../../gen/paper/model.png)
 
 ## 2. Methodology
 
