@@ -1,9 +1,8 @@
 ---
 title: The relationship between the start of the academic year and the AirBnB market in student cities in Western Europe
-
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 date: "2022-10-15"
 ---
 
@@ -46,23 +45,23 @@ This project uses archival data from the Airbnb website to investigate the relat
 
 #### *1.1 Problem background and research motivation*
 
-At the start of the academic year, many university students need temporary accommodation while they are arranging their documents and looking for permanent housing. Therefore, they often stay temporarily at Airbnb accommodations. In a recent study on the determinants of Airbnb listings' performance, Sainaghi et al. (2021) conclude that seasonality and certain events can have a significant impact on the prices of listings. Hence, this project aims to investigate how the Airbnb market in various Western-European cities is related to the period of the start of the academic year. The research will focus on analyzing the relationships between the start of the academic year and the Airbnb prices, as well as the maximum nights an accommodation can be booked for. In addition, the effect of the type of host (ordinary vs professional) and type of accommodation (room vs apartment) on the abovementioned relationships will be investigated.
+At the start of the academic year, many university students need temporary accomodation while they are arranging their documents and looking for permanent housing. Therefore, they often stay temporarily at AirBnB accommodations. In a recent study on the determinants of AirBnB listings' performance, Sainaghi et al. (2021) concludes that seasonality, and certain events can have a significant impact on the prices of listings. Hence, this project aims to investigate how the AirBnb market in various Western-European cities is related to the period of the start of the academic year. The research will focus on analyzing the relationships between the start of the academic year and the AirBnB prices, as well as the maximum nights and accommodation can be booked for. In addition, the effect of the type of host (ordinary vs proffessional) and type of accommodation (room vs apartment) on the abovementioned relationships will be investigated.
 
 The research will be executed for five major student cities in three Western-European countries: Belgium (Antwerp, Brussels), Germany (Berlin), The Netherlands (Amsterdam, Rotterdam).
 
 #### *1.2 Problem statement and research questions*
 
-Because of the arrival of many university students who have to arrange the start of their university career, we expect this affects the Airbnb market in Western-European cities. This leads to the following main research question:
+Because of the arrival of many university students who have to arrange accomodation at the start of their university career, we expect that the period of the academic year affects the AirBnB market in Western-European cities. Therefore, we compose the following main research question:
 
-**To what extent does the start of the academic year affect the Airbnb market in popular student cities in Europe?**
+**To what extent does the start of the academic year affect the AirBnB market in popular student cities in Europe?**
 
-To investigate this research questions, we produced some subquestions to gain a deeper insight in the effects on the Airbnb market. These will be:
+To investigate this problem statement, we look at the following sub-questions that aim to uncover the specific relationships between the start of the academic year and the two aspects of the AirBnB market of interest (price and average nights):
 
-\- How are the Airbnb prices related to the period of the academic year (beginning vs regular period)?
+\- How are the AirBnB prices related to the period of the academic year (beginning vs regular period)?
 
-\- How does the relationship between Airbnb prices and period of the academic year depend on the type of host (ordinary vs superhost)?
+\- How does the relationship between AirBnB prices and period of the academic year depend on the type of host (ordinary vs superhost)?
 
-\- How does the relationship between Airbnb prices and period of the academic year depend on the type of accommodation (room vs apartment)?
+\- How does the relationship between AirBnB prices and period of the academic year depend on the type of accommodation (room vs apartment)?
 
 \- How is the maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
 
@@ -72,7 +71,7 @@ To investigate this research questions, we produced some subquestions to gain a 
 
 #### *1.3 Conceptual model*
 
-To answer our research questions, we designed the following conceptual model. We think there is an effect of the start of the academic year on the price and the maximum number of nights a listing is available. In addition, we think these effects might be moderated by the type of host (whether a host has the 'superhost' badge or not) and the type of accommodation (a private, shared or hotel room versus an entire apartment)
+To answer our research questions, we designed the following conceptual model. We hypothesize that there will be positive relationshipts between the start of the academic year and the price, and the start of the academic year and the average number of nights a listing is available for. In addition, we expect that these relationships will be moderated by the type of host (whether a host has the "superhost" badge or not) and the type of accommodation (an entire apartment as opposed to a private, shared or hotel room).
 
 ![](https://user-images.githubusercontent.com/112591530/194730733-bf2d0bf2-0655-46f9-96d4-5cb6d6702569.jpg)
 
@@ -80,10 +79,10 @@ To answer our research questions, we designed the following conceptual model. We
 
 #### *2.1 Data*
 
-For this project we used publicly available archival data from Airbnb. In total, ten datasets were retrieved from the website www.insideairbnb.com, two for each city of interest. For each city of the five cities two datasets were downloaded "Listings.csv" and "calendar.csv" both containing different variables. The listings dataset contained information per listing about the type of property and it's features. The calendar dataset contained info on the price of the property on different dates and it's availability. We combined these datasets together on id to create one dataset for each city. This data was then explored (see: "Data exploration raw data"). Later a selection of the variables we were interested in was made as well as selecting only specific dates. This is described in more detail under "Data Transformation". 
+For this project we used publicly available archival data from Airbnb. In total, ten datasets were retrieved from the website www.insideairbnb.com, two for each city of interest. For each of the five cities, two datasets were downloaded; namely, "listings.csv" and "calendar.csv", both containing different variables. The listings dataset contained information per listing about the type of property and its features. The calendar dataset contained information on the price of the property on different dates and its availability. We combined these datasets together based on the listings id to create one dataset for each city. This data was then explored (see: "Data exploration raw data"). Later a selection of the variables we were interested in was made as well as selecting only data from the two time periods of interest (Aug/Sep 2022 and Mar/Apr 2023). This is described in more detail under "Data Transformation". 
 
 ##### Data exploration raw data 
-First the raw data was explored. For this we looked at the variable of interest to our research question. For the metric variables we made boxplots and took the summary statistics. For the categorical variable we took the count of each one to get a insight into their comperative numbers. 
+First, the raw data was explored. We looked at all variables of interest to our research question. For the metric variables we made boxplots and took the summary statistics. For the categorical variables we took the count of each one to get an insight into their comparative numbers. 
 
 *Maximum Nights*
 
@@ -138,25 +137,25 @@ Antwerp and Rotterdam are the smallest datasets. Berlin is the largest followed 
 
 Every two datasets per city were merged into one, based on listing ID. Afterwards, the data was explored and prepared.
 
-A selection was made for all cities to take the dates from 15th of March to the 15th of April 2023 and then from 15th of August to the 15th of September 2022. The first as our control dates and the second as the start of the academic year. We felt we had to pick a month with no major national holidays or religious occasions which could impact the prices.
+A selection was made for all cities to take the dates from August 15 to September15, 2022, as well as for March 15 to April 15, 2023. The first period corresponds to "the start of the academic year", whereas the second is the alternative/ control period to compare the changes in the DVs. End of March/Beginning of April was chosen as a period with no important milestones for students, nor major national holidays or religious occasions to avoid biases that could impact the variation in the DVs.
 
-We only selected the variables which interested us when loading the data for each city into a dataframe, which were the variables 'id', 'price', 'room_type', 'minimum_nights' and 'maximum_nights'. We also created two new variables by taking the mean average of the price and the mean average of the maximum number of nights.
+We only selected the variables which were needed for the analysis when loading the data for each city into a dataframe. Therefore, we ended up with the variables 'id', 'price', 'room_type', and 'maximum_nights'. We also created two new variables by taking the mean average of the price and the mean average of the maximum number of nights.
 
-For the availability variable, we chose to use every datapoint regardless of the datapoint being listed as available or not. This was done because the ones listed as not available might been rented out and those listings were exactly the rooms we want to know more about.
+For the availability variable, we chose to use every data point regardless of the data point being listed as available or not. This was done because the ones listed as not available might have been rented out, and those listings were important for the results as we expect a higher demand for AirBnBs at the beginning of the academic year. Therefore, exlcuding those observations would bias the results.
 
-After the selection of the data we also created a new dummy variable called dummy_month_august, which is 1 if the row is in August/September (start of academic year) and 0 if it's in March/April.
+After the selection of the data we also created a new dummy variable called dummy_month_august, which takes the value of 1 if the observation is for August/September (start of academic year) and 0 if it is in March/April.
 
-Furthermore, we turned the variable room_type into a dummy variable called room. There are 4 different room types given but, as 2 of them make up a very small percentage of the dataset they were combined with one of the larger ones. The dummy variable is coded as "Entire home/apt" = 1 and 0 = "Private room"&" Shared room"& "Hotel room". We also theorized grouping these together made sense, as these types would be the most popular among students, because these accommodations are usually meant for 1 or 2 people.
+Furthermore, we turned the variable room_type into a dummy variable called "room". There are 4 different room types given; however, as three of them refer to single rooms, they were considered as one type. The dummy variable is coded as "Entire home/apartment" = 1, and 0 = "Private room"&" Shared room"& "Hotel room". We also theorized grouping these together made sense, as these types would be the most popular among students, because these accommodations are usually meant for 1 or 2 people.
 
-For the Amsterdam dataset for example, these were the occurrences of each type;
+For the Amsterdam dataset, for example, these were the occurrences of each type:
 
 | Entire home / apartment | Hotel room | Private room | Shared room |
 |-------------------------|------------|--------------|-------------|
 | 8446                    | 152        | 3680         | 64          |
 
-After making boxplots and checking the summary output for our variable of interest. We removed the outliers for average_price and average_nights for all cities, as well as the outliers for the minimum number of nights for Berlin, as all these variables had extreme outliers which biased the mean and skewed the data.
+After making boxplots and checking the summary output for our variable of interest, we removed the outliers for average_price and average_nights for all cities, as well as the outliers for the minimum number of nights for Berlin, as all these variables had extreme outliers which biased the mean and skewed the data.
 
-We used a multiple methods to examine the datasets after transforming them. The full analysis on this can be found in the report.
+We used a multiple methods to examine the datasets after transforming them.
 
 The final variables in the datasets are as follows:
 
@@ -174,10 +173,6 @@ The final variables in the datasets are as follows:
 | dummy_month_aug   | Dummy variable listing August/September listings as 1 and March/April as 0.                                                                 |
 
 
-```{r}
-
-```
-
 ##### Data exploration after transformation
 
 *Price*
@@ -190,7 +185,7 @@ The final variables in the datasets are as follows:
 | Berlin   |0 | 40 | 61 | 93.69 | 100 | 24999 |
 | Rotterdam  | 25 | 75 | 109.9 | 144.1 | 158.3 | 1312.5 |
 
-For price there is a large range of values. Take Berlin for example with some rooms listed as 24999. This may be that the person renting out the property incorrectly filled out the price or does not want to rent out the property but just list it. Some properties have a minimum price of 0 might indicate those are also listed but not intended to rent it out. This is the case for Amsterdam, Brussels and Berlin. The prices also differ greatly per city, Amsterdam’s median price is more than twice the median price for Berlin. Amsterdam is the most expensive city of the five based on median and mean. As there are some quite extreme outliers the median is more representative of the majority of the market. 
+For price there is a large range of values. Berlin, for instance, contains some rooms listed as 24999. Such extreme values might be due to the fact that the person renting out the property filled in the price incorrectly, or does not want to rent out the property, but have it listed. Some properties which have a minimum price of 0 might also be listed but not intended to be rented out. This is the case for Amsterdam, Brussels and Berlin. The prices also differ greatly per city, Amsterdam’s median price is more than twice the median price for Berlin. Amsterdam is the most expensive city of the five based on median and mean. As there are some quite extreme outliers, the median is more representative of the majority of the market. 
 
 *Average nights*
 
@@ -228,118 +223,98 @@ The mean minimum nights for all cities is 2 nights, except for Berlin where the 
 
 For the maximum nights we can see that on average median number of nights is a year for most cities. Only Amsterdam has fewer listed. This is likely because Amsterdam has a law about only being allowed to rent out your property for 30 days unless you get a permit. Rotterdam also has this rule but the allowed number of days are 60. So their median should be lower than the other cities as anyone listing their property without the permit can’t rent it out for long. So it’s quite odd then that Rotterdam still has this same high median as the other cities. This could mean that permits are perhaps easier to get there than in Amsterdam, or that this isn’t checked as often and people are breaking the rules. All of the cities appear to have a somewhat insanely high number for their max. Number of days, as this would mean you could rent the property for several years at a time. 
 
-```{r}
-
-```
 
 #### 2.2 Research method
 
-This project will use a correlational research method. This is because we will use archival data for answering our research question.
+This project will uses archival data which implies the research is correlational. Although the regression analysis could be used to derive causal relationships, further research would be needed to claim causal effects.
 
 
-```{r}
-
-```
 #### 2.3 Analysis
 
-In order to answer our research questions, we used linear regression models. A linear regression is used to predict the effects of one or more predictors on one dependent variable. Our aim was to investigate the relationship between a nonmetric independent variable and a metric dependent variable. To examine this, a linear regression was the most obvious analysis to do. Some other options were discussed, such as an ANOVA, a repeated-measures ANOVA and a MANOVA, but a regression analysis seemed both the most feasible as the best answering method of analysis. Another advantage of regression is that interaction effects can be measured. We wanted to examine if there are any moderation effects for host type and room type, which can be measured by linear regression. This made it even more clear we wanted to use regression as our statistical analysis.
-
-Per city (Amsterdam, Antwerp, Berlin, Brussels and Rotterdam), we performed one regression with the independent variable ('dummy_month_aug') on the price ('average_price') and one regression with the independent variable ('dummy_month_aug') on the maximum nights a listing was available ('average_nights'). This means that in total, we performed ten regression analyses.
+We have two models, each with three independent variables ("start of the academic year", "type of host", and "type of accomodation"), and a dependent variable ("price" in the first model and "number of maximum nights" in the second model). Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform multiple linear regressions to analyze the relationships (Sekaran & Bogue, 2016). As we investigate the relationships for each of the two models with data for 5 different cities, there are ten linear regressions in total. Due to the fact that the focus of our research is to identify whether the start of the academic year, represented by "dummy_month_aug" is related to the DVs, and also to see whether this relationship depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators ("room" and "host_is_superhostTRUE").
 
 
-```{r}
-
-```
-
-```{r}
-```
 ## 3. Results
 
 *Regression output explanation*
 
 When running the regression we have checked the effect of the independent variable namely 'dummy_month_aug' for each of the five cities on the two dependent variables; 'average_price' and 'average_nights'. As the focus of our research is to identify whether the start of the academic year, represented by 'dummy_month_aug', has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely 'room' and 'host_is_superhostTRUE'.
 
-```{r}
-```
 
-First regression on price 
+*First model: DV = price*
 
-For Antwerp There is no significant effect observed for the start of the academic year on price. Room type and superhost do appear to have a significant effect on the price. With entire apartments (value 1) the price goes up €28.43 compared to the other room types. When the host is a superhost the price actually goes up by €6.25. The interactions between the independent variables are insignificant. 
+For Antwerp, there is no significant effect observed for the relationship between the start of the academic year and the price. Room type and superhost do appear to have a significant effect on the price. For entire apartments (value 1) the price is higher by €28.43 compared to the other room types. When the host is a superhost the price difference increases by €6.25 compared to prices of accomodations offered by ordinary hosts. The interactions between the independent variables are insignificant. 
 
-For Amsterdam there is no significant effect observed for the start of the academic year on price. The room type is a very significant with a p-value below 0.001 and shows a increase of €54.22 when the room type is entire apartment.  Host_is_superhost  is also significant causing a €8.11 decrease and the interactions are not significant. 
+For Amsterdam, there is no significant effect observed for the relationship between the start of the academic year and the price. The room type has a highly significant effect, with a p-value below 0.001, and shows a increase of €54.22 when the accomodation is an entire apartment compared to a single room. The effect of host_is_superhost is also significant; however, the results indicate that superhosts' listings are associated with lower prices (€8.11 difference). The interactions are not significant. 
 
-For Berlin there is no significant effect observed for the start of the academic year on price. The p-value is very high with 0.26. The only significant moderators are room type which has a very low p-value bellow 0.01 and increases the price by €37.74 and host_is_superhost increasing the price by €14.34.  
+For Berlin, there is no significant effect observed for the relationship between the start of the academic year and the price. The moderator "room type" has a significant effect with a p-value below 0.01. The relationship is positive and indicates prices for entire apartments are €37.74 higher compared to the prices of rooms. In addition, listings by superhosts are pricier, with a €14.34 difference compared to listings by ordinary hosts.
 
-For Brussels there is no significant effect observed for the start of the academic year on price. The room type is a very significant with a p-value below 0.001 and shows a increase of €26.18 when the room type is entire apartment.  Host_is_superhost  is also significant causing a €3.74 increase and the interactions are not significant. 
+For Brussels, there is no significant effect observed for the start of the academic year on price. The room type is highly significant with a p-value below 0.001 and shows an difference of €26.18 when the room type is entire apartment compared to single room.  The effect of host_is_superhost is also significant, indicating that prices are higher by €3.74 for listings by superhosts compared to ordinary hosts. The interactions are not significant. 
 
-For Rotterdam there is no significant effect observed for the start of the academic year on price. The room type is significant causing a €39.48 increase. And the host_is_superhost IV is also significant and causes a €8.47 decrease in price. 
+For Rotterdam, there is no significant effect for the start of the academic year on price. The effect of room type is significant and indicates prices of entire homes are higher by €39.48 compared to prices of single rooms. The effect of the moderator host_is_superhost is also significant and indicates that listings by superhosts are lower in price by €8.47 compared to listings by ordinary hosts.
 
 
-```{r}
-```
-Second regression on average nights:
+*Second model: DV = average (maximum) nights*
 
-For Antwerp there is no significant effect observed for the start of the academic year on average nights. Only the moderator host_is_superhost is significant causing a 131.14 increase.
+For Antwerp, there is no significant effect observed for the start of the academic year on average nights. Only the effect of the moderator host_is_superhost is significant, meaning that superhosts rent out accomodations for 131.14 maximum nights more on average compared to ordinary hosts.
 
-For Amsterdam there is no significant effect observed for the start of the academic year on average nights. Only the moderator host_is_superhost is significant causing a 152.34 increase and room type causes a 135.13 decrease. 
+For Amsterdam, there is no significant effect observed for the start of the academic year on average nights. Only the effect of the moderator host_is_superhost is significant, with a 152.34 difference in favour of superhosts compared to ordinary hosts. In addition, entire apartments are rented out for 135.13 fewer maximum nights on average compared to single rooms. 
 
-For Berlin there is no significant effect observed for the start of the academic year on average nights. The moderator room type causes a significant 47.40 increase and as significant 88.54 increase for host_is_superhost. 
+For Berlin, no significant effect is observed for the relationship between the start of the academic year and the average (maximum) nights. Once again the moderators' individual effects are significant, with 88.54 more average nights for superhosts compared to ordinary hosts, and 47.40 increase in number of average nights for entire homes compared to single rooms. 
 
-For Brussels there is no significant effect observed for the start of the academic year on average nights. Here room type has a significant effect, causing an increase of 80.45 and host_is_superhost is causing a significant 71.11 increase. 
+For Brussels, no significant effect is observed for the relationship between the start of the academic year and the average number of maximum nights. The moderators have significant individual effects, with 71.11 higher number of average nights for superhosts compared to ordinary hosts, and 80.45 more average nights for entire homes copared to single rooms. 
 
-For Rotterdam there is no significant effect observed for the start of the academic year on average nights. None of the moderators are significant.
-
-
-```{r}
-```
+For Rotterdam, there is no significant effect observed for the relationship between the start of the academic year and the average number of maximum nights. None of the effects of the moderators are significant either.
 
 
 ## 4. Conclusion
 
-According to the expectations of this analysis we would have found that the start of the academic year will positively influence the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. Unfortunately none of our regression had significant results for the effect of the start of the academic year on the price.
+Based on the problem background, it was expected that there would be a positive relationship between the start of the academic year and the average price of Airbnbs, as students in need of temporary housing use Airbnb's services to find accommodation, resulting in higher demand and hosts increasing prices. In addition, we hypothesized that the average nights would also be higher at the start of the academic year, since students looking for permanent accommodation might need to rent and AirBnB for few weeks or even months. Finally, it was expected that the type of room and the type of host would influence the relationship between the start of the academic year and each of the two dependent variables. 
+Nevertheless, no significant effects were found for the relationship between the start of the academic and the AirBnB prices, nor for the relationship between the start of the academic and the average maximum nights for which an accomodation is available. The interaction effects between the start of the academic year and the moderators were not significant for none of the models either. 
+Although, initially not considered in the research questions, there were some significant effects of the moderators on price and on average maximum nights. The prices were higher for superhosts compared to ordinary hosts for Antwerp, Brussels and Rotterdam. Entire homes were associated with higher prices compared to rooms for all cities. The average number of maximum nights was higher for superhosts compared to ordinary hosts for all cities besides Rotterdam. The average number of maximum nights is also higher for entire homes compared to rooms for Amsterdam, Berlin and Brussels. 
+ 
 
-Another expectation of the study was that average nights would increase as well at the start of the academic year, since students looking for permanent accommodation might need a few weeks or even months to succeed. Despite these expectations we found no significant effects for average nights for any of the cities, therefore, we can conclude that the start of the academic year has no significant effect on the average maximum nights Airbnbs are available. 
+*Based on the results, we conclude that:*
 
-Next we will answer the questions we formulated at the start of this paper:
+\- How are the AirBnB prices related to the period of the academic year (beginning vs regular period)?
 
-\- How are the Airbnb prices related to the period of the academic year (beginning vs regular period)?
-Based on our results it does not appear to be as our regression models did not find any significant effects for the start of the academic year. 
+We cannot derive meaningful conclusions regarding the relationship between the beginning of the academic year and the AirBnB prices due to the large p-values of the regression outputs.
 
 \- How does the relationship between Airbnb prices and period of the academic year depend on the type of host (ordinary vs superhost)?
-This interaction is not significant for any of the cities. But for most cities there was a positive effect caused by superhost. With superhost causing an increase in price of 3.74 euros to over 14 euros depending on the city. But it does cause a decrease for Amsterdam and Rotterdam.  
+
+This interaction did not have a significant effect for any of the cities. However, for most cities there was a positive effect caused by superhost. With superhost listings associated with a price higher by 3.74 euros to over 14 euros compared to listings by ordinary hosts, depending on the city. Nevertheless, the effect is opposite for Amsterdam and Rotterdam; therefore, further research needs to be done to draw conclusions.
 
 \- How does the relationship between Airbnb prices and period of the academic year depend on the type of accommodation (room vs apartment)?
-This interaction is not significant for any of the cities. But the type of accommodation does have a positive effect on price for all of the cities. 
 
-\- How is the maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
-Based on our results it does not appear to be as our regression models did not find any significant effects for the start of the academic year. 
+This interaction effect is not significant for any of the cities. Nevertheless, the type of accommodation does have an individual positive effect on price for all of the cities. 
+
+\- How is the average maximum number of nights per accommodation related to the period of the academic year (beginning vs regular period)?
+
+ The results of the analysis did not show significant individual effects of the relationship between the start of the academic year and the average maximum number of nights. Therefore, this research question also remains unanswered.
 
 \- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of host (ordinary vs superhost)?
-This interaction is not significant for any of the cities. But for all of the cities besides Rotterdam there is a positive effect caused by superhost on average maximum number of nights.
+
+This interaction effect is not significant for any of the cities. However, for all of the cities besides Rotterdam there is a positive relationship between the superhost variable and average maximum number of nights.
 
 \- How does the relationship between the maximum number of nights per accommodation and period of the academic year depend on the type of accommodation (room vs apartment)?
-This interaction is not significant for any of the cities. But for Amsterdam, Berlin, Brussels there is a positive effect caused by roomtype on average maximum number of nights.
+This interaction effect is not significant for any of the cities. Nevertheless, for Amsterdam, Berlin, and Brussels there is a positive relationship between roomtype and average maximum number of nights, meaning that entire homes are mostly rented out for a larger number of maximum nights (on average) compared to single rooms.
 
-```{r}
-```
+
 ## 5. Discussion
 
-Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of such research. Therefore, we could not control for the quality of the data. The lack of significant effects in the model can be due to the large amount of observations in the sample. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time. 
+Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of this research. Therefore, we could not control for the quality of the data. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time.
 
-The prices increasing when the host is a superhost for all cities besides Amsterdam and Rotterdam is interesting as we thought the superhost might have lower pricing as they can access bulk buying options for materials and can hire cleaners. That Rotterdam and Amsterdam are different is also curious. The type of room causing an increase in price for all cities makes sense. As it is logical a whole appartement will be more expencive than a single room.
+Some of the individual effects of the moderators were significant, but since they were not consistent for all cities, we cannot make conclusions without additional analysis.
 
-The average number of maximum nights going up for superhost for all cities but Rotterdam makes sense. As superhost are not renting out just a room in their home they might need themselves at times but a professional business. So having their bnb's available for longer is logical.
-
-The average number of maximum nights going up for roomtype for Amsterdam, Berlin and Brussels makes sense too. As the cleaning and such for a large appartement is likely more work than for a single room, so offering the appartement for longer means less work for them. Furthermore full appartements likely attract people renting for different reasons than those renting a single room. 
-
-We do not have enough information to make conclusions on the few significant relationships we see between our DV and the moderators. 
-
-In conclusion, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities.
+In conclison, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities. In addition, two-way ANOVA could be performed for each model since the independent variables are categorical, whereas each DV is interval (Sekaran & Bogue, 2016), or the models could be tested together using a MANOVA analysis in order to take both dependent variables into consideration at once.
 
 
-```{r}
 
-```
 ## 6. References
 
 Sainaghi, R., Abrate, G., & Mauri, A. (2021). Price and RevPAR determinants of Airbnb listings: Convergent and divergent evidence. International Journal of Hospitality Management, 92, 102709.
+
+
+Sekaran, U., & Bougie, R. (2016). Research methods for business: a skill-building approach (Seventh). John Wiley & Sons.
+
+
