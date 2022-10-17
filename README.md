@@ -99,12 +99,12 @@ Due to the fact that the focus of our research is to identify whether the start 
 
 When running the regression we have checked the effect of the independent variable namely 'dummy_month_aug' for each of the five cities on the two dependent variables; 'average_price' and 'average_nights'. As the focus of our research is to identify whether the start of the academic year, represented by 'dummy_month_aug', has an effect on the DVs and also to see whether this effect depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators, namely 'room' and 'host_is_superhostTRUE'.
 
-Regarding the relationship between the start of the academic and the AirBnB prices, there were no significant results that we obtained are for the cities. 
+Regarding the relationship between the start of the academic and the AirBnB prices, there were no significant results that were obtained for the cities. 
 With regards to the relationship between the start of the academic and the average maximum nights for which an accomodation is available there was no significant relationship. 
 
 There were some significant effect from the moderators on price and on average maximum nights. 
 The prices increased when the host is a superhost for all cities besides Amsterdam and Rotterdam.
-The type of room causing an increase in price for all cities.
+The type of room causes an increase in price for all cities.
 The average number of maximum nights goes up for superhost for all cities but Rotterdam.
 The average number of maximum nights going up for roomtype for Amsterdam, Berlin and Brussels
 
