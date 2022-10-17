@@ -305,7 +305,7 @@ Overall, this research did not find enough significant effects to draw meaningfu
 
 Some of the individual effects of the moderators were significant, but since they were not consistent for all cities, we cannot make conclusions without additional analysis.
 
-In conclison, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities. In addition, two-way ANOVA could be performed for each model since the independent variables are categorical, whereas each DV is interval (Sekaran & Bogue, 2016), or the models could be tested together using a MANOVA analysis in order to take both dependent variables into consideration at once.
+In conclusion, further research is needed to confirm or reject the relationships between the variables in our models. It might be useful to repeat the research later in time, as well as for other student cities. In addition, two-way ANOVA could be performed for each model since the independent variables are categorical, whereas each DV is interval (Sekaran & Bogue, 2016), or the models could be tested together using a MANOVA analysis in order to take both dependent variables into consideration at once.
 
 
 

@@ -31,7 +31,7 @@ After filtering these are the variables in the dataset:
 - maximum_nights        = maximum number of nights a listing can be rented out. 
 - average_nights        = mean maximum_nights for each listing over 30 days, numeric. 
 - minimum_nights        = minimum number of nights a listing can be rented out. 
-- dummy_month_aug       = Dummy variable to distinguish between the two time peridos: Aug/Sept listings as 1, and March/April as 0.
+- dummy_month_aug       = Dummy variable to distinguish between the two time periods: Aug/Sept listings as 1, and March/April as 0.
 
 3. Collection process
 
