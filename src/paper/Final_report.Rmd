@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This project uses archival data from the Airbnb website to investigate the relationship between the beginning of the academic year and the Airbnb market in five major Western-European cities.
 
+![](../../gen/paper/temp/airbnb.png)
 ## Contents
 
 1.  Introduction
