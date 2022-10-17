@@ -87,8 +87,10 @@ The data transformation process is explained in detail in the *report* file with
 
 ### 2.3 Analysis
 
+In order to answer our research questions, we used linear regression models. A linear regression is used to predict the effects of one or more predictors on one dependent variable. Our aim was to investigate the relationship between a nonmetric independent variable and a metric dependent variable. To examine this, a linear regression was the most obvious analysis to do. Some other options were discussed, such as an ANOVA, a repeated-measures ANOVA and a MANOVA, but a regression analysis seemed both the most feasible as the best answering method of analysis. Another advantage of regression is that interaction effects can be measured. We wanted to examine if there are any moderation effects for host type and room type, which can be measured by linear regression. This made it even more clear we wanted to use regression as our statistical analysis.
+
 We have two models, each with three independent variables ("start of the academic year", "type of host", and "type of accomodation"), and a dependent variable ("price" in the first model and "number of maximum nights" in the second model).
-Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform linear regressions to analysie the relationships.
+Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform linear regressions to analyze the relationships.
 As we investigate the relationships for each of the two models with data for 5 different cities, there are ten linear regressions in total.
 Due to the fact that the focus of our research is to identify whether the start of the academic year, represented by "dummy_month_aug" is related to the DVs, and also to see whether this relationship depends on the moderators, we have introduced interaction effects between the IV of the study and the moderators ("room" and "host_is_superhostTRUE").
 
@@ -178,11 +180,28 @@ Finally, to knit .pdf files from the RMarkdown files, the user needs to install 
 
 ### 5.2 Run the Code
 
-The user needs to fork this repository.
+1. Fork this repository.
+2. Open your terminal/command prompt and clone the repository.
+``` 
+git clone https://github.com/{username}/Start_of_Academic_Year_relationship_with_AirBnB_Market.git
+```
+3. Make sure to set the working directory to `Start_of_Academic_Year_relationship_with_AirBnB_Market` and use `make` to run the `makefile` that will execute all code files in the correct order.
+```
+make
+```
 
-Then, the user needs to clone the repository.
+#### Running the code without a makefile
 
-Finally, the user needs to open their terminal/command prompt and use *make* to run the *makefile* that will execute all code files in the correct order.
+1. Install packages -> `../src/data-preparation/install_packages.R`
+2. Download the datasets -> `../src/data-preparation/download_datasets.R`
+3. Exploration pre -> `../src/data-preparation/exploration_pre_prep.R`
+4. Apply functions -> `../src/data-preparation/apply_functioncs.R`
+5. Write datasets -> `../src/data-preparation/write_datasets.R`
+6. Exploration post -> `../src/analysis/exploration_post_prep.R`
+7. Multiple regression -> `../src/analysis/multiple_regressions.R`
+8. Model estimation -> `../src/analysis/Model_estimation.Rmd`
+9. Move model estimation -> `../src/analysis/move_model_estimation.R`
+10. Final report -> `../src/paper/Final_report.Rmd`
 
 ## About Us
 This project is created for the course Data Preparation and Workflow Management, which is part of the Marketing Analytics Master program at Tilburg University. 
