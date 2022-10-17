@@ -11,7 +11,7 @@ cal_urls <- c('https://github.com/thomassonneveldt/datasets_dprep/raw/main/datas
               'https://github.com/thomassonneveldt/datasets_dprep/raw/main/datasets/ams_calendar.csv.gz', 
               'https://github.com/thomassonneveldt/datasets_dprep/raw/main/datasets/rot_calendar.csv.gz', 
               'https://github.com/thomassonneveldt/datasets_dprep/raw/main/datasets/bru_calendar.csv.gz', 
-              'https://github.com/thomassonneveldt/datasets_dprep/raw/main/datasets/ber_calendar%20(4).csv.gz')
+              'https://github.com/thomassonneveldt/datasets_dprep/raw/main/datasets/ber_calendar.csv.gz')
 
 lis_datasets <- lapply(lis_urls, read_csv)
 cal_datasets <- lapply(cal_urls, read_csv)
