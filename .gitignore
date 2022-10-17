@@ -7,4 +7,4 @@
 *.csv
 .Rproj.user
 **Rplots.pdf
-
+**install_packages.txt

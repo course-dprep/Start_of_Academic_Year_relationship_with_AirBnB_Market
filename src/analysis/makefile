@@ -1,14 +1,17 @@
 TEMP = ../../gen/analysis/temp/
 DATA = ../../data
+OUTPUT = ../../gen/analysis/OUTPUT
 
-all: $(TEMP)/model_estimation1.RData
+all: $OUTPUT/model_estimation.pdf
 
-$(TEMP)/tot_rotterdam.RData: data_exploration_raw_data.R 
-	Rscript data_exploration_raw_data.R
-
-Rplots.pdf: data_exploration.R $(TEMP)/tot_rotterdam.RData
-	Rscript data_exploration.R
+Rplots.pdf: exploration_post_prep.R 
+	Rscript exploration_post_prep.R
 
 $(TEMP)/model_estimation1.RData: multiple_regressions.R Rplots.pdf
 	Rscript multiple_regressions.R
 
+model_estimation.pdf: model_estimation.Rmd $(TEMP)/model_estimation1.RData
+	Rscript -e "Sys.setenv(RSTUDIO_PANDOC='C:/Program Files/RStudio/bin/pandoc'); rmarkdown::render('model_estimation.Rmd')"
+
+$OUTPUT/model_estimation.pdf: move_model_estimation.R model_estimation.pdf
+	Rscript move_model_estimation.R
