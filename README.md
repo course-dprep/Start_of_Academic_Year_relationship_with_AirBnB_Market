@@ -56,7 +56,8 @@ The research will be executed for five major student cities in three Western-Eur
 
 ### 1.3 Conceptual model
 
-![conceptual-model-final-for-real](https://user-images.githubusercontent.com/112591530/196039306-1a0a3f17-5bad-40aa-863d-b69ba2840fca.jpg)
+![conceptual-model-use-this](https://user-images.githubusercontent.com/112591530/196250721-3a241662-ff75-49d7-80b2-5124e6455e42.jpg)
+
 
 
 ## 2. Methodology
