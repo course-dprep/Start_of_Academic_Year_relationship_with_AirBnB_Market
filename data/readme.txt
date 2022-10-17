@@ -35,7 +35,7 @@ After filtering these are the variables in the dataset:
 
 3. Collection process
 
-Data is downloaded from web. See src/data-preparation/download_datasets.R. 
+Data is originally downloaded from the InsideAirBnB website.
 
 4. Preprocessing/cleaning/labeling
 
@@ -54,6 +54,4 @@ Raw data available for download for others on the Inside Airbnb website.
 Go to: http://insideairbnb.com/get-the-data/
 
 7. Maintenance
-
-None. After the end of the project the datasets will not be updates or maintained by the project members.
-The datasets on Inside AirBnB are continuously updated. 
+The repository will not be maintained by the contributors. However, the datasets on Inside AirBnB are continuously updated, which means that if they are directly downloaded from there, the results will change. To avoid this, the files used in this project are loaded from another repository (used as a cloud).
