@@ -176,7 +176,12 @@ The user needs to open their terminal/command prompt and use *make* to run the *
 
 ## About Us
 This project is created for the course Data Preparation and Workflow Management, which is part of the Marketing Analytics Master program at Tilburg University. 
-The project is executed by Czenkár, L. (dev team role: research and analysis), Hilman, L. (dev team: research and documentation), Nikiforova, L. (scrum master; dev team role: analysis and documentation), Schrouff, K. (project owner; dev team role: data preparation and exploration), and Sonneveldt, T. (dev team role: pipeline automation, data exploration and preparation)
+The project is executed by 
+* Czenkár, L. (dev team role: research and analysis);
+* Hilman, L. (dev team role: research and documentation);
+* Nikiforova, L. (scrum master; dev team role: analysis and documentation);
+* Schrouff, K. (project owner; dev team role: data preparation and exploration);
+* Sonneveldt, T. (dev team role: pipeline automation, data retrieving, exploration, and preparation).
 
 
 ## References
