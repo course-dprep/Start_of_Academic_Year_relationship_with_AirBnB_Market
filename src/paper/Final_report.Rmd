@@ -74,7 +74,7 @@ To investigate this research questions, we produced some subquestions to gain a 
 
 To answer our research questions, we designed the following conceptual model. We think there is an effect of the start of the academic year on the price and the maximum number of nights a listing is available. In addition, we think these effects might be moderated by the type of host (whether a host has the 'superhost' badge or not) and the type of accommodation (a private, shared or hotel room versus an entire apartment)
 
-![](https://user-images.githubusercontent.com/112591530/194730733-bf2d0bf2-0655-46f9-96d4-5cb6d6702569.jpg)
+![](../../gen/paper/temp/model.png)
 
 ## 2. Methodology
 

@@ -2,7 +2,7 @@ TEMP = ../../gen/analysis/temp/
 DATA = ../../data
 OUTPUT = ../../gen/analysis/audit
 
-all: $OUTPUT/model_estimation.pdf
+all: $(OUTPUT)/model_estimation.pdf
 
 Rplots.pdf: exploration_post_prep.R 
 	Rscript exploration_post_prep.R

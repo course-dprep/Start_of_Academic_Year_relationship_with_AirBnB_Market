@@ -6,8 +6,8 @@ all: $(DATA)/total_rotterdam.csv
 $(TEMP)/install_packages.txt: install_packages.R
 	Rscript install_packages.R
 
-$(TEMP)/cal_datasets.RData: download_datasets.R $(TEMP)/install_packages.txt
-	Rscript download_datasets.R 
+$(TEMP)/cal_datasets.RData: download_data.R $(TEMP)/install_packages.txt
+	Rscript download_data.R 
 
 $(TEMP)/tot_rotterdam.RData: exploration_pre_prep.R $(TEMP)/cal_datasets.RData
 	Rscript exploration_pre_prep.R
