@@ -103,7 +103,7 @@ Nevertheless, no significant effects were found for the relationship between the
 
 There were some significant effects of the moderators on price and on average maximum nights. The prices were higher for superhosts compared to ordinary hosts for Antwerp, Brussels and Rotterdam. Entire homes were associated with higher prices compared to rooms for all cities. The average number of maximum nights was higher for superhost compared to ordinary host for all cities besides Rotterdam. The average number of maximum nights is also higher for entire homes compared to rooms for Amsterdam, Berlin and Brussels. 
 
-*Discussion and Reccomendations*
+*Discussion and Recommendations*
 
 Overall, this research did not find enough significant effects to draw meaningful generalizable conclusions. There are various reasons that could have caused this. First of all, this project used archival data that has not been collected for the purpose of this research. Therefore, we could not control for the quality of the data. Another possible explanation can be that not many students use Airbnb's services in these cities. We also have to keep in mind we are comparing the data from 2022 to 2023. So the prices listed for March/April might be changed closer to that time.
 
