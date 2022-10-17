@@ -18,7 +18,7 @@ It investigates whether the prices and the average nights for which an accomodat
 
 [2. Methodology](#2-methodology)
    - [Data](#21-data)
-   - [Research Method](#22-research-method)
+   - [Research Method and Analysis](#22-research-method-and-analysis)
 
 [3. Main Results, Conclusion and Discussion](#3-main-results-conclusion-and-discussion)
 
@@ -86,7 +86,7 @@ The data transformation process is explained in detail in the *report* file with
 |minimum_nights| Minimum number of nights a listing can be rented out.|
 |dummy_month_aug| Dummy variable to distinguish between the two time peridos: Aug/Sept listings as 1, and March/April as 0.|
 
-### 2.2 Research Method
+### 2.2 Research Method and Analysis
 
 We have two models, each with three independent variables ("start of the academic year", "type of host", and "type of accomodation"), and a dependent variable ("price" in the first model and "number of maximum nights" in the second model).
 Since there are three categorical explanatory variables, and a continuous dependent variable in each model, we perform multiple linear regressions to analyze the relationships (Sekaran & Bogue, 2016).
